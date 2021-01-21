@@ -14,9 +14,22 @@ public class InputTesting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(gamePhases.playerState == BattlePhases.GameState.PlayerSelect && Input.GetKeyDown(KeyCode.Y))
+        {
+            gamePhases.playerState = BattlePhases.GameState.PlayerBuy;
+        }
+        else if(gamePhases.playerState == BattlePhases.GameState.PlayerSelect && Input.GetKeyDown(KeyCode.N))
         {
             gamePhases.playerState = BattlePhases.GameState.PlayerAttack;
         }
+        else if (gamePhases.playerState == BattlePhases.GameState.PlayerBuy && Input.GetKeyDown(KeyCode.A)) 
+        {
+            gamePhases.playerState = BattlePhases.GameState.PlayerAttack;
+        }
+        /*else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            gamePhases.playerState = BattlePhases.GameState.PlayerAttack;
+        }
+        */
     }
 }
