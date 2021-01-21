@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5dce0b6c44adda4c861e0aefa653c5c, type: 3}
   m_Name: Red
   m_EditorClassIdentifier: 
-  name: 
-  dmgRadius: 0
-  speed: 0
+  name: Red
+  dmgRadius: 2
+  speed: 8

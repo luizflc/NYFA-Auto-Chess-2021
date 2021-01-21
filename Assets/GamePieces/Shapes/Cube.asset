@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad183e8a409b084f920394c05f5d5dd, type: 3}
   m_Name: Cube
   m_EditorClassIdentifier: 
-  name: 
-  damage: 0
-  health: 0
-  cost: 0
+  name: Cube
+  damage: 8
+  health: 5
+  cost: 8
