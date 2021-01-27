@@ -23,7 +23,7 @@ public class PieceSelector : MonoBehaviour
     public void Refresh()
     {
         int pieceNum;
-        for(int i = 0; i <= piecePositions.Length; i++)
+        for(int i = 0; i < piecePositions.Length; i++)
         {
             pieceNum = Random.Range(0, pieces.Length);
             Instantiate(pieces[pieceNum], piecePositions[i], Quaternion.identity);
