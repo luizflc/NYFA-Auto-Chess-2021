@@ -11,11 +11,13 @@ public class PlayablePiece : MonoBehaviour
     // Start is called before the first frame update
     public bool goingForward;
     public bool sideStrafe;
+    bool canMoveSideways;
+    bool canMoveForwards;
     public int damage;
     public int health;
     public int cost;
     public int dmgRadius;
-    public int speed;
+    public float speed;
     public int maxX;
     public int minX;
     public int maxZ;
@@ -28,61 +30,78 @@ public class PlayablePiece : MonoBehaviour
         cost = shape.cost;
         dmgRadius = color.dmgRadius;
         speed = color.speed;
+        if (color.name == "Red")
+        {
+            canMoveSideways = false;
+            canMoveForwards = true;
+        }
+
+        if (color.name == "Blue")
+        {
+            canMoveSideways = true;
+            canMoveForwards = true;
+        }
+
+        if (color.name == "Yellow")
+        {
+            canMoveSideways = false;
+            canMoveForwards = false;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (goingForward == true)
-        {
-            if (gameObject.transform.position.x <= maxX)
+        if (canMoveForwards == true) {
+            if (goingForward == true)
             {
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x + speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                if (gameObject.transform.position.x <= maxX)
+                {
+                    gameObject.transform.position = new Vector3(gameObject.transform.position.x + speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                }
+                else
+                 {
+                     goingForward = false;
+                 }
             }
-           /* else
-            {
-                goingForward = false;
-            } */
-        }
 
-        if (goingForward == false)
-        {
-            if (gameObject.transform.position.x >= minX)
+            if (goingForward == false)
             {
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x - speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                if (gameObject.transform.position.x >= minX)
+                {
+                    gameObject.transform.position = new Vector3(gameObject.transform.position.x - speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                }
+                else
+                {
+                    goingForward = true;
+                }
             }
-            /* else
-            {
-                goingForward = true;
-            } */
         }
-     
-        if (sideStrafe == true)
+        if (canMoveSideways == true)
         {
-            if (gameObject.transform.position.z <= maxZ)
+            if (sideStrafe == true)
             {
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + speed);
+                if (gameObject.transform.position.z <= maxZ)
+                {
+                    gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + speed);
+                }
+                else 
+                  {
+                     sideStrafe = false;
+                  }
             }
-           /* else 
-             {
-                sideStrafe = false;
-             } */
-        }
-        if (sideStrafe == false)
-        {
-            if (gameObject.transform.position.z >= minZ)
+            if (sideStrafe == false)
             {
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - speed);
+                if (gameObject.transform.position.z >= minZ)
+                {
+                    gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - speed);
+                }
+                else
+                {
+                    sideStrafe = true;
+                }
             }
-            /*else
-            {
-                sideStrafe = true;
-            } */
-        }
-
-        if(color.name == "Red")
-        {
-            sideStrafe = false;
         }
 
     }
