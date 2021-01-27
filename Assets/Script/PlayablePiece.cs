@@ -22,6 +22,7 @@ public class PlayablePiece : MonoBehaviour
     public int minX;
     public int maxZ;
     public int minZ;
+    public bool canMove;
     void Start()
     {
         goingForward = true;
@@ -53,57 +54,60 @@ public class PlayablePiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMoveForwards == true) {
-            if (goingForward == true)
-            {
-                if (gameObject.transform.position.x <= maxX)
-                {
-                    gameObject.transform.position = new Vector3(gameObject.transform.position.x + speed, gameObject.transform.position.y, gameObject.transform.position.z);
-                }
-                else
-                 {
-                     goingForward = false;
-                 }
-            }
-
-            if (goingForward == false)
-            {
-                if (gameObject.transform.position.x >= minX)
-                {
-                    gameObject.transform.position = new Vector3(gameObject.transform.position.x - speed, gameObject.transform.position.y, gameObject.transform.position.z);
-                }
-                else
-                {
-                    goingForward = true;
-                }
-            }
-        }
-        if (canMoveSideways == true)
+        if (canMove == false)
         {
-            if (sideStrafe == true)
+            if (canMoveForwards == true)
             {
-                if (gameObject.transform.position.z <= maxZ)
+                if (goingForward == true)
                 {
-                    gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + speed);
+                    if (gameObject.transform.position.x <= maxX)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x + speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                    }
+                    else
+                    {
+                        goingForward = false;
+                    }
                 }
-                else 
-                  {
-                     sideStrafe = false;
-                  }
+
+                if (goingForward == false)
+                {
+                    if (gameObject.transform.position.x >= minX)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x - speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                    }
+                    else
+                    {
+                        goingForward = true;
+                    }
+                }
             }
-            if (sideStrafe == false)
+            if (canMoveSideways == true)
             {
-                if (gameObject.transform.position.z >= minZ)
+                if (sideStrafe == true)
                 {
-                    gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - speed);
+                    if (gameObject.transform.position.z <= maxZ)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + speed);
+                    }
+                    else
+                    {
+                        sideStrafe = false;
+                    }
                 }
-                else
+                if (sideStrafe == false)
                 {
-                    sideStrafe = true;
+                    if (gameObject.transform.position.z >= minZ)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - speed);
+                    }
+                    else
+                    {
+                        sideStrafe = true;
+                    }
                 }
             }
         }
-
     }
 
 
