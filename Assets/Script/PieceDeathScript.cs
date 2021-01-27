@@ -10,6 +10,7 @@ public class PieceDeathScript : MonoBehaviour
     bool dead;
     public Vector3 afterlife;
     public GameObject Graveyard;
+    public bool disabling;
     void Start()
     {
          myPlayable = gameObject.GetComponent<PlayablePiece>();
@@ -36,6 +37,10 @@ public class PieceDeathScript : MonoBehaviour
     {
         dead = true;
         transform.position = afterlife;
-        gameObject.SetActive(false);
+        if(disabling)
+        {
+            gameObject.SetActive(false);
+        }
+        
     }
 }
