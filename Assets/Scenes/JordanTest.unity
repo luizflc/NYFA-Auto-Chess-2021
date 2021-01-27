@@ -260,6 +260,7 @@ MonoBehaviour:
   minX: -10
   maxZ: 10
   minZ: -10
+  canMove: 0
 --- !u!65 &668206571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -347,6 +348,7 @@ GameObject:
   - component: {fileID: 1831788720}
   - component: {fileID: 1831788719}
   - component: {fileID: 1831788718}
+  - component: {fileID: 1831788721}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -413,9 +415,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831788717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -21}
+  m_LocalPosition: {x: 0, y: 1, z: -9.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1831788721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831788717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a44717a4768e3c4aae0d3d5e6d61bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerOneWin: 0
+  PlayerTwoWin: 0
+  playerOneScore: 0
+  playerTwoScore: 0
