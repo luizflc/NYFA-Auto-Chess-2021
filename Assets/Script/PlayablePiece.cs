@@ -54,7 +54,7 @@ public class PlayablePiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove == false)
+        if (canMove == true)
         {
             if (canMoveForwards == true)
             {

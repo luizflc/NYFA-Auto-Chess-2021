@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Blue
   dmgRadius: 8
-  speed: 0.25
+  speed: 0.05
