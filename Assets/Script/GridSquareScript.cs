@@ -9,6 +9,7 @@ public class GridSquareScript : MonoBehaviour
     public bool taken;
     public Material selectedMaterial;
     public Material ordinaryMaterial;
+    public SpaceType thisSpace;
     void Start()
     {
         
@@ -18,5 +19,10 @@ public class GridSquareScript : MonoBehaviour
     void Update()
     {
         
+    }
+    public enum SpaceType
+    {
+        battlefield,
+        bench
     }
 }

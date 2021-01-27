@@ -12,11 +12,12 @@ public class DragScript : MonoBehaviour
     public GameObject homeSpace;
     public GridSquareScript homeScript;
     public MeshRenderer homeRenderer;
+    public PlayablePiece thisPiece;
     float distance;
 
     void Start()
     {
-
+        thisPiece = gameObject.GetComponent<PlayablePiece>();
     }
     private void OnMouseDown()
     {
@@ -32,6 +33,17 @@ public class DragScript : MonoBehaviour
         if (homeSpace != null)
         {
             transform.position = homeSpace.transform.position + new Vector3 (0,1,0);
+
+            if (homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
+            {
+                thisPiece.canMove = true;
+                inBattle = true;
+            }
+            else
+            {
+                thisPiece.canMove = false;
+                inBattle = false;
+            }
         }
     }
     // Update is called once per frame
@@ -62,6 +74,14 @@ public class DragScript : MonoBehaviour
                     homeSpace = other.gameObject;
                     homeScript = homeSpace.GetComponent<GridSquareScript>();
                     homeRenderer = homeSpace.GetComponent<MeshRenderer>();
+                    if(homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
+                    {
+                        thisPiece.canMove = true;
+                    }
+                    else if(homeScript.thisSpace == GridSquareScript.SpaceType.bench)
+                    {
+                        thisPiece.canMove = false;
+                    }
                     homeScript.taken = true;
                     homeRenderer.material = homeScript.selectedMaterial;
                 }
