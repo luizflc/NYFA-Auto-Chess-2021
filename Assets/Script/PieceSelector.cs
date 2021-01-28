@@ -1,11 +1,14 @@
 ﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PieceSelector : MonoBehaviour
 {
-    public Vector3[] piecePositions;
+    public Button[] pieceButtons;
+    public Sprite[] piecesPic;
     public GameObject[] pieces;
+    public SpawnPiece[] spawners;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +26,11 @@ public class PieceSelector : MonoBehaviour
     public void Refresh()
     {
         int pieceNum;
-        for(int i = 0; i < piecePositions.Length; i++)
+        for(int i = 0; i < pieceButtons.Length; i++)
         {
             pieceNum = Random.Range(0, pieces.Length);
-            Instantiate(pieces[pieceNum], piecePositions[i], Quaternion.identity);
+            pieceButtons[i].GetComponent<Image>().sprite = piecesPic[pieceNum];
+            spawners[i].currPiece = pieceNum;
         }
     }
 }
