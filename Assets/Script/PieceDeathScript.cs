@@ -11,10 +11,14 @@ public class PieceDeathScript : MonoBehaviour
     public Vector3 afterlife;
     public GameObject Graveyard;
     public bool disabling;
+    public GameObject myManagerObject;
+    public GameManager myManager;
     void Start()
     {
          myPlayable = gameObject.GetComponent<PlayablePiece>();
          dead = false;
+         myManagerObject = GameObject.Find("GameManager");
+         myManager = myManagerObject.GetComponent<GameManager>();
         /*if (Graveyard == null)
         {
             afterlife = new Vector3(10, 10, 10);
@@ -36,6 +40,16 @@ public class PieceDeathScript : MonoBehaviour
     void Death()
     {
         dead = true;
+        if(gameObject.tag == "EnemyPiece")
+        {
+            myManager.playerScore++;
+
+        }
+        else if (gameObject.tag == "PlayerPiece") 
+            {
+            myManager.enemyScore++;
+
+            } 
         transform.position = afterlife;
         myPlayable.canMove = false;
         myPlayable.health = myPlayable.shape.health;

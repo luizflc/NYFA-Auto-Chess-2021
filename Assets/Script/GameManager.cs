@@ -1,20 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public PieceSelector storeFront;
     public GameObject UI;
+    public GameObject startButton;
     public int turnNum = 0;
     public float timer;
     public bool canBuy;
+    public GameObject textObject;
+    public GameObject enemyTextObject;
+    public Text myPlayerText;
+    public Text myEnemyText;
+    public int playerScore;
+    public int enemyScore;
     //public GameState state;
     // Start is called before the first frame update
     void Start()
     {
         StartBuyingPhase();
         timer = 15f;
+        myPlayerText = textObject.GetComponent<Text>();
+        myEnemyText = enemyTextObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -29,6 +39,8 @@ public class GameManager : MonoBehaviour
         {
             StartBuyingPhase();
         }
+        myEnemyText.text = "Enemy:" + enemyScore;
+        myPlayerText.text = "Player:" + playerScore;
     }
 
     public void StartBattlePhase() {
