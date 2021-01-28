@@ -158,7 +158,7 @@ MonoBehaviour:
   - {fileID: 3253820982306286077}
   - {fileID: 3253820982681593806}
   currPiece: 0
-  spawnLocation: {x: 0, y: 0, z: 0}
+  spawnLocation: {x: -6, y: 1, z: 4}
 --- !u!1 &3253820981914837521
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +479,7 @@ MonoBehaviour:
   - {fileID: 3253820981788190189}
   - {fileID: 3253820982681593806}
   currPiece: 0
-  spawnLocation: {x: 0, y: 0, z: 0}
+  spawnLocation: {x: -6, y: 1, z: 4}
 --- !u!1 &3253820982681593806
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
   - {fileID: 3253820981788190189}
   - {fileID: 3253820982306286077}
   currPiece: 0
-  spawnLocation: {x: 0, y: 0, z: 0}
+  spawnLocation: {x: -6, y: 1, z: 4}
 --- !u!1 &3253820982826061285
 GameObject:
   m_ObjectHideFlags: 0
