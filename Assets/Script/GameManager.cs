@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     public void StartBattlePhase() {
         timer = 15;
+        canBuy = false;
         UI.SetActive(false);
         SpawnEnemyPieces();
         //state = GameState.PlayerAttack;
