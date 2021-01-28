@@ -437,6 +437,8 @@ MonoBehaviour:
   storeFront: {fileID: 896942039}
   UI: {fileID: 896942038}
   turnNum: 0
+  timer: 0
+  canBuy: 0
 --- !u!1001 &1365944089
 PrefabInstance:
   m_ObjectHideFlags: 0

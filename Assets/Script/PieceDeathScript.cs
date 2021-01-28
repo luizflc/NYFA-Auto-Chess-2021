@@ -38,6 +38,7 @@ public class PieceDeathScript : MonoBehaviour
         dead = true;
         transform.position = afterlife;
         myPlayable.canMove = false;
+        myPlayable.health = myPlayable.shape.health;
         if(disabling)
         {
             gameObject.SetActive(false);
