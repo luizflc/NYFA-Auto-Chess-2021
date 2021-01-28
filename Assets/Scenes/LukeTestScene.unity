@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Snapbox
       objectReference: {fileID: 0}
+    - target: {fileID: 748987147234847540, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
+      propertyPath: m_Name
+      value: Tile3
+      objectReference: {fileID: 0}
     - target: {fileID: 1252771961297229740, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.489998
@@ -255,6 +259,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Snapbox
       objectReference: {fileID: 0}
+    - target: {fileID: 3828751388005905554, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
+      propertyPath: m_Name
+      value: Tile2
+      objectReference: {fileID: 0}
     - target: {fileID: 4989339455526233624, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_TagString
       value: Snapbox
@@ -262,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 5103114506558302739, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_TagString
       value: Snapbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103114506558302739, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
+      propertyPath: m_Name
+      value: Tile1
       objectReference: {fileID: 0}
     - target: {fileID: 6698126402016753640, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_IsTrigger
