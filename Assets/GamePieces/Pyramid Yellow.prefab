@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 996632875535085845}
   - component: {fileID: 1004385610755258015}
   - component: {fileID: 3512628777801602196}
+  - component: {fileID: 5021323369746905312}
+  - component: {fileID: 960032274067363659}
+  - component: {fileID: 4504169578098864125}
   m_Layer: 0
   m_Name: Pyramid Yellow
   m_TagString: Untagged
@@ -107,3 +110,54 @@ MonoBehaviour:
   minX: -1
   maxZ: 26
   minZ: -1
+  canMove: 0
+--- !u!54 &5021323369746905312
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982471391650890265}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &960032274067363659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982471391650890265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a1bc0b884eefb41ab152c46f0455d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inBattle: 0
+  dragging: 0
+  homeSpace: {fileID: 0}
+  homeScript: {fileID: 0}
+  homeRenderer: {fileID: 0}
+  thisPiece: {fileID: 0}
+--- !u!114 &4504169578098864125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982471391650890265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ba9ce34780ea64b83f52317ad64610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayable: {fileID: 0}
+  afterlife: {x: 0, y: 0, z: 0}
+  Graveyard: {fileID: 0}
+  disabling: 0
