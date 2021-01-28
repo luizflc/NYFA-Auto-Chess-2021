@@ -347,6 +347,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+--- !u!1 &896942038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3253820982826061285, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+  m_PrefabInstance: {fileID: 798533478}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &896942039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+  m_PrefabInstance: {fileID: 798533478}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896942038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2226d0a6abd4a4e8ebae5f777231c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1256972519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256972520}
+  - component: {fileID: 1256972521}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1256972520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256972519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10.32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256972521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256972519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f743b3fd641bc14eb595113a109a69e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storeFront: {fileID: 896942039}
+  UI: {fileID: 896942038}
 --- !u!1001 &1365944089
 PrefabInstance:
   m_ObjectHideFlags: 0

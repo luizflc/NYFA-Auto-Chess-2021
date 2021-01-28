@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class BattlePhases : MonoBehaviour
 {
-    public enum GameState { PlayerSelect, PlayerBuy,PlayerAttack };
-
+    public enum GameState { PlayerSelect, PlayerBuy, PlayerAttack };
     public GameState playerState;
     //public int playerTurnID;
     //public int nextPlayerID;
