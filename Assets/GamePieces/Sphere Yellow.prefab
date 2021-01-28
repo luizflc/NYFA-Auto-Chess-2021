@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -5960866978126852657}
   - component: {fileID: 571608427923036172}
   - component: {fileID: 7070231875639175315}
+  - component: {fileID: 8883562309355947895}
   m_Layer: 0
   m_Name: Sphere Yellow
   m_TagString: Untagged
@@ -156,3 +157,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8883562309355947895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931687215547990029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a1bc0b884eefb41ab152c46f0455d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inBattle: 0
+  dragging: 0
+  homeSpace: {fileID: 0}
+  homeScript: {fileID: 0}
+  homeRenderer: {fileID: 0}
+  thisPiece: {fileID: 0}
