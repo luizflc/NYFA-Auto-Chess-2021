@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Snapbox
       objectReference: {fileID: 0}
+    - target: {fileID: 748987147234847540, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
+      propertyPath: m_Name
+      value: Tile3
+      objectReference: {fileID: 0}
     - target: {fileID: 1252771961297229740, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.489998
@@ -255,6 +259,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Snapbox
       objectReference: {fileID: 0}
+    - target: {fileID: 3828751388005905554, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
+      propertyPath: m_Name
+      value: Tile2
+      objectReference: {fileID: 0}
     - target: {fileID: 4989339455526233624, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_TagString
       value: Snapbox
@@ -262,6 +270,10 @@ PrefabInstance:
     - target: {fileID: 5103114506558302739, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_TagString
       value: Snapbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103114506558302739, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
+      propertyPath: m_Name
+      value: Tile1
       objectReference: {fileID: 0}
     - target: {fileID: 6698126402016753640, guid: 597b4c34e4011c3478cdcc0ea187b81f, type: 3}
       propertyPath: m_IsTrigger
@@ -1400,13 +1412,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261875154}
-  m_LocalRotation: {x: 0.21437664, y: 0.6499692, z: -0.26640725, w: 0.67868245}
-  m_LocalPosition: {x: -18.1, y: 19.2, z: 9.2}
+  m_LocalRotation: {x: 0.320652, y: 0.63653266, z: -0.32966045, w: 0.61913854}
+  m_LocalPosition: {x: -15.98, y: 28.71, z: 11.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 39.591, y: 85.298, z: -6.178}
+  m_LocalEulerAnglesHint: {x: 54.759, y: 91.587, z: 0}
 --- !u!1001 &1357907236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2775,27 +2787,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b67ac687e7456a64ea524c28c8b9e0df, type: 3}
---- !u!1 &1544540618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5412233354676430614, guid: b67ac687e7456a64ea524c28c8b9e0df, type: 3}
-  m_PrefabInstance: {fileID: 1544540617}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1544540619
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544540618}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1630315604
 PrefabInstance:
   m_ObjectHideFlags: 0
