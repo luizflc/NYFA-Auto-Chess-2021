@@ -21,29 +21,32 @@ public class DragScript : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (!inBattle)
-        {
+        //if (!inBattle)
+       // {
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
             dragging = true;
-        }
+      //  }
     }
     private void OnMouseUp()
     {
-        dragging = false;
-        if (homeSpace != null)
-        {
-            transform.position = homeSpace.transform.position + new Vector3 (0,1,0);
+       // if (!inBattle)
+      //  {
+            dragging = false;
+            if (homeSpace != null)
+            {
+                transform.position = homeSpace.transform.position + new Vector3(0, 1, 0);
 
-            if (homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
-            {
-                thisPiece.canMove = true;
-                inBattle = true;
-            }
-            else
-            {
-                thisPiece.canMove = false;
-                inBattle = false;
-            }
+                if (homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
+                {
+                    thisPiece.canMove = true;
+                    inBattle = true;
+                }
+                else
+                {
+                    thisPiece.canMove = false;
+                    inBattle = false;
+                }
+           // }
         }
     }
     // Update is called once per frame
