@@ -26,5 +26,9 @@ public class BounceOff : MonoBehaviour
             currPiece.sideStrafe = !currPiece.sideStrafe;*/
             print(col.name + "has bounced");
         }
+        else
+        {
+            return;
+        }
     }
 }

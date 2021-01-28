@@ -29,6 +29,7 @@ public class PieceSelector : MonoBehaviour
         for(int i = 0; i < pieceButtons.Length; i++)
         {
             pieceNum = Random.Range(0, pieces.Length);
+            pieceButtons[i].gameObject.SetActive(true);
             pieceButtons[i].GetComponent<Image>().sprite = piecesPic[pieceNum];
             spawners[i].currPiece = pieceNum;
         }
