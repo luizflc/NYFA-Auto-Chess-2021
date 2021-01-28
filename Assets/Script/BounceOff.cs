@@ -19,8 +19,8 @@ public class BounceOff : MonoBehaviour
     private void OnTriggerEnter(Collider col)
     {
         print(col.name);
-        if(col.gameObject.GetComponent<PlayablePiece>() == true) {
-            PlayablePiece currPiece = col.gameObject.GetComponent<PlayablePiece>();
+        if(col.gameObject.transform.parent.GetComponent<PlayablePiece>() == true) {
+            PlayablePiece currPiece = col.gameObject.transform.parent.GetComponent<PlayablePiece>();
             currPiece.speed *= -1;
             /*currPiece.goingForward = !currPiece.goingForward;
             currPiece.sideStrafe = !currPiece.sideStrafe;*/
