@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BattlePhases : MonoBehaviour
 {
-    public enum GameState { PlayerSelect, PlayerBuy, PlayerAttack };
+    //public enum GameState { PlayerSelect, PlayerBuy, PlayerAttack };
     public GameState playerState;
     //public int playerTurnID;
     //public int nextPlayerID;
@@ -23,15 +23,20 @@ public class BattlePhases : MonoBehaviour
     {
         switch(playerState)
         {
-            case GameState.PlayerSelect:
+            case GameState.Select:
                 Debug.Log("Player is selecting");
                 break;
-            case GameState.PlayerBuy:
+            case GameState.Buy:
                 Debug.Log("Player is buying");
                 break;
-            case GameState.PlayerAttack:
+            case GameState.Attack:
                 Debug.Log("Player is attacking");
                 break;
         }
     }
+}
+public enum GameState { 
+Select,
+Buy,
+Attack
 }

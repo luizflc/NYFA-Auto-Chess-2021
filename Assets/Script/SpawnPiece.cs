@@ -22,7 +22,9 @@ public class SpawnPiece : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
+        GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
+        newPiece.tag = "PlayerPiece";
+        newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
         for(int i = 0; i < otherButtons.Length; i++)
         {
             otherButtons[i].SetActive(false);

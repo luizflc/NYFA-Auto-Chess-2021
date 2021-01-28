@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class InputTesting : MonoBehaviour
 {
-    private BattlePhases gamePhases;
+    //private PlayerState gamePhases;
     // Start is called before the first frame update
     void Start()
     {
-        gamePhases = GetComponent<BattlePhases>();
+        //gamePhases = GetComponent<BattlePhases>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gamePhases.playerState == BattlePhases.GameState.PlayerSelect && Input.GetKeyDown(KeyCode.Y))
+        /*if(gamePhases.playerState == BattlePhases.GameState.PlayerSelect && Input.GetKeyDown(KeyCode.Y))
         {
             gamePhases.playerState = BattlePhases.GameState.PlayerBuy;
         }

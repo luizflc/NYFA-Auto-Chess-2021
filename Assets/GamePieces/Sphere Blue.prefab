@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPlayable: {fileID: 0}
-  afterlife: {x: 0, y: 0, z: 0}
+  afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
 --- !u!1 &8836499152394435815
@@ -193,7 +193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2438979969439452747
 Transform:
   m_ObjectHideFlags: 0
@@ -228,7 +228,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8836499152394435815}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.55

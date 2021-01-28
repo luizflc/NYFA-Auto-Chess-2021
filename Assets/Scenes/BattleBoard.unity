@@ -253,6 +253,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1256972521}
+    - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartBattlePhase
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4593193203030481026, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_Camera
       value: 
@@ -408,6 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storeFront: {fileID: 896942039}
   UI: {fileID: 896942038}
+  turnNum: 0
 --- !u!1001 &1365944089
 PrefabInstance:
   m_ObjectHideFlags: 0
