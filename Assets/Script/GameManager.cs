@@ -13,9 +13,11 @@ public class GameManager : MonoBehaviour
     public GameObject textObject;
     public GameObject enemyTextObject;
     public GameObject resultObject;
+    public GameObject timerObject;
     public Text myPlayerText;
     public Text myEnemyText;
     public Text resultText;
+    public Text timerText;
     public int playerScore;
     public int enemyScore;
     public bool endless;
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
         resultText = resultObject.GetComponent<Text>();
+        timerText = timerObject.GetComponent<Text>();
         StartBuyingPhase();
     }
 
@@ -38,8 +41,14 @@ public class GameManager : MonoBehaviour
         if(timer >= 0)
         {
             timer -= Time.deltaTime;
+
             print(timer);
         }
+        if(timer >= 0)
+        {
+            timerText.text = Mathf.FloorToInt(timer % 60).ToString();
+        }
+      
         if (timer < 0 && canBuy == false)
         {
             StartBuyingPhase();
