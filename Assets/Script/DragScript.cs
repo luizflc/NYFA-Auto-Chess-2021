@@ -23,8 +23,12 @@ public class DragScript : MonoBehaviour
     {
         //if (!inBattle)
        // {
+       if(gameObject.tag == "PlayerPiece")
+        {
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
             dragging = true;
+        }
+            
       //  }
     }
     private void OnMouseUp()
