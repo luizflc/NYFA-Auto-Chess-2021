@@ -25,11 +25,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartBuyingPhase();
         timer = 15f;
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
         resultText = resultObject.GetComponent<Text>();
+        StartBuyingPhase();
     }
 
     // Update is called once per frame
