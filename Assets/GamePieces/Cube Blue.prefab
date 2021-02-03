@@ -142,6 +142,8 @@ MonoBehaviour:
   afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
 --- !u!114 &5714177042652415359
 MonoBehaviour:
   m_ObjectHideFlags: 0

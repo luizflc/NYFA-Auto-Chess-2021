@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver;
     public Vector3[] playerBench;
     public Vector3[] enemyBench;
+    public GameObject enemyHat;
    
     //public GameState state;
     // Start is called before the first frame update
@@ -99,6 +100,27 @@ public class GameManager : MonoBehaviour
             newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 20);
             newPiece.tag = "EnemyPiece";
             newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+            if(newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
+            {
+                GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                hat.transform.parent = newPiece.transform;
+                hat.transform.localPosition = new Vector3(0, 3.5f, 0);
+                hat.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            }
+            else if (newPiece.GetComponent<PlayablePiece>().shape.name == "Sphere")
+            {
+                GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                hat.transform.parent = newPiece.transform;
+                hat.transform.localPosition = new Vector3(0, .4f, 0);
+                hat.transform.localScale = new Vector3(.5f, .5f, .5f);
+            }
+            else if(newPiece.GetComponent<PlayablePiece>().shape.name == "Cube")
+            {
+                GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                hat.transform.parent = newPiece.transform;
+                hat.transform.localPosition = new Vector3(0, .5f, 0);
+                hat.transform.localScale = new Vector3(.6f, .6f, .6f);
+            }
         }
     }
     // The way you would call this method is this: GameOver((playerScore - enemyScore));.
