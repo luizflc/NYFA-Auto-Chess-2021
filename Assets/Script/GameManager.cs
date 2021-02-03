@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject textObject;
     public GameObject enemyTextObject;
     public GameObject resultObject;
+    public GameObject resultParent;
     public GameObject timerObject;
     public Text myPlayerText;
     public Text myEnemyText;
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     public int enemyScore;
     public bool endless;
     public int maxTurns;
+    public bool gameOver;
     public Vector3[] playerBench;
     public Vector3[] enemyBench;
    
@@ -83,7 +85,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            GameOver(playerScore-enemyScore);
+            GameOver((playerScore-enemyScore));
+            gameOver = true;
         }
     }
 
@@ -101,7 +104,7 @@ public class GameManager : MonoBehaviour
     // The way you would call this method is this: GameOver((playerScore - enemyScore));.
     public void GameOver(int score)
     {
-        resultObject.SetActive(true);
+        resultParent.SetActive(true);
         if (score > 0)
         {
             resultText.text = "Player 1 wins.";
