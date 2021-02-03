@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     public void StartBuyingPhase()
     {
         turnNum += 1;
-        if(turnNum <= maxTurns)
+        if(turnNum <= maxTurns || endless)
         {
             canBuy = true;
 
