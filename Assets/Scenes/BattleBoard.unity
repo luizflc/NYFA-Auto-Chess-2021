@@ -452,16 +452,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storeFront: {fileID: 896942039}
   UI: {fileID: 896942038}
-  startButton: {fileID: 0}
   turnNum: 0
   timer: 0
   canBuy: 0
   textObject: {fileID: 5912574542383196689}
   enemyTextObject: {fileID: 7856320247561907150}
+  resultObject: {fileID: 0}
   myPlayerText: {fileID: 0}
   myEnemyText: {fileID: 0}
+  resultText: {fileID: 0}
   playerScore: 0
   enemyScore: 0
+  endless: 0
+  maxTurns: 0
 --- !u!1001 &1365944089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -705,6 +708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Board
       objectReference: {fileID: 0}
+    - target: {fileID: 2580390422420075898, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
     - target: {fileID: 8058957830897730294, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -749,6 +756,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8509113605096482522, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
+      propertyPath: ordinaryMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
 --- !u!1 &5912574542383196689 stripped
@@ -850,6 +861,18 @@ PrefabInstance:
     - target: {fileID: 1025433113075333007, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835506466111100263, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5563073579705393510, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640976557271582900, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f8871107e85d0644bc342172b59af05, type: 3}

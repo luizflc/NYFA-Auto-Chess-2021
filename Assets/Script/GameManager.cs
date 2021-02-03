@@ -7,16 +7,20 @@ public class GameManager : MonoBehaviour
 {
     public PieceSelector storeFront;
     public GameObject UI;
-    public GameObject startButton;
     public int turnNum = 0;
     public float timer;
     public bool canBuy;
     public GameObject textObject;
     public GameObject enemyTextObject;
+    public GameObject resultObject;
     public Text myPlayerText;
     public Text myEnemyText;
+    public Text resultText;
     public int playerScore;
     public int enemyScore;
+    public bool endless;
+    public int maxTurns;
+   
     //public GameState state;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +29,7 @@ public class GameManager : MonoBehaviour
         timer = 15f;
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
+        resultText = resultObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -39,6 +44,7 @@ public class GameManager : MonoBehaviour
         {
             StartBuyingPhase();
         }
+
         myEnemyText.text = "Enemy:" + enemyScore;
         myPlayerText.text = "Player:" + playerScore;
     }
@@ -53,11 +59,20 @@ public class GameManager : MonoBehaviour
 
     public void StartBuyingPhase()
     {
-        canBuy = true;
         turnNum += 1;
-        UI.SetActive(true);
-        //state = GameState.PlayerBuy;
-        storeFront.Refresh();
+        if(turnNum <= maxTurns)
+        {
+            canBuy = true;
+
+
+            UI.SetActive(true);
+            //state = GameState.PlayerBuy;
+            storeFront.Refresh();
+        }
+        else
+        {
+            GameOver(playerScore-enemyScore);
+        }
     }
 
     public void SpawnEnemyPieces()
@@ -70,5 +85,23 @@ public class GameManager : MonoBehaviour
             newPiece.tag = "EnemyPiece";
             newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
         }
+    }
+    // The way you would call this method is this: GameOver((playerScore - enemyScore));.
+    public void GameOver(int score)
+    {
+        resultObject.SetActive(true);
+        if (score > 0)
+        {
+            resultText.text = "Player 1 wins.";
+        }
+        else if (score < 0)
+        {
+            resultText.text = "Player 2 wins.";
+        }
+        else
+        {
+            resultText.text = "Draw";
+        }
+        
     }
 }
