@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
         GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
         for (int i = 0; i < playerPieces.Length; i++)
         {
-            if(i <= playerBench.Length)
+            if(i < playerBench.Length)
             {
                 playerPieces[i].transform.position = playerBench[i];
             }
@@ -135,7 +135,7 @@ public class GameManager : MonoBehaviour
         GameObject[] enemyPieces = GameObject.FindGameObjectsWithTag("EnemyPiece");
         for (int i = 0; i < enemyPieces.Length; i++)
         {
-            if (i <= enemyBench.Length)
+            if (i < enemyBench.Length)
             {
                 enemyPieces[i].transform.position = enemyBench[i];
             }
