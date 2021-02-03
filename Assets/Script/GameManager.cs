@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public int enemyScore;
     public bool endless;
     public int maxTurns;
+    public Vector3[] playerBench;
+    public Vector3[] enemyBench;
    
     //public GameState state;
     // Start is called before the first frame update
@@ -51,6 +53,7 @@ public class GameManager : MonoBehaviour
       
         if (timer < 0 && canBuy == false)
         {
+            EndBattlePhase();
             StartBuyingPhase();
         }
 
@@ -112,5 +115,35 @@ public class GameManager : MonoBehaviour
             resultText.text = "Draw";
         }
         
+    }
+
+    public void EndBattlePhase()
+    {
+        GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
+        for (int i = 0; i < playerPieces.Length; i++)
+        {
+            if(i <= playerBench.Length)
+            {
+                playerPieces[i].transform.position = playerBench[i];
+            }
+            else
+            {
+                Destroy(playerPieces[i]);
+            }
+        }
+
+        GameObject[] enemyPieces = GameObject.FindGameObjectsWithTag("EnemyPiece");
+        for (int i = 0; i < enemyPieces.Length; i++)
+        {
+            if (i <= enemyBench.Length)
+            {
+                enemyPieces[i].transform.position = enemyBench[i];
+            }
+            else
+            {
+                Destroy(enemyPieces[i]);
+            }
+        }
+
     }
 }

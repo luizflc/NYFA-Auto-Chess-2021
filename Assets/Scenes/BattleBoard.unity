@@ -466,7 +466,17 @@ MonoBehaviour:
   playerScore: 0
   enemyScore: 0
   endless: 0
-  maxTurns: 200
+  maxTurns: 5
+  playerBench:
+  - {x: -6, y: 1, z: 4}
+  - {x: -6, y: 1, z: 9}
+  - {x: -6, y: 1, z: 14.5}
+  - {x: -6, y: 1, z: 19.5}
+  enemyBench:
+  - {x: 33, y: 1, z: 14.5}
+  - {x: 33, y: 1, z: 19.5}
+  - {x: 33, y: 1, z: 9}
+  - {x: 33, y: 1, z: 4}
 --- !u!1 &1322568210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5563073579705393510, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
