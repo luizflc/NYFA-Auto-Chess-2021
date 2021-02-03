@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Cube
   damage: 8
-  health: 5
+  health: 10
   cost: 8
