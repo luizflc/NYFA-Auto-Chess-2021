@@ -457,7 +457,7 @@ MonoBehaviour:
   canBuy: 0
   textObject: {fileID: 5912574542383196689}
   enemyTextObject: {fileID: 7856320247561907150}
-  resultObject: {fileID: 0}
+  resultObject: {fileID: 7068578921955501902}
   myPlayerText: {fileID: 0}
   myEnemyText: {fileID: 0}
   resultText: {fileID: 0}
@@ -876,6 +876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+--- !u!1 &7068578921955501902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5563073579705393510, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+  m_PrefabInstance: {fileID: 7068578921955501901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7856320247561907150 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1089838914217856131, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
