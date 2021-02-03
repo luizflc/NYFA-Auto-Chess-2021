@@ -45,7 +45,7 @@ public class PlayablePiece : MonoBehaviour
 
         if (color.name == "Yellow")
         {
-            canMoveSideways = false;
+            canMoveSideways = true;
             canMoveForwards = false;
         }
 
