@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
         }
         if (timer < 0 && canBuy == false)
         {
+            EndBattlePhase();
             StartBuyingPhase();
         }
 
