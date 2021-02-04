@@ -261,6 +261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyScoreText
       objectReference: {fileID: 0}
+    - target: {fileID: 3253820981788190193, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: playerHat
+      value: 
+      objectReference: {fileID: 197008496265815657, guid: 19c2989ae6728154c9304fe624de5ac7, type: 3}
     - target: {fileID: 3253820981914837524, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -289,6 +293,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3253820982306286017, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: playerHat
+      value: 
+      objectReference: {fileID: 197008496265815657, guid: 19c2989ae6728154c9304fe624de5ac7, type: 3}
+    - target: {fileID: 3253820982681593807, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: playerHat
+      value: 
+      objectReference: {fileID: 197008496265815657, guid: 19c2989ae6728154c9304fe624de5ac7, type: 3}
     - target: {fileID: 4593193203030481026, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_Camera
       value: 
@@ -479,6 +491,7 @@ MonoBehaviour:
   - {x: 33, y: 1, z: 19.5}
   - {x: 33, y: 1, z: 9}
   - {x: 33, y: 1, z: 4}
+  enemyHat: {fileID: 7752038477776102117, guid: 78ddf9ec8dcf0e546879c4a87be8260e, type: 3}
 --- !u!1 &1322568210 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5563073579705393510, guid: 2f8871107e85d0644bc342172b59af05, type: 3}

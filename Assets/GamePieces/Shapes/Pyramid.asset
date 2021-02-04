@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pyramid
   damage: 5
-  health: 8
+  health: 16
   cost: 5
