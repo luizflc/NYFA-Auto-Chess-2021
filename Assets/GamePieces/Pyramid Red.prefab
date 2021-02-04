@@ -218,7 +218,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPlayable: {fileID: 0}
-  afterlife: {x: -6, y: 1, z: 4}
+  afterlife:
+  - {x: -6, y: 1, z: 4}
+  - {x: -6, y: 1, z: 9}
+  - {x: -6, y: 1, z: 14.5}
+  - {x: -6, y: 1, z: 19.5}
   Graveyard: {fileID: 0}
   disabling: 0
   myManagerObject: {fileID: 0}
@@ -253,4 +257,5 @@ MonoBehaviour:
   shape: {fileID: 11400000, guid: 47f0615eed10d624facedbd949de16f3, type: 2}
   HelperParent: {fileID: 0}
   HelperObject: {fileID: 0}
+  HelperImage: {fileID: 0}
   helperText: {fileID: 0}
