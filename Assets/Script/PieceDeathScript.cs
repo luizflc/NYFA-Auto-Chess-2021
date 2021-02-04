@@ -12,6 +12,7 @@ public class PieceDeathScript : MonoBehaviour
     public GameObject Graveyard;
     public bool disabling;
     public GameObject myManagerObject;
+    public DragScript myDragScript;
     public GameManager myManager;
     void Start()
     {

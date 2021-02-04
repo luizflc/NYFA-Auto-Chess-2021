@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         {
             timer -= Time.deltaTime;
 
-            print(timer);
+           // print(timer);
         }
         if(timer >= 0)
         {

@@ -178,7 +178,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: P2Bench
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5686008557210759093, guid: 7bd36060ba056a346b35a4a1179bffed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7bd36060ba056a346b35a4a1179bffed, type: 3}
 --- !u!1 &413175023
 GameObject:

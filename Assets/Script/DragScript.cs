@@ -38,7 +38,9 @@ public class DragScript : MonoBehaviour
             dragging = false;
             if (homeSpace != null)
             {
+            
                 transform.position = homeSpace.transform.position + new Vector3(0, 1, 0);
+                ForcedEnter();
 
                 if (homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
                 {
@@ -63,6 +65,7 @@ public class DragScript : MonoBehaviour
             transform.position = new Vector3 (rayPoint.x, 1, rayPoint.z + (-.05f * rayPoint.z));
         }
     }
+    
     private void OnTriggerExit(Collider other)
     {
         MeshRenderer otherRenderer = other.GetComponent<MeshRenderer>();
@@ -72,21 +75,31 @@ public class DragScript : MonoBehaviour
             otherRenderer.material = otherScript.ordinaryMaterial;
         }
     }
+    public void ForcedExit()
+    {
+        if(homeRenderer.material.name == homeScript.selectedMaterial.name)
+        {
+            homeRenderer.material = homeScript.ordinaryMaterial;
+        }
+        
+
+    }
+    public void ForcedEnter()
+    {
+        if(homeRenderer.material.name == homeScript.ordinaryMaterial.name)
+        {
+            homeRenderer.material = homeScript.selectedMaterial;
+        }
+        
+    }
+    
     private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Snapbox")
         {
             if (homeSpace == null || other.name != homeSpace.name)
             {
-                GridSquareScript otherScript = other.GetComponent<GridSquareScript>();
-
-                if (otherScript.taken == false)
-                {
-                    if (homeSpace != null)
-                    {
-                        homeScript.taken = false;
-                        
-                    }
+                    GridSquareScript otherScript = other.GetComponent<GridSquareScript>();
                     homeSpace = other.gameObject;
                     homeScript = homeSpace.GetComponent<GridSquareScript>();
                     homeRenderer = homeSpace.GetComponent<MeshRenderer>();
@@ -98,16 +111,15 @@ public class DragScript : MonoBehaviour
                     {
                         thisPiece.canMove = false;
                     }
-                    homeScript.taken = true;
-                    homeRenderer.material = homeScript.selectedMaterial;
-                }
+                    
             }
-            else
-            {
-                return;
-            }
+            homeScript.taken = true;
+            homeRenderer.material = homeScript.selectedMaterial;
+
+        }
+           
           
         }
 
     }
-}
+
