@@ -51,6 +51,7 @@ public class PieceDeathScript : MonoBehaviour
             myManager.enemyScore++;
 
             } 
+
         transform.position = afterlife;
         myPlayable.canMove = false;
         myPlayable.health = myPlayable.shape.health;
