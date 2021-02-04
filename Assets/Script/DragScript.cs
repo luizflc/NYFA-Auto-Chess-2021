@@ -63,6 +63,15 @@ public class DragScript : MonoBehaviour
             transform.position = new Vector3 (rayPoint.x, 1, rayPoint.z + (-.05f * rayPoint.z));
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        MeshRenderer otherRenderer = other.GetComponent<MeshRenderer>();
+        GridSquareScript otherScript = other.GetComponent<GridSquareScript>();
+        if (other.tag == "Snapbox")
+        {
+            otherRenderer.material = otherScript.ordinaryMaterial;
+        }
+    }
     private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Snapbox")
@@ -76,7 +85,7 @@ public class DragScript : MonoBehaviour
                     if (homeSpace != null)
                     {
                         homeScript.taken = false;
-                        homeRenderer.material = homeScript.ordinaryMaterial;
+                        
                     }
                     homeSpace = other.gameObject;
                     homeScript = homeSpace.GetComponent<GridSquareScript>();
@@ -97,6 +106,8 @@ public class DragScript : MonoBehaviour
             {
                 return;
             }
+          
         }
+
     }
 }
