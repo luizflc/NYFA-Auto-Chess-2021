@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Blue
   dmgRadius: 8
   speed: 0.09
+  direction: Front-left diagonal.

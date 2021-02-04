@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 1378761881361904055}
   - component: {fileID: 2468259910506004315}
   - component: {fileID: 5389977924967792097}
+  - component: {fileID: 5832624632524242986}
   m_Layer: 0
   m_Name: Pyramid Red
   m_TagString: Untagged
@@ -220,6 +221,8 @@ MonoBehaviour:
   afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
 --- !u!64 &5389977924967792097
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -234,3 +237,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300018, guid: 48dc4c6cddf48a943bf7251f1ba06c05, type: 3}
+--- !u!114 &5832624632524242986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459689335906772260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b06eb955908d458f358545b8dedd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 11400000, guid: 282e0444389099c4e9115720e59867e7, type: 2}
+  shape: {fileID: 11400000, guid: 47f0615eed10d624facedbd949de16f3, type: 2}
+  HelperParent: {fileID: 0}
+  HelperObject: {fileID: 0}
+  helperText: {fileID: 0}

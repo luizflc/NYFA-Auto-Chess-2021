@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 1395975757730644493}
   - component: {fileID: 8607807236179489735}
   - component: {fileID: 5425141448096951876}
+  - component: {fileID: 5216326834551225352}
   m_Layer: 0
   m_Name: Cube Yellow
   m_TagString: Untagged
@@ -233,3 +234,22 @@ MonoBehaviour:
   afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
+--- !u!114 &5216326834551225352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5412233354676430614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b06eb955908d458f358545b8dedd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 11400000, guid: 6684738d027108345b84eb54b74bcda8, type: 2}
+  shape: {fileID: 11400000, guid: 7842191ea04191149b930f54281ae089, type: 2}
+  HelperParent: {fileID: 0}
+  HelperObject: {fileID: 0}
+  helperText: {fileID: 0}

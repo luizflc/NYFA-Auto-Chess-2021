@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Yellow
   dmgRadius: 5
   speed: 0.06
+  direction: Left.

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3527841474219648603}
   - component: {fileID: 2844248425476759660}
   - component: {fileID: 7769315377379552279}
+  - component: {fileID: -3399051419526497108}
   m_Layer: 0
   m_Name: Sphere Blue
   m_TagString: Untagged
@@ -176,6 +177,25 @@ MonoBehaviour:
   afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
+--- !u!114 &-3399051419526497108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4374776697734332108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b06eb955908d458f358545b8dedd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 11400000, guid: fca227cfc2e69a34cb318a9e47ddae36, type: 2}
+  shape: {fileID: 11400000, guid: 1fda06f36112d92499e02d81a9d0da09, type: 2}
+  HelperParent: {fileID: 0}
+  HelperObject: {fileID: 0}
+  helperText: {fileID: 0}
 --- !u!1 &8836499152394435815
 GameObject:
   m_ObjectHideFlags: 0

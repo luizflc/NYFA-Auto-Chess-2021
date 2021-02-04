@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8653744890064804326}
   - component: {fileID: 8092567187936799506}
   - component: {fileID: 2047279630614646882}
+  - component: {fileID: -6105264995413700859}
   m_Layer: 0
   m_Name: Pyramid Blue
   m_TagString: Untagged
@@ -163,6 +164,8 @@ MonoBehaviour:
   afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
 --- !u!64 &2047279630614646882
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -177,6 +180,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300018, guid: 48dc4c6cddf48a943bf7251f1ba06c05, type: 3}
+--- !u!114 &-6105264995413700859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824064252397945354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b06eb955908d458f358545b8dedd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 11400000, guid: fca227cfc2e69a34cb318a9e47ddae36, type: 2}
+  shape: {fileID: 11400000, guid: 47f0615eed10d624facedbd949de16f3, type: 2}
+  HelperParent: {fileID: 0}
+  HelperObject: {fileID: 0}
+  helperText: {fileID: 0}
 --- !u!1 &1839662267116250797
 GameObject:
   m_ObjectHideFlags: 0

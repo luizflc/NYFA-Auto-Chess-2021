@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4528131720824193996}
   - component: {fileID: 5714177042652415359}
   - component: {fileID: 4897624675424730226}
+  - component: {fileID: 4781370253571309025}
   m_Layer: 0
   m_Name: Cube Blue
   m_TagString: Untagged
@@ -142,6 +143,8 @@ MonoBehaviour:
   afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
 --- !u!114 &5714177042652415359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +179,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4781370253571309025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2344459608175888341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b06eb955908d458f358545b8dedd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 11400000, guid: fca227cfc2e69a34cb318a9e47ddae36, type: 2}
+  shape: {fileID: 11400000, guid: 7842191ea04191149b930f54281ae089, type: 2}
+  HelperParent: {fileID: 0}
+  HelperObject: {fileID: 0}
+  helperText: {fileID: 0}
 --- !u!1 &4799267178586568277
 GameObject:
   m_ObjectHideFlags: 0

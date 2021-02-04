@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 6127694842964859733}
   - component: {fileID: 7561669724147235500}
   - component: {fileID: 1086875417713928681}
+  - component: {fileID: 4099517608724952368}
   m_Layer: 0
   m_Name: Cube Red
   m_TagString: Untagged
@@ -233,3 +234,22 @@ MonoBehaviour:
   afterlife: {x: -6, y: 1, z: 4}
   Graveyard: {fileID: 0}
   disabling: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
+--- !u!114 &4099517608724952368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7250533191543977526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787b06eb955908d458f358545b8dedd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {fileID: 11400000, guid: 282e0444389099c4e9115720e59867e7, type: 2}
+  shape: {fileID: 11400000, guid: 7842191ea04191149b930f54281ae089, type: 2}
+  HelperParent: {fileID: 0}
+  HelperObject: {fileID: 0}
+  helperText: {fileID: 0}
