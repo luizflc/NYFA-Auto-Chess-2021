@@ -7,6 +7,7 @@ public class SpawnPiece : MonoBehaviour
     public GameObject[] pieces;
     public GameObject[] otherButtons;
     public int currPiece;
+    public Vector3[] benchLocations;
     public Vector3 spawnLocation;
     public GameObject playerHat;
     // Start is called before the first frame update
@@ -23,9 +24,19 @@ public class SpawnPiece : MonoBehaviour
 
     public void Spawn()
     {
+        GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
+        if(playerPieces.Length < benchLocations.Length)
+        {
+            spawnLocation = benchLocations[playerPieces.Length];
+        }
+        else
+        {
+            spawnLocation = benchLocations[0];
+        }
         GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
         newPiece.tag = "PlayerPiece";
         newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
+        newPiece.GetComponent<PieceDeathScript>().afterlife = spawnLocation;
         if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
         {
             GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
