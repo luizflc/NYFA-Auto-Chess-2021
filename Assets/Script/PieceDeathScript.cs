@@ -41,14 +41,26 @@ public class PieceDeathScript : MonoBehaviour
     void Death()
     {
         dead = true;
-        if(gameObject.tag == "EnemyPiece")
+        print(gameObject.name + "has died!");
+        if (gameObject.tag == "EnemyPiece")
         {
             myManager.playerScore++;
+            if(myPlayable.color.name == "Purple")
+            {
+                print("purpledeathbonus");
+                myManager.playerScore += 2;
+            }
 
         }
         else if (gameObject.tag == "PlayerPiece") 
             {
             myManager.enemyScore++;
+            
+            if(myPlayable.color.name == "Purple")
+            {
+                print("purpledeathbonusEnemy");
+                myManager.playerScore += 2;
+            }
 
             } 
 

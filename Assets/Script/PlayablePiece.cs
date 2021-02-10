@@ -18,13 +18,18 @@ public class PlayablePiece : MonoBehaviour
     public int cost;
     public int dmgRadius;
     public float speed;
+    public float scoreTimer;
     public int maxX;
     public int minX;
     public int maxZ;
     public int minZ;
     public bool canMove;
+    public GameObject myManagerObject;
+    public GameManager myManager;
     void Start()
     {
+        myManagerObject = GameObject.Find("GameManager");
+        myManager = myManagerObject.GetComponent<GameManager>();
         goingForward = true;
         damage = shape.damage;
         health = shape.health;
@@ -48,12 +53,28 @@ public class PlayablePiece : MonoBehaviour
             canMoveSideways = true;
             canMoveForwards = false;
         }
+        if (color.name == "Purple")
+        {
+            scoreTimer += 3;
+            canMove = false;
+        }
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(scoreTimer > 0)
+        {
+            scoreTimer = scoreTimer - Time.deltaTime;
+        }
+        else if(color.name == "Purple")
+        {
+            myManager.playerScore++;
+            print ("purplebonus");
+            scoreTimer += 3;
+            
+        }
         if (canMove == true)
         {
             if (canMoveForwards == true)

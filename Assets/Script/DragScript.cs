@@ -35,10 +35,12 @@ public class DragScript : MonoBehaviour
     {
        // if (!inBattle)
       //  {
+      if(gameObject.tag == "PlayerPiece")
+        {
             dragging = false;
             if (homeSpace != null)
             {
-            
+
                 transform.position = homeSpace.transform.position + new Vector3(0, 1, 0);
                 ForcedEnter();
 
@@ -52,8 +54,10 @@ public class DragScript : MonoBehaviour
                     thisPiece.canMove = false;
                     inBattle = false;
                 }
-           // }
+                // }
+            }
         }
+           
     }
     // Update is called once per frame
     void Update()
