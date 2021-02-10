@@ -19,10 +19,13 @@ public class DealDamage : MonoBehaviour
 
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.transform./*parent.*/tag != gameObject.transform.parent.tag)
+        if (col.gameObject/*.transform.parent*/.GetComponent<PlayablePiece>() != null)
         {
-            PlayablePiece currPiece = col.gameObject/*.transform.parent*/.GetComponent<PlayablePiece>();
-            currPiece.health -= gameObject.transform.parent.GetComponent<PlayablePiece>().damage;
+            if (col.gameObject.transform./*parent.*/tag != gameObject.transform.parent.tag && col.gameObject.transform.tag != null)
+            {
+                PlayablePiece currPiece = col.gameObject/*.transform.parent*/.GetComponent<PlayablePiece>();
+                currPiece.health -= gameObject.transform.parent.GetComponent<PlayablePiece>().damage;
+            }
         }
     }
 }
