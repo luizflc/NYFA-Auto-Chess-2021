@@ -55,7 +55,7 @@ public class PlayablePiece : MonoBehaviour
         }
         if (color.name == "Purple")
         {
-            scoreTimer += 3;
+            scoreTimer += 5;
             canMove = true;
             int direction = Random.Range(1, 4);
             if(direction == 1)
@@ -92,7 +92,7 @@ public class PlayablePiece : MonoBehaviour
         {
             myManager.playerScore++;
             print ("purplebonus");
-            scoreTimer += 3;
+            scoreTimer += 5;
             
         }
         if (canMove == true)
