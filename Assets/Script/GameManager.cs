@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
         timer = 15;
         canBuy = false;
         UI.SetActive(false);
+        DeployEnemyPieces();
         SpawnEnemyPieces();
         //state = GameState.PlayerAttack;
     }
@@ -93,8 +94,8 @@ public class GameManager : MonoBehaviour
 
     public void SpawnEnemyPieces()
     {
-        for (int i = 0; i < turnNum; i++)
-        {
+        //for (int i = 0; i < turnNum; i++)
+        //{
             int pieceNum = Random.Range(0, storeFront.pieces.Length);
             GameObject newPiece = Instantiate(storeFront.pieces[pieceNum], new Vector3(Random.Range(21,25), 1, Random.Range(0,26)), Quaternion.identity);
             newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
@@ -121,6 +122,15 @@ public class GameManager : MonoBehaviour
                 hat.transform.localPosition = new Vector3(0, .5f, 0);
                 hat.transform.localScale = new Vector3(.6f, .6f, .6f);
             }
+        //}
+    }
+
+    public void DeployEnemyPieces()
+    {
+        GameObject[] enemyPieces = GameObject.FindGameObjectsWithTag("EnemyPiece");
+        for (int i = 0; i < enemyPieces.Length; i++)
+        {
+            enemyPieces[i].transform.position = new Vector3(Random.Range(21, 25), 1, Random.Range(0, 26));
         }
     }
     // The way you would call this method is this: GameOver((playerScore - enemyScore));.
