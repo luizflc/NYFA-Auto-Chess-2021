@@ -24,44 +24,47 @@ public class SpawnPiece : MonoBehaviour
 
     public void Spawn()
     {
-        GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
-        if(playerPieces.Length < benchLocations.Length)
-        {
-            spawnLocation = benchLocations[playerPieces.Length];
+        if(Economy.instance.p1Corners >= pieces[currPiece].GetComponent<PlayablePiece>().shape.cost){
+            GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
+            if (playerPieces.Length < benchLocations.Length)
+            {
+                spawnLocation = benchLocations[playerPieces.Length];
+            }
+            else
+            {
+                spawnLocation = benchLocations[0];
+            }
+            GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
+            newPiece.tag = "PlayerPiece";
+            newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
+            newPiece.GetComponent<PieceDeathScript>().afterlife = spawnLocation;
+            if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
+            {
+                GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
+                hat.transform.parent = newPiece.transform;
+                hat.transform.localPosition = new Vector3(0, 3, 0);
+                hat.transform.localScale = new Vector3(.4f, .4f, .4f);
+            }
+            else if (newPiece.GetComponent<PlayablePiece>().shape.name == "Sphere")
+            {
+                GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
+                hat.transform.parent = newPiece.transform;
+                hat.transform.localPosition = new Vector3(0, .4f, 0);
+                hat.transform.localScale = new Vector3(.2f, .2f, .2f);
+            }
+            else if (newPiece.GetComponent<PlayablePiece>().shape.name == "Cube")
+            {
+                GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
+                hat.transform.parent = newPiece.transform;
+                hat.transform.localPosition = new Vector3(0, .5f, 0);
+                hat.transform.localScale = new Vector3(.2f, .2f, .2f);
+            }
+            Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
+            gameObject.transform.parent.GetComponent<PieceSelector>().Refresh();
         }
         else
         {
-            spawnLocation = benchLocations[0];
+            gameObject.SetActive(false);
         }
-        GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
-        newPiece.tag = "PlayerPiece";
-        newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
-        newPiece.GetComponent<PieceDeathScript>().afterlife = spawnLocation;
-        if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
-        {
-            GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
-            hat.transform.parent = newPiece.transform;
-            hat.transform.localPosition = new Vector3(0, 3, 0);
-            hat.transform.localScale = new Vector3(.4f, .4f, .4f);
-        }
-        else if (newPiece.GetComponent<PlayablePiece>().shape.name == "Sphere")
-        {
-            GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
-            hat.transform.parent = newPiece.transform;
-            hat.transform.localPosition = new Vector3(0, .4f, 0);
-            hat.transform.localScale = new Vector3(.2f, .2f, .2f);
-        }
-        else if (newPiece.GetComponent<PlayablePiece>().shape.name == "Cube")
-        {
-            GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
-            hat.transform.parent = newPiece.transform;
-            hat.transform.localPosition = new Vector3(0,.5f,0);
-            hat.transform.localScale = new Vector3(.2f, .2f, .2f);
-        }
-        for (int i = 0; i < otherButtons.Length; i++)
-        {
-            otherButtons[i].SetActive(false);
-        }
-        gameObject.SetActive(false);
     }
 }

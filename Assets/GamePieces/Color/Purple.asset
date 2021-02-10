@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Purple
   dmgRadius: 0
-  speed: 0
+  speed: 0.05
   direction: 'Special: +1 score per 3 seconds. +3 score awarded to opponent if killed.'
