@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
     public void StartBuyingPhase()
     {
         turnNum += 1;
+        Economy.instance.p1Corners += 4;
         if(turnNum <= maxTurns || endless)
         {
             canBuy = true;
