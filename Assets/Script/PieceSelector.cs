@@ -34,4 +34,19 @@ public class PieceSelector : MonoBehaviour
             spawners[i].currPiece = pieceNum;
         }
     }
+
+    public void HideStore()
+    {
+        for (int i = 0; i < pieceButtons.Length; i++)
+        {
+            pieceButtons[i].gameObject.SetActive(false);
+        }
+    }
+    public void ShowStore()
+    {
+        for (int i = 0; i < pieceButtons.Length; i++)
+        {
+            pieceButtons[i].gameObject.SetActive(true);
+        }
+    }
 }
