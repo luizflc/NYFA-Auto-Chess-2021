@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Green
   dmgRadius: 5
-  speed: 0
+  speed: 0.5
   direction: Moves forward slowly. Does damage at larger radius.
