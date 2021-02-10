@@ -25,10 +25,6 @@ public class BounceOff : MonoBehaviour
             currPiece.goingForward = !currPiece.goingForward;
             currPiece.sideStrafe = !currPiece.sideStrafe;
             print(col.name + "has bounced");
-            if (col.gameObject.transform./*parent.*/tag != gameObject.transform.parent.tag)
-            {
-                currPiece.health -= gameObject.transform.parent.GetComponent<PlayablePiece>().damage;
-            }
         }
         else
         {
