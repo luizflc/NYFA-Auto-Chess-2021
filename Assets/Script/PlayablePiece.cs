@@ -58,6 +58,10 @@ public class PlayablePiece : MonoBehaviour
             scoreTimer += 3;
             canMove = false;
         }
+        if(color.name == "Green")
+        {
+            canMoveForwards = true;
+        }
 
     }
 
