@@ -20,7 +20,7 @@ public class Economy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        p1Text.text = p1Corners.ToString();
+        p1Text.text ="Corners: " + p1Corners.ToString();
     }
 
     public void AddCorners(int corner)

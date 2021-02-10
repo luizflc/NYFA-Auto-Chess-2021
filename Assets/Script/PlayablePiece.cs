@@ -56,7 +56,23 @@ public class PlayablePiece : MonoBehaviour
         if (color.name == "Purple")
         {
             scoreTimer += 3;
-            canMove = false;
+            canMove = true;
+            int direction = Random.Range(1, 4);
+            if(direction == 1)
+            {
+                canMoveSideways = true;
+                canMoveForwards = false;
+            }
+            else if (direction == 2)
+            {
+                canMoveForwards = true;
+                canMoveSideways = false;
+            }
+            else
+            {
+                canMoveForwards = true;
+                canMoveSideways = true;
+            }
         }
 
     }

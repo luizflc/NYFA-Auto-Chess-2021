@@ -24,7 +24,7 @@ public class SpawnPiece : MonoBehaviour
 
     public void Spawn()
     {
-        if(Economy.instance.p1Corners >= pieces[currPiece].GetComponent<ShapeStats>().cost){
+        if(Economy.instance.p1Corners >= pieces[currPiece].GetComponent<PlayablePiece>().shape.cost){
             GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
             if (playerPieces.Length < benchLocations.Length)
             {
