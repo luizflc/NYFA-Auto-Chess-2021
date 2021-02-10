@@ -158,7 +158,9 @@ MonoBehaviour:
   - {fileID: 3253820982306286077}
   - {fileID: 3253820982681593806}
   currPiece: 0
+  benchLocations: []
   spawnLocation: {x: -6, y: 1, z: 4}
+  playerHat: {fileID: 0}
 --- !u!1 &3253820981914837521
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +481,9 @@ MonoBehaviour:
   - {fileID: 3253820981788190189}
   - {fileID: 3253820982681593806}
   currPiece: 0
+  benchLocations: []
   spawnLocation: {x: -6, y: 1, z: 4}
+  playerHat: {fileID: 0}
 --- !u!1 &3253820982681593806
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +642,9 @@ MonoBehaviour:
   - {fileID: 3253820981788190189}
   - {fileID: 3253820982306286077}
   currPiece: 0
+  benchLocations: []
   spawnLocation: {x: -6, y: 1, z: 4}
+  playerHat: {fileID: 0}
 --- !u!1 &3253820982826061285
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +774,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9fe2aa46a898216469db290605e987b7, type: 3}
   - {fileID: 21300000, guid: d5a31669a767c154a9c1593396817da7, type: 3}
   - {fileID: 21300000, guid: a21c14d059497c34d91a3a4170f0fd70, type: 3}
+  - {fileID: 21300000, guid: 0c6443c9a059011438551ad9d2357189, type: 3}
+  - {fileID: 21300000, guid: 459acc1c956fa3048a0cf659682e1a96, type: 3}
+  - {fileID: 21300000, guid: 0c6443c9a059011438551ad9d2357189, type: 3}
   pieces:
   - {fileID: 2344459608175888341, guid: f4da37e3579aa794ca5ce380319ccc93, type: 3}
   - {fileID: 7250533191543977526, guid: a2d40ac2d2e63504e9fcfb78b5459af1, type: 3}
@@ -778,6 +787,12 @@ MonoBehaviour:
   - {fileID: 4374776697734332108, guid: f4173faae0bfb19429edfff85e56a8fc, type: 3}
   - {fileID: 9061147378704913819, guid: 131e50f20cbef1d42bddb6b57b3f5e98, type: 3}
   - {fileID: 1931687215547990029, guid: d523e3b04e346334ca7118b201649440, type: 3}
+  - {fileID: 5902622964648215680, guid: 4b542d49df35fa94ea2c3d239c95ae39, type: 3}
+  - {fileID: 5072906599486706507, guid: 1ed660109857d264da91ee7394de9fa4, type: 3}
+  - {fileID: 5866672611616732068, guid: 0f42d287109a7bd4193618f5838dd238, type: 3}
+  - {fileID: 8918353408750110208, guid: dac99cfe2bf933c4a8bc04503620abcd, type: 3}
+  - {fileID: 1552563541006752394, guid: c202bf27b4526464b9a9a8e11a7da000, type: 3}
+  - {fileID: 1440013426890566739, guid: d77741c6971f4f04dae7db487ece2e69, type: 3}
   spawners:
   - {fileID: 3253820981788190193}
   - {fileID: 3253820982306286017}
