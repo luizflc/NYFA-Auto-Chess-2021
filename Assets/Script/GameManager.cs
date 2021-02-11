@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public PieceSelector storeFront;
+    public GameState myState;
     public GameObject UI;
     public int turnNum = 0;
     public float timer;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        myState = GameState.Buy;
         timer = 15f;
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartBattlePhase() {
+        myState = GameState.Attack;
         timer = 15;
         canBuy = false;
         UI.SetActive(false);
@@ -75,6 +78,7 @@ public class GameManager : MonoBehaviour
 
     public void StartBuyingPhase()
     {
+        myState = GameState.Buy;
         turnNum += 1;
         Economy.instance.p1Corners += 4;
         if(turnNum <= maxTurns || endless)
