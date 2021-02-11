@@ -84,16 +84,22 @@ public class PlayablePiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scoreTimer > 0)
+        if(scoreTimer > 0 || myManager.myState != GameState.Attack)
         {
             scoreTimer = scoreTimer - Time.deltaTime;
         }
-        else if(color.name == "Purple")
+        else if(color.name == "Purple" && gameObject.tag == "PlayerPiece")
         {
             myManager.playerScore++;
             print ("purplebonus");
             scoreTimer += 5;
             
+        }
+        else if(color.name == "Purple" && gameObject.tag == "EnemyPiece")
+        {
+            myManager.enemyScore++;
+            print("purplebonus");
+            scoreTimer += 5;
         }
         if (canMove == true)
         {
