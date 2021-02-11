@@ -13,7 +13,7 @@ public class MovingTest : MonoBehaviour
 
     private void Update()
     {
-        if(Vector3.Distance(way
+     //   if(Vector3.Distance(way
     }
 
 }
