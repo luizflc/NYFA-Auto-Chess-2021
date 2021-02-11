@@ -1,22 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MovingTest : MonoBehaviour
 {
-    public float delta = 1.5f;  // Amount to move left and right from the start point
-    public float speed = 2.0f;
-    private Vector3 startPos;
+    public GameObject[] waypoint;
+    int current = 0;
+    float rotSpeed;
+    public float speed;
+    float wPradius = 1;
 
-    void Start()
+    private void Update()
     {
-        startPos = transform.position;
+     //   if(Vector3.Distance(way
     }
 
-    void Update()
-    {
-        Vector3 v = startPos;
-        v.x += delta * Mathf.Sin(Time.time * speed);
-        transform.position = v;
-    }
 }

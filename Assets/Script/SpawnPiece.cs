@@ -8,11 +8,17 @@ public class SpawnPiece : MonoBehaviour
     public GameObject[] otherButtons;
     public int currPiece;
     public Vector3[] benchLocations;
+    public Transform[] benchTransforms;
     public Vector3 spawnLocation;
     public GameObject playerHat;
     // Start is called before the first frame update
     void Start()
     {
+        for(int i = 0; i < benchLocations.Length; i++)
+        {
+            benchLocations[i] = benchTransforms[i].position; 
+
+        }
         
     }
 
