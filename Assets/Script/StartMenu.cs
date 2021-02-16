@@ -3,34 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenu : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+public class StartMenu : MonoBehaviour {
+
+ public string loadLevel;
+
+// Start is called before the first frame update
+void Start()
     {
         
     }
 
-    public void StartButton()
+    public void MenuButton()
     {
-        SceneManager.LoadScene("BattleBoard");
+        SceneManager.LoadScene(loadLevel);
     }
 
-    /*public void CreditsButton()
-    {
-        SceneManager.LoadScene("Credits");
-    } */
+    /* public void StartButton()
+     {
+         SceneManager.LoadScene("BattleBoard");
+     }
 
-    public void QuitButton()
-    {
-        Application.Quit();
-    }
+     public void CreditsButton()
+     {
+         SceneManager.LoadScene("Credits");
+     } */
 
-    void Update()
-    {
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
-    }
+     public void QuitButton()
+     {
+         Application.Quit();
+     }
+
+     void Update()
+     {
+         if (Input.GetKey("escape"))
+         {
+             Application.Quit();
+         }
+     } 
 }
