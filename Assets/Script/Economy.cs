@@ -10,9 +10,14 @@ public class Economy : MonoBehaviour
     public int p2Corners;
     public static Economy instance;
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         instance = this;
+    }
+    void Start()
+    {
+        
         p1Corners = 8;
         p2Corners = 8;
     }
