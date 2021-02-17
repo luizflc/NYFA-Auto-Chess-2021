@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+//Author: Christopher Cruz
 public class MovingTest : MonoBehaviour
 {
     public GameObject[] waypoint;

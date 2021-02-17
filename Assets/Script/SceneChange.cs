@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Author: Christopher Cruz
 public class SceneChange : MonoBehaviour
 {
     //simple script that used to change my game scene and main menu

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Author: Christopher Cruz
 public class PauseMenu : MonoBehaviour
 {
     public string thisLevel;
