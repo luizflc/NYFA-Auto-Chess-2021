@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //thisLevel = SceneManager.GetActiveScene().name;
+        thisLevel = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -46,13 +47,17 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
-        //SceneManager.LoadScene(thisLevel);
+        SceneManager.LoadScene(thisLevel);
     }
 
-    public void Quit()
+    public void MainMenu()
     {
         //load game back to menu
         Time.timeScale = 1;
-        //SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene("StartMenu");
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
