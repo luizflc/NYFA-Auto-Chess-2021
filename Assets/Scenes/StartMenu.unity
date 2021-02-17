@@ -274,7 +274,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 358119426}
         m_TargetAssemblyTypeName: StartMenu, Assembly-CSharp
-        m_MethodName: StartButton
+        m_MethodName: MenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1172,7 +1172,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1721945403}
         m_TargetAssemblyTypeName: StartMenu, Assembly-CSharp
-        m_MethodName: CreditsButton
+        m_MethodName: MenuButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
