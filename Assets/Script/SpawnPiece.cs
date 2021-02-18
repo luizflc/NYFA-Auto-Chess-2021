@@ -66,7 +66,7 @@ public class SpawnPiece : MonoBehaviour
                 hat.transform.localScale = new Vector3(.2f, .2f, .2f);
             }
             SynergyBonuses.instance.UpdateSynergies();
-            Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
+            Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().cost);
             gameObject.transform.parent.GetComponent<PieceSelector>().Refresh();
         }
         else

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SynergyBonuses : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class SynergyBonuses : MonoBehaviour
     int pyramidCount;
     GameObject[] playerPieces;
     public static SynergyBonuses instance;
+    public Text colorText;
+    public Text shapeText;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,52 @@ public class SynergyBonuses : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (redCount >= 2)
+        {
+            colorText.text = "Red";
+            colorText.color = Color.red;
+        }
+        else if (blueCount >= 2)
+        {
+            colorText.text = "Blue";
+            colorText.color = Color.blue;
+        }
+        else if (yellowCount >= 2)
+        {
+            colorText.text = "Yellow";
+            colorText.color = Color.yellow;
+        }
+        else if (greenCount >= 2)
+        {
+            colorText.text = "Green";
+            colorText.color = Color.green;
+        }
+        else if (purpleCount >= 2)
+        {
+            colorText.text = "Purple";
+            colorText.color = new Color(7, 0, 1);
+        }
+        else
+        {
+            colorText.text = "None";
+            colorText.color = Color.white;
+        }
+        if (cubeCount >= 3)
+        {
+            shapeText.text = "Cube";
+        }
+        else if (pyramidCount >= 3)
+        {
+            shapeText.text = "Pyramid";
+        }
+        else if (sphereCount >= 3)
+        {
+            shapeText.text = "Sphere";
+        }
+        else
+        {
+            shapeText.text = "None";
+        }
     }
 
     public void UpdateSynergies()
@@ -36,7 +84,7 @@ public class SynergyBonuses : MonoBehaviour
         cubeCount = 0;
         sphereCount = 0;
         pyramidCount = 0;
-        playerPieces = GameObject.FindGameObjectsWithTag("PlayerPieces");
+        playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
         for(int i = 0; i < playerPieces.Length; i++)
         {
             if (playerPieces[i].GetComponent<PlayablePiece>().color.name == "Red"){
@@ -96,11 +144,11 @@ public class SynergyBonuses : MonoBehaviour
         {
             BoostCube();
         }
-        if(pyramidCount >= 3)
+        else if(pyramidCount >= 3)
         {
             BoostPyramid();
         }
-        if(sphereCount >= 3)
+        else if(sphereCount >= 3)
         {
             BoostSphere();
         }
