@@ -16,3 +16,4 @@ MonoBehaviour:
   dmgRadius: 5
   speed: 0.02
   direction: Moves forward slowly. Does damage at larger radius.
+  objective: 4

@@ -9,4 +9,5 @@ public class ShapeStats : ScriptableObject
     public int damage;
     public int health;
     public int cost;
+    public BonusGoalObjective objective;
 }

@@ -16,3 +16,4 @@ MonoBehaviour:
   dmgRadius: 8
   speed: 0.09
   direction: Random diagonal.
+  objective: 7

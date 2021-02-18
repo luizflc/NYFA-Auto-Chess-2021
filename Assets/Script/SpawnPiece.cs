@@ -11,9 +11,11 @@ public class SpawnPiece : MonoBehaviour
     public Transform[] benchTransforms;
     public Vector3 spawnLocation;
     public GameObject playerHat;
+    public GameManager myManager;
     // Start is called before the first frame update
     void Start()
     {
+        myManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         for(int i = 0; i < benchLocations.Length; i++)
         {
             benchLocations[i] = benchTransforms[i].position; 
@@ -43,6 +45,9 @@ public class SpawnPiece : MonoBehaviour
             GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
             newPiece.tag = "PlayerPiece";
             newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
+            PlayablePiece spawnPlayable = newPiece.GetComponent<PlayablePiece>();
+            myManager.TryGoalAdd(spawnPlayable.color.objective, 1);
+            myManager.TryGoalAdd(spawnPlayable.shape.objective, 1);
             newPiece.GetComponent<PieceDeathScript>().afterlife = spawnLocation;
             if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
             {

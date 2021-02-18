@@ -16,3 +16,4 @@ MonoBehaviour:
   damage: 8
   health: 10
   cost: 8
+  objective: 1
