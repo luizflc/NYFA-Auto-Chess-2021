@@ -104,6 +104,20 @@ public class GameManager : MonoBehaviour
         UI.SetActive(false);
         DeployEnemyPieces();
         SpawnEnemyPieces();
+        GameObject[] playersObj = GameObject.FindGameObjectsWithTag("PlayerPiece");
+        GameObject[] enemyObj = GameObject.FindGameObjectsWithTag("EnemyPiece");
+        int numberNeeded = playersObj.Length - enemyObj.Length;
+        if(numberNeeded < 0)
+        {
+            numberNeeded *= -1;
+        }
+        if(numberNeeded > 0)
+        {
+            for(int i = 0; i < numberNeeded; i++)
+            {
+                SpawnEnemyPieces();
+            }
+        }
         //state = GameState.PlayerAttack;
     }
 
@@ -111,7 +125,7 @@ public class GameManager : MonoBehaviour
     {
         myState = GameState.Buy;
         turnNum += 1;
-        Economy.instance.p1Corners += 4;
+        Economy.instance.p1Corners += 5;
         if(turnNum <= maxTurns || endless)
         {
             canBuy = true;

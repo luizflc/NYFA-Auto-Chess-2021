@@ -159,6 +159,7 @@ MonoBehaviour:
   - {fileID: 3253820982681593806}
   currPiece: 0
   benchLocations: []
+  benchTransforms: []
   spawnLocation: {x: -6, y: 1, z: 4}
   playerHat: {fileID: 0}
 --- !u!1 &3253820981914837521
@@ -482,6 +483,7 @@ MonoBehaviour:
   - {fileID: 3253820982681593806}
   currPiece: 0
   benchLocations: []
+  benchTransforms: []
   spawnLocation: {x: -6, y: 1, z: 4}
   playerHat: {fileID: 0}
 --- !u!1 &3253820982681593806
@@ -643,6 +645,7 @@ MonoBehaviour:
   - {fileID: 3253820982306286077}
   currPiece: 0
   benchLocations: []
+  benchTransforms: []
   spawnLocation: {x: -6, y: 1, z: 4}
   playerHat: {fileID: 0}
 --- !u!1 &3253820982826061285
@@ -776,7 +779,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a21c14d059497c34d91a3a4170f0fd70, type: 3}
   - {fileID: 21300000, guid: 0c6443c9a059011438551ad9d2357189, type: 3}
   - {fileID: 21300000, guid: 459acc1c956fa3048a0cf659682e1a96, type: 3}
-  - {fileID: 21300000, guid: 0c6443c9a059011438551ad9d2357189, type: 3}
+  - {fileID: 21300000, guid: e0dea67553e0b2a468fe9ab235c921aa, type: 3}
+  - {fileID: 21300000, guid: b8eec6c8f93ac3040b2991abcbc641c5, type: 3}
+  - {fileID: 21300000, guid: 6e918ed96adf16c4bb3a632bf805506c, type: 3}
+  - {fileID: 21300000, guid: 087d7a1fe0c044742a33383612f2e42f, type: 3}
   pieces:
   - {fileID: 2344459608175888341, guid: f4da37e3579aa794ca5ce380319ccc93, type: 3}
   - {fileID: 7250533191543977526, guid: a2d40ac2d2e63504e9fcfb78b5459af1, type: 3}

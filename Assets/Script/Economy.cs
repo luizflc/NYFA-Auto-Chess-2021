@@ -18,8 +18,8 @@ public class Economy : MonoBehaviour
     void Start()
     {
         
-        p1Corners = 8;
-        p2Corners = 8;
+        p1Corners = 5;
+        p2Corners = 5;
     }
 
     // Update is called once per frame

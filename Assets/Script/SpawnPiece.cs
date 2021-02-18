@@ -43,6 +43,8 @@ public class SpawnPiece : MonoBehaviour
                 spawnLocation = benchLocations[0];
             }
             GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
+            print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
+            Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
             newPiece.tag = "PlayerPiece";
             newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
             PlayablePiece spawnPlayable = newPiece.GetComponent<PlayablePiece>();
@@ -71,7 +73,6 @@ public class SpawnPiece : MonoBehaviour
                 hat.transform.localScale = new Vector3(.2f, .2f, .2f);
             }
             SynergyBonuses.instance.UpdateSynergies();
-            Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().cost);
             gameObject.transform.parent.GetComponent<PieceSelector>().Refresh();
         }
         else
