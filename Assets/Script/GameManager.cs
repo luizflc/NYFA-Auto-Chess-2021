@@ -16,10 +16,12 @@ public class GameManager : MonoBehaviour
     public GameObject resultObject;
     public GameObject resultParent;
     public GameObject timerObject;
+    public GameObject[] bonusObjects;
     public Text myPlayerText;
     public Text myEnemyText;
     public Text resultText;
     public Text timerText;
+    public Text[] bonusTexts;
     public int playerScore;
     public int enemyScore;
     public bool endless;
@@ -35,11 +37,15 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        bonusTexts = new Text[3];
         myBonusGoals = new BonusGoalScript[3];
         for (int i = 0; i < myBonusGoals.Length; i++)
         {
             myBonusGoals[i] = new BonusGoalScript((BonusGoalObjective)myRandom.Next(0, (int)BonusGoalObjective.Length-1), 0);
-            print("Goal" + " " +i +" is: " + myBonusGoals[i].myObjective.ToString());
+            bonusTexts[i] = bonusObjects[i].GetComponent<Text>();
+            bonusTexts[i].text = ("Goal" + " " + (i+1) +" is: " + myBonusGoals[i].myObjective.ToString());
+           
         }
         
         myState = GameState.Buy;

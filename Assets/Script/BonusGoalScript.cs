@@ -57,15 +57,15 @@ public enum BonusGoalState
 
 public enum BonusGoalObjective
 {
-    mostSpheres,
-    mostCubes,
-    mostPyramids,
-    bestVariety,
-    mostGreen,
-    mostRed,
-    mostPurple,
-    mostBlue,
-    mostYellow,
+    Spheres,
+    Cubes,
+    Pyramids,
+    Variety,
+    Green,
+    Red,
+    Purple,
+    Blue,
+    Yellow,
     Length
 }
 //using this enum so we can index an array of values for comparison. The idea is to pass appropriate relative values

@@ -12,15 +12,17 @@ public class GridSquareScript : MonoBehaviour
     public Material ordinaryMaterial;
     public MeshRenderer thisRenderer;
     public SpaceType thisSpace;
+   
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        }
+
+    }
     public enum SpaceType
     {
         battlefield,
