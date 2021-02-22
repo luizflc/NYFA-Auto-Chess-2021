@@ -16,3 +16,4 @@ MonoBehaviour:
   dmgRadius: 2
   speed: 0.16
   direction: Vertical forward.
+  objective: 5

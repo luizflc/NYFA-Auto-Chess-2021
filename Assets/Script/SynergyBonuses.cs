@@ -173,14 +173,14 @@ public class SynergyBonuses : MonoBehaviour
     {
         for (int i = 0; i < playerPieces.Length; i++)
         {
-            playerPieces[i].GetComponent<PlayablePiece>().speed += .15f;
+            playerPieces[i].GetComponent<PlayablePiece>().speed += .02f;
         }
     }
     public void BoostPurple()
     {
         for (int i = 0; i < playerPieces.Length; i++)
         {
-            playerPieces[i].GetComponent<PlayablePiece>().speed -=.025f;
+            playerPieces[i].GetComponent<PlayablePiece>().speed -=.01f;
         }
     }
     public void BoostGreen()

@@ -9,4 +9,5 @@ public class ColorStats : ScriptableObject
     public int dmgRadius;
     public float speed;
     public string direction;
+    public BonusGoalObjective objective;
 }

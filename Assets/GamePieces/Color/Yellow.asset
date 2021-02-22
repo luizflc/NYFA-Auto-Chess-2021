@@ -16,3 +16,4 @@ MonoBehaviour:
   dmgRadius: 5
   speed: 0.07
   direction: Left.
+  objective: 8

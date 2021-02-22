@@ -16,10 +16,12 @@ public class GameManager : MonoBehaviour
     public GameObject resultObject;
     public GameObject resultParent;
     public GameObject timerObject;
+    public GameObject[] bonusObjects;
     public Text myPlayerText;
     public Text myEnemyText;
     public Text resultText;
     public Text timerText;
+    public Text[] bonusTexts;
     public int playerScore;
     public int enemyScore;
     public bool endless;
@@ -28,11 +30,24 @@ public class GameManager : MonoBehaviour
     public Vector3[] playerBench;
     public Vector3[] enemyBench;
     public GameObject enemyHat;
+    public BonusGoalScript[] myBonusGoals;
+    public System.Random myRandom = new System.Random();
    
     //public GameState state;
     // Start is called before the first frame update
     void Start()
     {
+        
+        bonusTexts = new Text[3];
+        myBonusGoals = new BonusGoalScript[3];
+        for (int i = 0; i < myBonusGoals.Length; i++)
+        {
+            myBonusGoals[i] = new BonusGoalScript((BonusGoalObjective)myRandom.Next(0, (int)BonusGoalObjective.Length-1), 0);
+            bonusTexts[i] = bonusObjects[i].GetComponent<Text>();
+            bonusTexts[i].text = ("Goal" + " " + (i+1) +" is: " + myBonusGoals[i].myObjective.ToString());
+           
+        }
+        
         myState = GameState.Buy;
         timer = 15f;
         myPlayerText = textObject.GetComponent<Text>();
@@ -65,14 +80,153 @@ public class GameManager : MonoBehaviour
         myEnemyText.text = "Enemy:" + enemyScore;
         myPlayerText.text = "Player:" + playerScore;
     }
-
+    public void TryGoalAdd(BonusGoalObjective objective, int player)
+    {
+        for(int i = 0; i < myBonusGoals.Length; i++)
+        {
+            myBonusGoals[i].AddGoalValue(objective, player);
+        }
+    }
+    public void AwardBonuses()
+    {
+        for (int i = 0; i < myBonusGoals.Length; i++)
+        {
+            if(myBonusGoals[i].myGoalState == BonusGoalState.Player1)
+            {
+                playerScore += 3;
+                print("Player 1 awarded 3 bonus points!");
+            }
+            else if(myBonusGoals[i].myGoalState == BonusGoalState.Player2)
+            {
+                enemyScore += 3;
+                print("Enemy awarded 3 bonus points!");
+            }
+        }
+    }
     public void StartBattlePhase() {
         myState = GameState.Attack;
         timer = 15;
         canBuy = false;
         UI.SetActive(false);
-        DeployEnemyPieces();
-        SpawnEnemyPieces();
+        if (turnNum == 0 || turnNum == 1)
+        {
+            int chooseRand = Random.Range(0, 3);
+            if (chooseRand == 0)
+            {
+                GameObject newPiece = Instantiate(storeFront.pieces[0], new Vector3(Random.Range(21, 25), 1, Random.Range(0, 26)), Quaternion.identity);
+                PlayablePiece newPlayable = newPiece.GetComponent<PlayablePiece>();
+
+                newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
+                newPiece.tag = "EnemyPiece";
+                TryGoalAdd(newPlayable.shape.objective, 2);
+                TryGoalAdd(newPlayable.color.objective, 2);
+                newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+                if (newPlayable.shape.name == "Pyramid")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, 3.5f, 0);
+                    hat.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                }
+                else if (newPlayable.shape.name == "Sphere")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, .4f, 0);
+                    hat.transform.localScale = new Vector3(.5f, .5f, .5f);
+                }
+                else if (newPlayable.shape.name == "Cube")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, .5f, 0);
+                    hat.transform.localScale = new Vector3(.6f, .6f, .6f);
+                }
+            }
+            else if (chooseRand == 1)
+            {
+                GameObject newPiece = Instantiate(storeFront.pieces[3], new Vector3(Random.Range(21, 25), 1, Random.Range(0, 26)), Quaternion.identity);
+                PlayablePiece newPlayable = newPiece.GetComponent<PlayablePiece>();
+
+                newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
+                newPiece.tag = "EnemyPiece";
+                TryGoalAdd(newPlayable.shape.objective, 2);
+                TryGoalAdd(newPlayable.color.objective, 2);
+                newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+                if (newPlayable.shape.name == "Pyramid")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, 3.5f, 0);
+                    hat.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                }
+                else if (newPlayable.shape.name == "Sphere")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, .4f, 0);
+                    hat.transform.localScale = new Vector3(.5f, .5f, .5f);
+                }
+                else if (newPlayable.shape.name == "Cube")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, .5f, 0);
+                    hat.transform.localScale = new Vector3(.6f, .6f, .6f);
+                }
+            }
+            else if (chooseRand == 2)
+            {
+                GameObject newPiece = Instantiate(storeFront.pieces[6], new Vector3(Random.Range(21, 25), 1, Random.Range(0, 26)), Quaternion.identity);
+                PlayablePiece newPlayable = newPiece.GetComponent<PlayablePiece>();
+
+                newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
+                newPiece.tag = "EnemyPiece";
+                TryGoalAdd(newPlayable.shape.objective, 2);
+                TryGoalAdd(newPlayable.color.objective, 2);
+                newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+                if (newPlayable.shape.name == "Pyramid")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, 3.5f, 0);
+                    hat.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                }
+                else if (newPlayable.shape.name == "Sphere")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, .4f, 0);
+                    hat.transform.localScale = new Vector3(.5f, .5f, .5f);
+                }
+                else if (newPlayable.shape.name == "Cube")
+                {
+                    GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
+                    hat.transform.parent = newPiece.transform;
+                    hat.transform.localPosition = new Vector3(0, .5f, 0);
+                    hat.transform.localScale = new Vector3(.6f, .6f, .6f);
+                }
+            }
+        }
+        else
+        {
+            DeployEnemyPieces();
+            SpawnEnemyPieces();
+        }
+        GameObject[] playersObj = GameObject.FindGameObjectsWithTag("PlayerPiece");
+        GameObject[] enemyObj = GameObject.FindGameObjectsWithTag("EnemyPiece");
+        int numberNeeded = playersObj.Length - enemyObj.Length;
+        /*if(numberNeeded < 0)
+        {
+            numberNeeded *= -1;
+        }*/
+        if(numberNeeded > 0)
+        {
+            for(int i = 0; i < numberNeeded; i++)
+            {
+                SpawnEnemyPieces();
+            }
+        }
         //state = GameState.PlayerAttack;
     }
 
@@ -80,7 +234,7 @@ public class GameManager : MonoBehaviour
     {
         myState = GameState.Buy;
         turnNum += 1;
-        Economy.instance.p1Corners += 4;
+        Economy.instance.p1Corners += 5;
         if(turnNum <= maxTurns || endless)
         {
             canBuy = true;
@@ -103,24 +257,28 @@ public class GameManager : MonoBehaviour
         //{
             int pieceNum = Random.Range(0, storeFront.pieces.Length);
             GameObject newPiece = Instantiate(storeFront.pieces[pieceNum], new Vector3(Random.Range(21,25), 1, Random.Range(0,26)), Quaternion.identity);
+            PlayablePiece newPlayable = newPiece.GetComponent<PlayablePiece>();
+
             newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
             newPiece.tag = "EnemyPiece";
+            TryGoalAdd(newPlayable.shape.objective, 2);
+            TryGoalAdd(newPlayable.color.objective, 2);
             newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
-            if(newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
+            if(newPlayable.shape.name == "Pyramid")
             {
                 GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
                 hat.transform.parent = newPiece.transform;
                 hat.transform.localPosition = new Vector3(0, 3.5f, 0);
                 hat.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             }
-            else if (newPiece.GetComponent<PlayablePiece>().shape.name == "Sphere")
+            else if (newPlayable.shape.name == "Sphere")
             {
                 GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
                 hat.transform.parent = newPiece.transform;
                 hat.transform.localPosition = new Vector3(0, .4f, 0);
                 hat.transform.localScale = new Vector3(.5f, .5f, .5f);
             }
-            else if(newPiece.GetComponent<PlayablePiece>().shape.name == "Cube")
+            else if(newPlayable.shape.name == "Cube")
             {
                 GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
                 hat.transform.parent = newPiece.transform;
