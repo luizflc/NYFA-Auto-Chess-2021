@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Cube
   damage: 8
   health: 10
-  cost: 8
+  cost: 5
   objective: 1
