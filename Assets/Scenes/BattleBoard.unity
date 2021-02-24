@@ -1498,7 +1498,10 @@ MonoBehaviour:
   myEnemyText: {fileID: 7856320247561907152}
   resultText: {fileID: 1496664048}
   timerText: {fileID: 7068578921955501902}
-  bonusTexts: []
+  bonusTexts:
+  - {fileID: 7068578921955501905}
+  - {fileID: 7068578921955501904}
+  - {fileID: 7068578921955501903}
   playerScore: 0
   enemyScore: 0
   endless: 0
@@ -2554,6 +2557,39 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 7068578921955501901}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478906549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7068578921955501903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8598161656248096592, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+  m_PrefabInstance: {fileID: 7068578921955501901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108862806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7068578921955501904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 526366162647945793, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+  m_PrefabInstance: {fileID: 7068578921955501901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589190594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7068578921955501905 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5832264810955736497, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+  m_PrefabInstance: {fileID: 7068578921955501901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315236047}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
