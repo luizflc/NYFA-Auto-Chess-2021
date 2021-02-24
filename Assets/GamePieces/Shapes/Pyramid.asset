@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Pyramid
   damage: 5
   health: 16
-  cost: 5
+  cost: 8
   objective: 2
