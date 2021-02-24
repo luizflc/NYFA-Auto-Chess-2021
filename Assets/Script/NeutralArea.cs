@@ -28,9 +28,13 @@ public class NeutralArea : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(scoreTimer > 0)
+        if(scoreTimer > 0 && myManager.myState == GameState.Attack)
         {
             scoreTimer -= 1 * Time.deltaTime;
+        }
+        else if(myManager.myState != GameState.Attack)
+        {
+            scoreTimer = 5f;
         }
         else
         {

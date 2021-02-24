@@ -9,6 +9,7 @@ TagManager:
   - EnemyPiece
   - HelperUI
   - HelperText
+  - GameManager
   layers:
   - Default
   - TransparentFX

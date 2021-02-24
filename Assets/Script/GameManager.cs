@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemyHat;
     public BonusGoalScript[] myBonusGoals;
     public System.Random myRandom = new System.Random();
+    public static float setTimer = 15f;
    
     //public GameState state;
     // Start is called before the first frame update
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
         }
         
         myState = GameState.Buy;
-        timer = 15f;
+        timer = setTimer;
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
         resultText = resultObject.GetComponent<Text>();
@@ -105,7 +106,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartBattlePhase() {
         myState = GameState.Attack;
-        timer = 15;
+        timer = setTimer;
         canBuy = false;
         UI.SetActive(false);
         if (turnNum == 0 || turnNum == 1)

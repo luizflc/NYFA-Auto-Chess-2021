@@ -103,10 +103,16 @@ public class DragScript : MonoBehaviour
         {
             if (homeSpace == null || other.name != homeSpace.name)
             {
+                if (homeSpace != null)
+                {
+
+                    homeRenderer.material = homeScript.ordinaryMaterial;
+                }
                     GridSquareScript otherScript = other.GetComponent<GridSquareScript>();
                     homeSpace = other.gameObject;
                     homeScript = homeSpace.GetComponent<GridSquareScript>();
                     homeRenderer = homeSpace.GetComponent<MeshRenderer>();
+
                     if(homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
                     {
                         thisPiece.canMove = true;
@@ -117,6 +123,7 @@ public class DragScript : MonoBehaviour
                     }
                     
             }
+
             homeScript.taken = true;
             homeRenderer.material = homeScript.selectedMaterial;
 
