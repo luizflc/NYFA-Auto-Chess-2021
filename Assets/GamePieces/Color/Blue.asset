@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Blue
   dmgRadius: 8
-  speed: 0.09
+  speed: 0.08
   direction: Random diagonal.
   objective: 7
