@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PlayablePiece : MonoBehaviour
 {
-    
 
+    // Start is called before the first frame update
     public ColorStats color;
     public ShapeStats shape;
-    // Start is called before the first frame update
     public bool goingForward;
     public bool sideStrafe;
     bool canMoveSideways;
