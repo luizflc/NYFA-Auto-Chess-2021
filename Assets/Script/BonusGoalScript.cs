@@ -13,10 +13,13 @@ public class BonusGoalScript
         startingState = BonusGoalState.Neither;
         myObjective = givenObjective;
         myGoalState = startingState;
+        goalValues = new int[2];
+        goalValues[0] = 0;
+        goalValues[1] = 0;
     }
 public void CheckObjective()
     {
-        myGoalState = (BonusGoalState)(goalValues[1] - goalValues[2] / System.Math.Abs(goalValues[1] - goalValues[2]));
+        myGoalState = (BonusGoalState)(goalValues[0] - goalValues[1] / System.Math.Abs(goalValues[0] - goalValues[1]));
         //I wrote some if statements that accomplish the same thing, if my formula messes up. 
         /*
         if (goalValues[1, (int)myObjective] - goalValues[2, (int)myObjective] > 0)
@@ -33,7 +36,7 @@ public void CheckObjective()
         }
         */
     } 
-    //When calling this method, remember to include the playerNumber. 1 = player, 2 = enemy.
+    //When calling this method, remember to include the playerNumber. 0 = player, 1 = enemy.
     public void AddGoalValue(BonusGoalObjective thisObjective, int playerNumber)
     {
         if(myObjective == thisObjective) {

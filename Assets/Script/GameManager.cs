@@ -121,8 +121,8 @@ public class GameManager : MonoBehaviour
 
                 newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
                 newPiece.tag = "EnemyPiece";
-                TryGoalAdd(newPlayable.shape.objective, 2);
-                TryGoalAdd(newPlayable.color.objective, 2);
+                TryGoalAdd(newPlayable.shape.objective, 0);
+                TryGoalAdd(newPlayable.color.objective, 0);
                 newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
                 if (newPlayable.shape.name == "Pyramid")
                 {
@@ -153,8 +153,8 @@ public class GameManager : MonoBehaviour
 
                 newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
                 newPiece.tag = "EnemyPiece";
-                TryGoalAdd(newPlayable.shape.objective, 2);
-                TryGoalAdd(newPlayable.color.objective, 2);
+                TryGoalAdd(newPlayable.shape.objective, 1);
+                TryGoalAdd(newPlayable.color.objective, 1);
                 newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
                 if (newPlayable.shape.name == "Pyramid")
                 {
@@ -185,8 +185,8 @@ public class GameManager : MonoBehaviour
 
                 newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
                 newPiece.tag = "EnemyPiece";
-                TryGoalAdd(newPlayable.shape.objective, 2);
-                TryGoalAdd(newPlayable.color.objective, 2);
+                TryGoalAdd(newPlayable.shape.objective, 1);
+                TryGoalAdd(newPlayable.color.objective, 1);
                 newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
                 if (newPlayable.shape.name == "Pyramid")
                 {
@@ -264,8 +264,8 @@ public class GameManager : MonoBehaviour
 
             newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
             newPiece.tag = "EnemyPiece";
-            TryGoalAdd(newPlayable.shape.objective, 2);
-            TryGoalAdd(newPlayable.color.objective, 2);
+            TryGoalAdd(newPlayable.shape.objective, 1);
+            TryGoalAdd(newPlayable.color.objective, 1);
             newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
             if(newPlayable.shape.name == "Pyramid")
             {
