@@ -6525,6 +6525,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: cornerPrices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: piecesPic.Array.data[12]
       value: 
       objectReference: {fileID: 21300000, guid: b8eec6c8f93ac3040b2991abcbc641c5, type: 3}
@@ -6536,6 +6540,18 @@ PrefabInstance:
       propertyPath: piecesPic.Array.data[14]
       value: 
       objectReference: {fileID: 21300000, guid: 087d7a1fe0c044742a33383612f2e42f, type: 3}
+    - target: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: cornerPrices.Array.data[0]
+      value: 
+      objectReference: {fileID: 2055345434}
+    - target: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: cornerPrices.Array.data[1]
+      value: 
+      objectReference: {fileID: 1708312423}
+    - target: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: cornerPrices.Array.data[2]
+      value: 
+      objectReference: {fileID: 1851507122}
     - target: {fileID: 3253820983072862549, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_Color.r
       value: 1
@@ -13758,7 +13774,7 @@ RectTransform:
   m_LocalScale: {x: 2.8571427, y: 0.5747127, z: 3.846154}
   m_Children: []
   m_Father: {fileID: 1619073330}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

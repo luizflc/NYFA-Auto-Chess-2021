@@ -9,6 +9,7 @@ public class PieceSelector : MonoBehaviour
     public Sprite[] piecesPic;
     public GameObject[] pieces;
     public SpawnPiece[] spawners;
+    public Text[] cornerPrices;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,7 @@ public class PieceSelector : MonoBehaviour
             pieceButtons[i].gameObject.SetActive(true);
             pieceButtons[i].GetComponent<Image>().sprite = piecesPic[pieceNum];
             spawners[i].currPiece = pieceNum;
+            cornerPrices[i].text = "Corners: " + pieces[pieceNum].GetComponent<PlayablePiece>().shape.cost.ToString();
         }
     }
 
