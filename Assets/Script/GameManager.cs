@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     public BonusGoalScript[] myBonusGoals;
     public System.Random myRandom = new System.Random();
     public static float setTimer = 15f;
+    public static int setMaxTurns = 2;
    
     //public GameState state;
     // Start is called before the first frame update
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
         
         myState = GameState.Buy;
         timer = setTimer;
+        maxTurns = setMaxTurns;
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
         resultText = resultObject.GetComponent<Text>();
@@ -235,8 +237,8 @@ public class GameManager : MonoBehaviour
     {
         myState = GameState.Buy;
         turnNum += 1;
-        Economy.instance.p1Corners += 5;
-        if(turnNum <= maxTurns || endless)
+        Economy.instance.p1Corners += 4;
+        if(turnNum <= maxTurns + 1 || endless)
         {
             canBuy = true;
 
