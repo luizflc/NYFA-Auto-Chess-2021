@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cube
   m_EditorClassIdentifier: 
   name: Cube
-  damage: 8
+  damage: 6
   health: 10
-  cost: 5
+  cost: 4
   objective: 1

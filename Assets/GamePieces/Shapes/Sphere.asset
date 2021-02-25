@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sphere
   m_EditorClassIdentifier: 
   name: Sphere
-  damage: 2
+  damage: 4
   health: 4
   cost: 2
+  objective: 0
