@@ -789,6 +789,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109598767}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &121153734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1905992737099862274, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+  m_PrefabInstance: {fileID: 7068578921955501901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &126897728
 GameObject:
   m_ObjectHideFlags: 0
@@ -4264,6 +4269,11 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &598644609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4738980788274965536, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+  m_PrefabInstance: {fileID: 7068578921955501901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &618781204
 GameObject:
   m_ObjectHideFlags: 0
@@ -8688,7 +8698,10 @@ MonoBehaviour:
   resultObject: {fileID: 1603264924}
   resultParent: {fileID: 1322568210}
   timerObject: {fileID: 1478906549}
-  bonusObjects: []
+  bonusObjects:
+  - {fileID: 121153734}
+  - {fileID: 598644609}
+  - {fileID: 1747432212}
   myPlayerText: {fileID: 5912574542383196691}
   myEnemyText: {fileID: 7856320247561907152}
   resultText: {fileID: 1496664048}
@@ -11556,6 +11569,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729707540}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1747432212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 406796046166200571, guid: 2f8871107e85d0644bc342172b59af05, type: 3}
+  m_PrefabInstance: {fileID: 7068578921955501901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1755427336
 GameObject:
   m_ObjectHideFlags: 0
