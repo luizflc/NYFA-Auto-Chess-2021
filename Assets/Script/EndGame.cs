@@ -1,24 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class Endgame : MonoBehaviour
+public class EndGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Text pointText;
+    public string thisLevel;
+
+    public void Results()
     {
-        
+        gameObject.SetActive(true);
+        //pointText.text = score.ToString() + "Score";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RestartButton()
     {
-        void Update()
-        {
-            if (Input.GetKey("escape"))
-            {
-                Application.Quit();
-            }
-        }
+       SceneManager.LoadScene(thisLevel);
+    }
+
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+    
+    public void QuitButton()
+    {
+        Application.Quit();
     }
 }
