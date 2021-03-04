@@ -6,14 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
-    public Text pointText;
     public string thisLevel;
-
-    public void Results()
-    {
-        gameObject.SetActive(true);
-        //pointText.text = score.ToString() + "Score";
-    }
 
     public void RestartButton()
     {

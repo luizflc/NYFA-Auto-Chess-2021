@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     public System.Random myRandom = new System.Random();
     public static float setTimer = 15f;
     public static int setMaxTurns = 2;
+
+    public GameObject EndGameUI;
    
     //public GameState state;
     // Start is called before the first frame update
@@ -306,14 +308,17 @@ public class GameManager : MonoBehaviour
         if (score > 0)
         {
             resultText.text = "Player 1 wins.";
+            EndGameUI.SetActive(true);
         }
         else if (score < 0)
         {
             resultText.text = "Player 2 wins.";
+            EndGameUI.SetActive(true);
         }
         else
         {
             resultText.text = "Draw";
+            EndGameUI.SetActive(true);
         }
         
     }
