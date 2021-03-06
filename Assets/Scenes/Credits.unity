@@ -577,7 +577,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 707e7abc6242f5343b30a46bdf2b46e9, type: 3}
+    m_Font: {fileID: 12800000, guid: 14eb6a42bd0790a418bfb165eaec530c, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -749,7 +749,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 707e7abc6242f5343b30a46bdf2b46e9, type: 3}
+    m_Font: {fileID: 12800000, guid: 14eb6a42bd0790a418bfb165eaec530c, type: 3}
     m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
@@ -761,9 +761,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'CyberChess
-
-'
+  m_Text: Grid War
 --- !u!222 &1161458427
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -947,7 +945,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 707e7abc6242f5343b30a46bdf2b46e9, type: 3}
+    m_Font: {fileID: 12800000, guid: 14eb6a42bd0790a418bfb165eaec530c, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0

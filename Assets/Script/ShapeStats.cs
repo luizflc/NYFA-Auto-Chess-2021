@@ -9,5 +9,12 @@ public class ShapeStats : ScriptableObject
     public int damage;
     public int health;
     public int cost;
+
+    //Shape Stat Changes added 3/3/2021
+    /*
+    public int dmgRadius;
+    public float speed;
+    public string direction;
+    */
     public BonusGoalObjective objective;
 }
