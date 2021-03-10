@@ -8945,6 +8945,7 @@ MonoBehaviour:
   - {x: 33, y: 1, z: 9}
   - {x: 33, y: 1, z: 4}
   enemyHat: {fileID: 7752038477776102117, guid: 78ddf9ec8dcf0e546879c4a87be8260e, type: 3}
+  EndGameUI: {fileID: 0}
 --- !u!114 &1256972522
 MonoBehaviour:
   m_ObjectHideFlags: 0
