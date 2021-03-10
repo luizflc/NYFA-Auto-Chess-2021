@@ -76,14 +76,14 @@ public class DragScript : MonoBehaviour
         GridSquareScript otherScript = other.GetComponent<GridSquareScript>();
         if (other.tag == "Snapbox")
         {
-            otherRenderer.material = otherScript.ordinaryMaterial;
+        //    otherRenderer.material = otherScript.ordinaryMaterial;
         }
     }
     public void ForcedExit()
     {
         if(homeRenderer.material.name == homeScript.selectedMaterial.name)
         {
-            homeRenderer.material = homeScript.ordinaryMaterial;
+        //    homeRenderer.material = homeScript.ordinaryMaterial;
         }
         
 
@@ -92,7 +92,7 @@ public class DragScript : MonoBehaviour
     {
         if(homeRenderer.material.name == homeScript.ordinaryMaterial.name)
         {
-            homeRenderer.material = homeScript.selectedMaterial;
+          //  homeRenderer.material = homeScript.selectedMaterial;
         }
         
     }
@@ -106,7 +106,7 @@ public class DragScript : MonoBehaviour
                 if (homeSpace != null)
                 {
 
-                    homeRenderer.material = homeScript.ordinaryMaterial;
+                   // homeRenderer.material = homeScript.ordinaryMaterial;
                 }
                     GridSquareScript otherScript = other.GetComponent<GridSquareScript>();
                     homeSpace = other.gameObject;
@@ -125,7 +125,8 @@ public class DragScript : MonoBehaviour
             }
 
             homeScript.taken = true;
-            homeRenderer.material = homeScript.selectedMaterial;
+           
+            //homeRenderer.material = homeScript.selectedMaterial;
 
         }
            
