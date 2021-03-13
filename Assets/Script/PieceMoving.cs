@@ -12,10 +12,10 @@ public class PieceMoving : MonoBehaviour
     public float timerStart;
     float timer;
     public PieceType type;
-    bool moveForward;
-    bool moveBackward;
-    bool moveRight;
-    bool moveLeft;
+    public bool moveForward;
+    public bool moveBackward;
+    public bool moveRight;
+    public bool moveLeft;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,42 +78,134 @@ public class PieceMoving : MonoBehaviour
         {
             gameObject.transform.position = gameObject.transform.position;
         }*/
-        if(type == PieceType.bike)
+       /*if (gameObject.transform.position.x <= minX)
         {
-            if (gameObject.transform.position.x <= minX)
+            moveForward = true;
+            moveBackward = false;
+            moveLeft = false;
+            moveRight = false;
+        }
+        else if (gameObject.transform.position.x >= maxX)
+        {
+            moveForward = false;
+            moveBackward = true;
+            moveLeft = false;
+            moveRight = false;
+        }
+        else if (gameObject.transform.position.z <= minZ)
+        {
+            moveForward = false;
+            moveBackward = false;
+            moveLeft = false;
+            moveRight = true;
+        }
+        else if (gameObject.transform.position.z >= maxZ)
+        {
+            moveForward = false;
+            moveBackward = false;
+            moveLeft = true;
+            moveRight = false;
+        }
+        else
+        {
+            moveForward = false;
+            moveBackward = false;
+            moveLeft = false;
+            moveRight = false;
+        }*/
+        if(moveForward == true)
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x + 5, gameObject.transform.position.y, gameObject.transform.position.z);
+        }
+        else if(moveLeft == true)
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 5);
+        }
+        else if (moveBackward == true)
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x - 5, gameObject.transform.position.y, gameObject.transform.position.z);
+        }
+        else if (moveRight == true)
+        {
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 5);
+        }
+        if (type == PieceType.bike)
+        {
+            moveForward = moveForward;
+            moveBackward = moveBackward;
+            moveRight = moveRight;
+            moveLeft = moveLeft;
+           if(gameObject.transform.position.x >= maxX)
+            {
+                moveRight = false;
+                moveLeft = true;
+            }
+           if(gameObject.transform.position.z <= minZ)
+            {
+                moveForward = false;
+                moveBackward = true;
+               
+            }
+           if(gameObject.transform.position.x <= minX)
+            {
+                moveLeft = false;
+                moveRight = true;
+               
+            }
+           if(gameObject.transform.position.z >= maxZ)
+            {
+                moveBackward = false;
+                moveForward = true;
+               
+            }
+            if ((moveForward == false) && (moveBackward == false) && (moveLeft = false) && (moveRight == false))
             {
                 moveForward = true;
                 moveBackward = false;
                 moveLeft = false;
                 moveRight = false;
             }
-            else if (gameObject.transform.position.x >= maxX)
+        }
+        if(type == PieceType.spider)
+        {
+            moveForward = moveForward;
+            moveBackward = moveBackward;
+            moveRight = moveRight;
+            moveLeft = moveLeft;
+            if ((gameObject.transform.position.x >= maxX) && (gameObject.transform.position.z >= maxZ))
             {
+                moveBackward = true;
+                moveLeft = true;
+                moveRight = false;
                 moveForward = false;
+            }
+            else if ((gameObject.transform.position.x >= maxX) && (gameObject.transform.position.z <= minZ))
+            {
                 moveBackward = true;
                 moveLeft = false;
-                moveRight = false;
-            }
-            else if (gameObject.transform.position.z <= minZ)
-            {
+                moveRight = true;
                 moveForward = false;
+            }
+            else if ((gameObject.transform.position.x <= minX) && (gameObject.transform.position.z <= minZ))
+            {
                 moveBackward = false;
                 moveLeft = false;
                 moveRight = true;
+                moveForward = true;
             }
-            else if (gameObject.transform.position.z >= maxZ)
+            else if ((gameObject.transform.position.x <= minX) && (gameObject.transform.position.z >= maxZ))
             {
-                moveForward = false;
                 moveBackward = false;
                 moveLeft = true;
                 moveRight = false;
+                moveForward = true;
             }
-            else
+            if ((moveForward == false) && (moveBackward == false) && (moveLeft = false) && (moveRight == false))
             {
-                moveForward = false;
+                moveForward = true;
                 moveBackward = false;
                 moveLeft = false;
-                moveRight = false;
+                moveRight = true;
             }
         }
     }

@@ -12732,6 +12732,7 @@ MonoBehaviour:
   minX: 0
   minZ: 0
   timerStart: 3
+  type: 0
 --- !u!1001 &3563552843542876842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12869,6 +12870,7 @@ MonoBehaviour:
   minX: 0
   minZ: 0
   timerStart: 3
+  type: 0
 --- !u!1001 &5824021701184501206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12949,3 +12951,4 @@ MonoBehaviour:
   minX: 0
   minZ: 0
   timerStart: 3
+  type: 2
