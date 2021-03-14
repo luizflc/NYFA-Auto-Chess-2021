@@ -25,8 +25,11 @@ public class PlayablePiece : MonoBehaviour
     public bool canMove;
     public GameObject myManagerObject;
     public GameManager myManager;
+    public PauseMenu MyPause;
+
     void Start()
     {
+        MyPause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
         myManagerObject = GameObject.Find("GameManager");
         myManager = myManagerObject.GetComponent<GameManager>();
         goingForward = true;
@@ -83,6 +86,10 @@ public class PlayablePiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(MyPause.isPaused)
+        {
+            return;
+        }
         if(scoreTimer > 0 || myManager.myState != GameState.Attack)
         {
             scoreTimer = scoreTimer - Time.deltaTime;

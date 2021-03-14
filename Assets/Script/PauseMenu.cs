@@ -28,6 +28,7 @@ public class PauseMenu : MonoBehaviour
             {
                 //freezes game if paused
                 Time.timeScale = 0;
+
             }
             else
             {
