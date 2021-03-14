@@ -7,6 +7,7 @@ public class StartMenu : MonoBehaviour {
 
  public string loadLevel;
 
+
 // Start is called before the first frame update
 void Start()
     {
@@ -39,5 +40,11 @@ void Start()
          {
              Application.Quit();
          }
-     } 
+     }
+
+    public void OnDisable()
+    {
+        gameObject.SetActive(false);
+    }
+
 }
