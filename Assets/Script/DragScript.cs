@@ -14,7 +14,7 @@ public class DragScript : MonoBehaviour
     public MeshRenderer homeRenderer;
     public PlayablePiece thisPiece;
     float distance;
-
+    
     void Start()
     {
         thisPiece = gameObject.GetComponent<PlayablePiece>();
@@ -99,7 +99,7 @@ public class DragScript : MonoBehaviour
     
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "Snapbox")
+        if (other.tag == "Snapbox")
         {
             if (homeSpace == null || other.name != homeSpace.name)
             {
