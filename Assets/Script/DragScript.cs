@@ -12,12 +12,12 @@ public class DragScript : MonoBehaviour
     public GameObject homeSpace;
     public GridSquareScript homeScript;
     public MeshRenderer homeRenderer;
-    public PlayablePiece thisPiece;
+    public PlayablePieceV2 thisPiece;
     float distance;
     
     void Start()
     {
-        thisPiece = gameObject.GetComponent<PlayablePiece>();
+        thisPiece = gameObject.GetComponent<PlayablePieceV2>();
     }
     private void OnMouseDown()
     {
@@ -113,11 +113,11 @@ public class DragScript : MonoBehaviour
                     homeScript = homeSpace.GetComponent<GridSquareScript>();
                     homeRenderer = homeSpace.GetComponent<MeshRenderer>();
 
-                    if(homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
+                    if(homeScript.thisSpace == GridSquareScript.SpaceType.battlefield && thisPiece != null)
                     {
                         thisPiece.canMove = true;
                     }
-                    else if(homeScript.thisSpace == GridSquareScript.SpaceType.bench)
+                    else if(homeScript.thisSpace == GridSquareScript.SpaceType.bench && thisPiece != null)
                     {
                         thisPiece.canMove = false;
                     }

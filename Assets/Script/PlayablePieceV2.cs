@@ -9,8 +9,8 @@ public class PlayablePieceV2 : MonoBehaviour
     public int cost;
     public bool goingForward;
     public bool sideStrafe;
-    bool canMoveSideways;
-    bool canMoveForwards;
+    bool canMoveSideways = false;
+    bool canMoveForwards = true;
     public bool canMove;
     public int maxX;
     public int maxZ;
@@ -24,7 +24,8 @@ public class PlayablePieceV2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        myManagerObject = GameObject.Find("GameManager");
+        myManager = myManagerObject.GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -88,13 +89,17 @@ public class PlayablePieceV2 : MonoBehaviour
     }
         public void OnTriggerEnter(Collider col)
         {
-            if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
-            {
-                col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
-            }
-            else if ((gameObject.tag == "EnemyPiece" && col.gameObject.tag == "PlayerPiece"))
-            {
-                col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
-            }
+        if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
+        {
+            col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
+        }
+        else if ((gameObject.tag == "EnemyPiece" && col.gameObject.tag == "PlayerPiece"))
+        {
+            col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
+        }
+        else
+        {
+            return;
+        }
         }
     }
