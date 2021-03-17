@@ -771,41 +771,18 @@ MonoBehaviour:
   - {fileID: 3253820982306286018}
   - {fileID: 3253820982681593811}
   piecesPic:
-  - {fileID: 21300000, guid: a82b89d2d711f47408f777332c1eb30d, type: 3}
-  - {fileID: 21300000, guid: 87e065c7b28c8a04cbf04c0f621c160a, type: 3}
-  - {fileID: 21300000, guid: f09393ad73c74204db4257a30a738097, type: 3}
-  - {fileID: 21300000, guid: ad01f823557ab2741944583d20229a3b, type: 3}
-  - {fileID: 21300000, guid: f9f2e6096b1e1e14fb76d74303e70320, type: 3}
-  - {fileID: 21300000, guid: d8c8ea503b6a2a44bab1d3c200e62e93, type: 3}
-  - {fileID: 21300000, guid: 9fe2aa46a898216469db290605e987b7, type: 3}
-  - {fileID: 21300000, guid: d5a31669a767c154a9c1593396817da7, type: 3}
-  - {fileID: 21300000, guid: a21c14d059497c34d91a3a4170f0fd70, type: 3}
-  - {fileID: 21300000, guid: 0c6443c9a059011438551ad9d2357189, type: 3}
-  - {fileID: 21300000, guid: 459acc1c956fa3048a0cf659682e1a96, type: 3}
-  - {fileID: 21300000, guid: e0dea67553e0b2a468fe9ab235c921aa, type: 3}
-  - {fileID: 21300000, guid: b8eec6c8f93ac3040b2991abcbc641c5, type: 3}
-  - {fileID: 21300000, guid: 6e918ed96adf16c4bb3a632bf805506c, type: 3}
-  - {fileID: 21300000, guid: 087d7a1fe0c044742a33383612f2e42f, type: 3}
+  - {fileID: 21300000, guid: fd5e8b23647920a4c917e35f9c79b5a5, type: 3}
+  - {fileID: 21300000, guid: bbf7dc6a74c83dd44857256cee4a6def, type: 3}
+  - {fileID: 21300000, guid: 92f80830bbab4cf4d929e78eca2c6b80, type: 3}
   pieces:
-  - {fileID: 2344459608175888341, guid: f4da37e3579aa794ca5ce380319ccc93, type: 3}
-  - {fileID: 7250533191543977526, guid: a2d40ac2d2e63504e9fcfb78b5459af1, type: 3}
-  - {fileID: 5412233354676430614, guid: b67ac687e7456a64ea524c28c8b9e0df, type: 3}
-  - {fileID: 1824064252397945354, guid: 68543ebd3bcfaff419d2df269d8e658b, type: 3}
-  - {fileID: 8459689335906772260, guid: f3a8ec72f7978734ca4b5e1d602f7dee, type: 3}
-  - {fileID: 982471391650890265, guid: f981fb8582a971d4fb70959688427ada, type: 3}
-  - {fileID: 4374776697734332108, guid: f4173faae0bfb19429edfff85e56a8fc, type: 3}
-  - {fileID: 9061147378704913819, guid: 131e50f20cbef1d42bddb6b57b3f5e98, type: 3}
-  - {fileID: 1931687215547990029, guid: d523e3b04e346334ca7118b201649440, type: 3}
-  - {fileID: 5902622964648215680, guid: 4b542d49df35fa94ea2c3d239c95ae39, type: 3}
-  - {fileID: 5072906599486706507, guid: 1ed660109857d264da91ee7394de9fa4, type: 3}
-  - {fileID: 5866672611616732068, guid: 0f42d287109a7bd4193618f5838dd238, type: 3}
-  - {fileID: 8918353408750110208, guid: dac99cfe2bf933c4a8bc04503620abcd, type: 3}
-  - {fileID: 1552563541006752394, guid: c202bf27b4526464b9a9a8e11a7da000, type: 3}
-  - {fileID: 1440013426890566739, guid: d77741c6971f4f04dae7db487ece2e69, type: 3}
+  - {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
+  - {fileID: 5259317173998863803, guid: 0e0d320107c47a14a9dad689a56fbcb0, type: 3}
+  - {fileID: 1140006209434903053, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
   spawners:
   - {fileID: 3253820981788190193}
   - {fileID: 3253820982306286017}
   - {fileID: 3253820982681593807}
+  cornerPrices: []
 --- !u!1 &3253820983072862547
 GameObject:
   m_ObjectHideFlags: 0
