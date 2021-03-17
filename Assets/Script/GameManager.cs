@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         timer = setTimer;
         canBuy = false;
         UI.SetActive(false);
-        if (turnNum == 0 || turnNum == 1)
+        /*if (turnNum == 0 || turnNum == 1)
         {
             int chooseRand = Random.Range(0, 3);
             if (chooseRand == 0)
@@ -220,7 +220,9 @@ public class GameManager : MonoBehaviour
         {
             DeployEnemyPieces();
             SpawnEnemyPieces();
-        }
+        }*/
+        DeployEnemyPieces();
+        SpawnEnemyPieces();
         GameObject[] playersObj = GameObject.FindGameObjectsWithTag("PlayerPiece");
         GameObject[] enemyObj = GameObject.FindGameObjectsWithTag("EnemyPiece");
         int numberNeeded = playersObj.Length - enemyObj.Length;
