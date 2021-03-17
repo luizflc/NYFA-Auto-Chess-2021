@@ -126,6 +126,7 @@ public class GameManager : MonoBehaviour
                 TryGoalAdd(newPlayable.shape.objective, 0);
                 TryGoalAdd(newPlayable.color.objective, 0);
                 newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+                newPiece.AddComponent<GetTargeted>();
                 if (newPlayable.shape.name == "Pyramid")
                 {
                     GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
@@ -158,6 +159,7 @@ public class GameManager : MonoBehaviour
                 TryGoalAdd(newPlayable.shape.objective, 1);
                 TryGoalAdd(newPlayable.color.objective, 1);
                 newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+                newPiece.AddComponent<GetTargeted>();
                 if (newPlayable.shape.name == "Pyramid")
                 {
                     GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
@@ -190,6 +192,7 @@ public class GameManager : MonoBehaviour
                 TryGoalAdd(newPlayable.shape.objective, 1);
                 TryGoalAdd(newPlayable.color.objective, 1);
                 newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+                newPiece.AddComponent<GetTargeted>();
                 if (newPlayable.shape.name == "Pyramid")
                 {
                     GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
@@ -269,6 +272,7 @@ public class GameManager : MonoBehaviour
             TryGoalAdd(newPlayable.shape.objective, 1);
             TryGoalAdd(newPlayable.color.objective, 1);
             newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
+            newPiece.AddComponent<GetTargeted>();
             if(newPlayable.shape.name == "Pyramid")
             {
                 GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);

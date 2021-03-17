@@ -50,6 +50,7 @@ public class SpawnPiece : MonoBehaviour
             PlayablePiece spawnPlayable = newPiece.GetComponent<PlayablePiece>();
             myManager.TryGoalAdd(spawnPlayable.color.objective, 1);
             myManager.TryGoalAdd(spawnPlayable.shape.objective, 1);
+            newPiece.AddComponent<ClickToTarget>();
             newPiece.GetComponent<PieceDeathScript>().afterlife = spawnLocation;
             if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
             {
