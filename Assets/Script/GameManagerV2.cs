@@ -10,6 +10,7 @@ public class GameManagerV2 : MonoBehaviour
     public int roundNum;
     public float timerStart;
     float timer;
+    public int score;
     //public Text timerText;
     // Start is called before the first frame update
     void Start()
@@ -53,7 +54,7 @@ public class GameManagerV2 : MonoBehaviour
 
     public void EndRound()
     {
-        GameObject[] playersPieces = GameObject.FindGameObjectsWithTag("PlayerPieces");
+        GameObject[] playersPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
         for(int i = 0; i < playersPieces.Length; i++)
         {
             Destroy(playersPieces[i]);
