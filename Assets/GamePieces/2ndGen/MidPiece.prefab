@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5259317173999194607}
   - component: {fileID: 5259317173999969421}
   - component: {fileID: 5259317174000945757}
+  - component: {fileID: 1024230039658026367}
+  - component: {fileID: 1090310521019964129}
   m_Layer: 0
   m_Name: MidPiece
   m_TagString: Untagged
@@ -89,6 +91,50 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1024230039658026367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259317173998863803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0dfb75f73d84643a847294bf17f1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  health: 0
+  cost: 0
+  goingForward: 0
+  sideStrafe: 0
+  canMove: 0
+  maxX: 0
+  maxZ: 0
+  minX: 0
+  minZ: 0
+  speed: 0
+  myManagerObject: {fileID: 0}
+  myManager: {fileID: 0}
+  MyPause: {fileID: 0}
+--- !u!114 &1090310521019964129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259317173998863803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a1bc0b884eefb41ab152c46f0455d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inBattle: 0
+  dragging: 0
+  homeSpace: {fileID: 0}
+  homeScript: {fileID: 0}
+  homeRenderer: {fileID: 0}
+  thisPiece: {fileID: 0}
 --- !u!1 &5259317173998920657
 GameObject:
   m_ObjectHideFlags: 0

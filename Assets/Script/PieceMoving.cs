@@ -9,6 +9,11 @@ public class PieceMoving : MonoBehaviour
     public int maxZ;
     public int minX;
     public int minZ;
+    public bool canMove;
+    public bool goingForward;
+    public bool sideStrafe;
+    bool canMoveSideways;
+    bool canMoveForwards;
     public float timerStart;
     float timer;
     public PieceType type;
@@ -19,13 +24,13 @@ public class PieceMoving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = timerStart;   
+        timer = timerStart;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timer > 0)
+        if (timer > 0)
         {
             timer -= Time.deltaTime * speed;
         }
@@ -37,183 +42,236 @@ public class PieceMoving : MonoBehaviour
     }
     public void Move()
     {
-        /*int moveDirection = Random.Range(0, 4);
-        if(gameObject.transform.position.x >= maxX)
+        if (canMove == true)
         {
-            moveDirection = 2;
-        }
-        else if(gameObject.transform.position.x <= minX)
-        {
-            moveDirection = 0;
-        }
-        else if (gameObject.transform.position.z >= maxZ)
-        {
-            moveDirection = 1;
-        }
-        else if (gameObject.transform.position.z <= minZ)
-        {
-            moveDirection = 3;
-        }
-        else
-        {
-            moveDirection = moveDirection;
-        }
-        if(moveDirection == 0)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x + 5, gameObject.transform.position.y, gameObject.transform.position.z);
-        }
-        else if(moveDirection == 1)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 5);
-        }
-        else if (moveDirection == 2)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x - 5, gameObject.transform.position.y, gameObject.transform.position.z);
-        }
-        else if (moveDirection == 3)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 5);
-        }
-        else
-        {
-            gameObject.transform.position = gameObject.transform.position;
-        }*/
-       /*if (gameObject.transform.position.x <= minX)
-        {
-            moveForward = true;
-            moveBackward = false;
-            moveLeft = false;
-            moveRight = false;
-        }
-        else if (gameObject.transform.position.x >= maxX)
-        {
-            moveForward = false;
-            moveBackward = true;
-            moveLeft = false;
-            moveRight = false;
-        }
-        else if (gameObject.transform.position.z <= minZ)
-        {
-            moveForward = false;
-            moveBackward = false;
-            moveLeft = false;
-            moveRight = true;
-        }
-        else if (gameObject.transform.position.z >= maxZ)
-        {
-            moveForward = false;
-            moveBackward = false;
-            moveLeft = true;
-            moveRight = false;
-        }
-        else
-        {
-            moveForward = false;
-            moveBackward = false;
-            moveLeft = false;
-            moveRight = false;
-        }*/
-        if(moveForward == true)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x + 5, gameObject.transform.position.y, gameObject.transform.position.z);
-        }
-        else if(moveLeft == true)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 5);
-        }
-        else if (moveBackward == true)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x - 5, gameObject.transform.position.y, gameObject.transform.position.z);
-        }
-        else if (moveRight == true)
-        {
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 5);
-        }
-        if (type == PieceType.bike)
-        {
-            moveForward = moveForward;
-            moveBackward = moveBackward;
-            moveRight = moveRight;
-            moveLeft = moveLeft;
-           if(gameObject.transform.position.x >= maxX)
+            if (canMoveForwards == true)
             {
-                moveRight = false;
-                moveLeft = true;
+                if (goingForward == true)
+                {
+                    if (gameObject.transform.position.x <= maxX)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x + speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                    }
+                    else
+                    {
+                        goingForward = false;
+                    }
+                }
+                if (goingForward == false)
+                {
+                    if (gameObject.transform.position.x >= minX)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x - speed, gameObject.transform.position.y, gameObject.transform.position.z);
+                    }
+                    else
+                    {
+                        goingForward = true;
+                    }
+                }
             }
-           if(gameObject.transform.position.z <= minZ)
+            if (canMoveSideways == true)
             {
-                moveForward = false;
-                moveBackward = true;
-               
+                if (sideStrafe == true)
+                {
+                    if (gameObject.transform.position.z <= maxZ)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + speed);
+                    }
+                    else
+                    {
+                        sideStrafe = false;
+                    }
+                }
+                if (sideStrafe == false)
+                {
+                    if (gameObject.transform.position.z >= minZ)
+                    {
+                        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - speed);
+                    }
+                    else
+                    {
+                        sideStrafe = true;
+                    }
+                }
             }
-           if(gameObject.transform.position.x <= minX)
+            /*int moveDirection = Random.Range(0, 4);
+            if(gameObject.transform.position.x >= maxX)
             {
-                moveLeft = false;
-                moveRight = true;
-               
+                moveDirection = 2;
             }
-           if(gameObject.transform.position.z >= maxZ)
+            else if(gameObject.transform.position.x <= minX)
             {
-                moveBackward = false;
-                moveForward = true;
-               
+                moveDirection = 0;
             }
-            if ((moveForward == false) && (moveBackward == false) && (moveLeft = false) && (moveRight == false))
+            else if (gameObject.transform.position.z >= maxZ)
             {
-                moveForward = true;
-                moveBackward = false;
-                moveLeft = false;
-                moveRight = false;
+                moveDirection = 1;
             }
-        }
-        if(type == PieceType.spider)
-        {
-            moveForward = moveForward;
-            moveBackward = moveBackward;
-            moveRight = moveRight;
-            moveLeft = moveLeft;
-            if ((gameObject.transform.position.x >= maxX) && (gameObject.transform.position.z >= maxZ))
+            else if (gameObject.transform.position.z <= minZ)
             {
-                moveBackward = true;
-                moveLeft = true;
-                moveRight = false;
-                moveForward = false;
+                moveDirection = 3;
             }
-            else if ((gameObject.transform.position.x >= maxX) && (gameObject.transform.position.z <= minZ))
+            else
             {
-                moveBackward = true;
-                moveLeft = false;
-                moveRight = true;
-                moveForward = false;
+                moveDirection = moveDirection;
             }
-            else if ((gameObject.transform.position.x <= minX) && (gameObject.transform.position.z <= minZ))
+            if(moveDirection == 0)
             {
-                moveBackward = false;
-                moveLeft = false;
-                moveRight = true;
-                moveForward = true;
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x + 5, gameObject.transform.position.y, gameObject.transform.position.z);
             }
-            else if ((gameObject.transform.position.x <= minX) && (gameObject.transform.position.z >= maxZ))
+            else if(moveDirection == 1)
             {
-                moveBackward = false;
-                moveLeft = true;
-                moveRight = false;
-                moveForward = true;
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 5);
             }
-            if ((moveForward == false) && (moveBackward == false) && (moveLeft = false) && (moveRight == false))
+            else if (moveDirection == 2)
             {
-                moveForward = true;
-                moveBackward = false;
-                moveLeft = false;
-                moveRight = true;
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x - 5, gameObject.transform.position.y, gameObject.transform.position.z);
+            }
+            else if (moveDirection == 3)
+            {
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 5);
+            }
+            else
+            {
+                gameObject.transform.position = gameObject.transform.position;
+            }*/
+            /*if (gameObject.transform.position.x <= minX)
+             {
+                 moveForward = true;
+                 moveBackward = false;
+                 moveLeft = false;
+                 moveRight = false;
+             }
+             else if (gameObject.transform.position.x >= maxX)
+             {
+                 moveForward = false;
+                 moveBackward = true;
+                 moveLeft = false;
+                 moveRight = false;
+             }
+             else if (gameObject.transform.position.z <= minZ)
+             {
+                 moveForward = false;
+                 moveBackward = false;
+                 moveLeft = false;
+                 moveRight = true;
+             }
+             else if (gameObject.transform.position.z >= maxZ)
+             {
+                 moveForward = false;
+                 moveBackward = false;
+                 moveLeft = true;
+                 moveRight = false;
+             }
+             else
+             {
+                 moveForward = false;
+                 moveBackward = false;
+                 moveLeft = false;
+                 moveRight = false;
+             }*/
+            if (moveForward == true)
+            {
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x + 5, gameObject.transform.position.y, gameObject.transform.position.z);
+            }
+            else if (moveLeft == true)
+            {
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z - 5);
+            }
+            else if (moveBackward == true)
+            {
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x - 5, gameObject.transform.position.y, gameObject.transform.position.z);
+            }
+            else if (moveRight == true)
+            {
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 5);
+            }
+            if (type == PieceType.bike)
+            {
+                moveForward = moveForward;
+                moveBackward = moveBackward;
+                moveRight = moveRight;
+                moveLeft = moveLeft;
+                if (gameObject.transform.position.x >= maxX)
+                {
+                    moveRight = false;
+                    moveLeft = true;
+                }
+                if (gameObject.transform.position.z <= minZ)
+                {
+                    moveForward = false;
+                    moveBackward = true;
+
+                }
+                if (gameObject.transform.position.x <= minX)
+                {
+                    moveLeft = false;
+                    moveRight = true;
+
+                }
+                if (gameObject.transform.position.z >= maxZ)
+                {
+                    moveBackward = false;
+                    moveForward = true;
+
+                }
+                if ((moveForward == false) && (moveBackward == false) && (moveLeft = false) && (moveRight == false))
+                {
+                    moveForward = true;
+                    moveBackward = false;
+                    moveLeft = false;
+                    moveRight = false;
+                }
+            }
+            if (type == PieceType.spider)
+            {
+                moveForward = moveForward;
+                moveBackward = moveBackward;
+                moveRight = moveRight;
+                moveLeft = moveLeft;
+                if ((gameObject.transform.position.x >= maxX) && (gameObject.transform.position.z >= maxZ))
+                {
+                    moveBackward = true;
+                    moveLeft = true;
+                    moveRight = false;
+                    moveForward = false;
+                }
+                else if ((gameObject.transform.position.x >= maxX) && (gameObject.transform.position.z <= minZ))
+                {
+                    moveBackward = true;
+                    moveLeft = false;
+                    moveRight = true;
+                    moveForward = false;
+                }
+                else if ((gameObject.transform.position.x <= minX) && (gameObject.transform.position.z <= minZ))
+                {
+                    moveBackward = false;
+                    moveLeft = false;
+                    moveRight = true;
+                    moveForward = true;
+                }
+                else if ((gameObject.transform.position.x <= minX) && (gameObject.transform.position.z >= maxZ))
+                {
+                    moveBackward = false;
+                    moveLeft = true;
+                    moveRight = false;
+                    moveForward = true;
+                }
+                if ((moveForward == false) && (moveBackward == false) && (moveLeft = false) && (moveRight == false))
+                {
+                    moveForward = true;
+                    moveBackward = false;
+                    moveLeft = false;
+                    moveRight = true;
+                }
             }
         }
     }
-}
 
-public enum PieceType
-{
-    bike,
-    tank,
-    spider
+    public enum PieceType
+    {
+        bike,
+        tank,
+        spider
+    }
 }
