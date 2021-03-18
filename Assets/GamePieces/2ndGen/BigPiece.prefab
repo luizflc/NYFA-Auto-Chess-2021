@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6766117352166746299}
   - component: {fileID: 6722597118259998029}
   - component: {fileID: 7824526669841472947}
+  - component: {fileID: 1139355291194771146}
   m_Layer: 0
   m_Name: BigPiece
   m_TagString: PlayerPiece
@@ -224,6 +225,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.154021, y: 4.689261, z: 1.5458441}
   m_Center: {x: 0, y: 0, z: 0.77292204}
+--- !u!114 &1139355291194771146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493749721896383751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ba9ce34780ea64b83f52317ad64610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayable: {fileID: 0}
+  afterlife: {x: 0, y: 0, z: 17.82}
+  Graveyard: {fileID: 0}
+  disabling: 0
+  myManagerObject: {fileID: 0}
+  myDragScript: {fileID: 0}
+  myManager: {fileID: 0}
+  myNeutral: {fileID: 0}
+  inNeutralArea: 0
 --- !u!1 &5493749721896561277
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class PieceDeathScript : MonoBehaviour
 {
     //Author: Luke Sapir
 
-    public PlayablePiece myPlayable;
+    public PlayablePieceV2 myPlayable;
     bool dead;
     public Vector3 afterlife;
     public GameObject Graveyard;
@@ -18,7 +18,7 @@ public class PieceDeathScript : MonoBehaviour
     public bool inNeutralArea = false;
     void Start()
     {
-         myPlayable = gameObject.GetComponent<PlayablePiece>();
+         myPlayable = gameObject.GetComponent<PlayablePieceV2>();
          myNeutral = GameObject.Find("Neutral Ground").GetComponent<NeutralArea>();
          dead = false;
          myManagerObject = GameObject.Find("GameManager");
@@ -52,12 +52,13 @@ public class PieceDeathScript : MonoBehaviour
             {
                 myNeutral.ForcedEnemyExit();
             }
+            /*
             if(myPlayable.color.name == "Purple")
             {
                 print("purpledeathbonus");
                 myManager.playerScore += 2;
             }
-            
+            */
         }
         else if (gameObject.tag == "PlayerPiece") 
             {
@@ -66,18 +67,19 @@ public class PieceDeathScript : MonoBehaviour
             {
                 myNeutral.ForcedPlayerExit();
             }
+            /*
             if(myPlayable.color.name == "Purple")
             {
                 print("purpledeathbonusEnemy");
                 myManager.playerScore += 2;
             }
-
+            */
             } 
 
         transform.position = afterlife;
         myPlayable.canMove = false;
         inNeutralArea = false;
-        myPlayable.health = myPlayable.shape.health;
+        myPlayable.health += 1;
         if(disabling)
         {
             gameObject.SetActive(false);

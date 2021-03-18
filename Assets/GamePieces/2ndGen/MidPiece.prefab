@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1090310521019964129}
   - component: {fileID: 370754822431462173}
   - component: {fileID: 3350138804742303791}
+  - component: {fileID: 5928720717463674683}
+  - component: {fileID: 5253901005397134154}
   m_Layer: 0
   m_Name: MidPiece
   m_TagString: PlayerPiece
@@ -166,6 +168,48 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.7217655, y: 7.151766, z: 3.782457}
   m_Center: {x: -0.08899498, y: -0.14592457, z: 1.5324639}
+--- !u!114 &5928720717463674683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259317173998863803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ba9ce34780ea64b83f52317ad64610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayable: {fileID: 0}
+  afterlife: {x: 0, y: 0, z: 0}
+  Graveyard: {fileID: 0}
+  disabling: 0
+  myManagerObject: {fileID: 0}
+  myDragScript: {fileID: 0}
+  myManager: {fileID: 0}
+  myNeutral: {fileID: 0}
+  inNeutralArea: 0
+--- !u!114 &5253901005397134154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259317173998863803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ba9ce34780ea64b83f52317ad64610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayable: {fileID: 0}
+  afterlife: {x: 0, y: 0, z: -17.82}
+  Graveyard: {fileID: 0}
+  disabling: 0
+  myManagerObject: {fileID: 0}
+  myDragScript: {fileID: 0}
+  myManager: {fileID: 0}
+  myNeutral: {fileID: 0}
+  inNeutralArea: 0
 --- !u!1 &5259317173998920657
 GameObject:
   m_ObjectHideFlags: 0

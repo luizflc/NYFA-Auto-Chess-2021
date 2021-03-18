@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 2466497692276541298}
   - component: {fileID: 3631489646466089688}
   - component: {fileID: 4215527683054419944}
+  - component: {fileID: 4520620666717366388}
   m_Layer: 0
   m_Name: SmallPiece
   m_TagString: PlayerPiece
@@ -486,3 +487,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4520620666717366388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140006209434903053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ba9ce34780ea64b83f52317ad64610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayable: {fileID: 0}
+  afterlife: {x: 0, y: 0, z: 17.82}
+  Graveyard: {fileID: 0}
+  disabling: 0
+  myManagerObject: {fileID: 0}
+  myDragScript: {fileID: 0}
+  myManager: {fileID: 0}
+  myNeutral: {fileID: 0}
+  inNeutralArea: 0
