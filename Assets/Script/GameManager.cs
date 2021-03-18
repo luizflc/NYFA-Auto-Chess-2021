@@ -267,7 +267,7 @@ public class GameManager : MonoBehaviour
         //{
             int pieceNum = Random.Range(0, storeFront.pieces.Length);
             GameObject newPiece = Instantiate(storeFront.pieces[pieceNum], new Vector3(Random.Range(21,25), 1, Random.Range(0,26)), Quaternion.identity);
-            PlayablePiece newPlayable = ne  wPiece.GetComponent<PlayablePiece>();
+            PlayablePiece newPlayable = newPiece.GetComponent<PlayablePiece>();
 
             newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
             newPiece.tag = "EnemyPiece";
