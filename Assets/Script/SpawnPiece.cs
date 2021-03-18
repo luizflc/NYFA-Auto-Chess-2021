@@ -32,7 +32,7 @@ public class SpawnPiece : MonoBehaviour
 
     public void Spawn()
     {
-        if(Economy.instance.p1Corners >= pieces[currPiece].GetComponent<PlayablePiece>().shape.cost){
+       //if(Economy.instance.p1Corners >= pieces[currPiece].GetComponent<PlayablePiece>().shape.cost){
             GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
             if (playerPieces.Length < benchLocations.Length)
             {
@@ -43,16 +43,16 @@ public class SpawnPiece : MonoBehaviour
                 spawnLocation = benchLocations[0];
             }
             GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
-            print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
-            Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
+            //print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
+            //Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
             newPiece.tag = "PlayerPiece";
             newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
-            PlayablePiece spawnPlayable = newPiece.GetComponent<PlayablePiece>();
-            myManager.TryGoalAdd(spawnPlayable.color.objective, 1);
-            myManager.TryGoalAdd(spawnPlayable.shape.objective, 1);
+            //PlayablePiece spawnPlayable = newPiece.GetComponent<PlayablePiece>();
+            //myManager.TryGoalAdd(spawnPlayable.color.objective, 1);
+            //myManager.TryGoalAdd(spawnPlayable.shape.objective, 1);
             newPiece.AddComponent<ClickToTarget>();
             newPiece.GetComponent<PieceDeathScript>().afterlife = spawnLocation;
-            if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
+            /*if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
             {
                 GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
                 hat.transform.parent = newPiece.transform;
@@ -72,13 +72,13 @@ public class SpawnPiece : MonoBehaviour
                 hat.transform.parent = newPiece.transform;
                 hat.transform.localPosition = new Vector3(0, .5f, 0);
                 hat.transform.localScale = new Vector3(.2f, .2f, .2f);
-            }
+            }*/
             SynergyBonuses.instance.UpdateSynergies();
             gameObject.transform.parent.GetComponent<PieceSelector>().Refresh();
-        }
-        else
-        {
-            gameObject.SetActive(false);
-        }
+        //}
+        //else
+        //{
+          //  gameObject.SetActive(false);
+        //}
     }
 }
