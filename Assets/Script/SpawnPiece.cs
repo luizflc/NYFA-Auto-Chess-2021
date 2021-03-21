@@ -74,7 +74,7 @@ public class SpawnPiece : MonoBehaviour
                 hat.transform.localScale = new Vector3(.2f, .2f, .2f);
             }*/
             SynergyBonuses.instance.UpdateSynergies();
-            gameObject.transform.parent.GetComponent<PieceSelector>().Refresh();
+            //gameObject.transform.parent.GetComponent<PieceSelector>().Refresh();
         //}
         //else
         //{
