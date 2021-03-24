@@ -15,6 +15,7 @@ public class PieceDeathScript : MonoBehaviour
     public DragScript myDragScript;
     public GameManager myManager;
     public NeutralArea myNeutral;
+    public GameObject myExplosion;
     public bool inNeutralArea = false;
     void Start()
     {
@@ -80,6 +81,7 @@ public class PieceDeathScript : MonoBehaviour
         myPlayable.canMove = false;
         inNeutralArea = false;
         myPlayable.health += 1;
+        GameObject.Instantiate(myExplosion);
         if(disabling)
         {
             gameObject.SetActive(false);

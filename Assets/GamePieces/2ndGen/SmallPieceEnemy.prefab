@@ -265,6 +265,7 @@ MonoBehaviour:
   myDragScript: {fileID: 0}
   myManager: {fileID: 0}
   myNeutral: {fileID: 0}
+  myExplosion: {fileID: 1464421840011120619, guid: 81036dbc2af8aec4ba4b469675eae481, type: 3}
   inNeutralArea: 0
 --- !u!1 &6356886384931156894
 GameObject:
