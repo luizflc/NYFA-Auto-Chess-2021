@@ -252,7 +252,7 @@ public class GameManager : MonoBehaviour
 
             UI.SetActive(true);
             //state = GameState.PlayerBuy;
-            storeFront.Refresh();
+            //storeFront.Refresh();
         }
         else
         {

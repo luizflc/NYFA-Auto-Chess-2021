@@ -19,12 +19,12 @@ public class PieceSelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) {
+        /*if (Input.GetKeyDown(KeyCode.R)) {
             Refresh();
-        } 
+        } */
     }
 
-    public void Refresh()
+    /*public void Refresh()
     {
         int pieceNum;
         for(int i = 0; i < pieceButtons.Length; i++)
@@ -35,7 +35,7 @@ public class PieceSelector : MonoBehaviour
             spawners[i].currPiece = pieceNum;
             //cornerPrices[i].text = "Corners: " + pieces[pieceNum].GetComponent<PlayablePiece>().shape.cost.ToString();
         }
-    }
+    }*/
 
     public void HideStore()
     {
