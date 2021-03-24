@@ -185,6 +185,8 @@ MonoBehaviour:
   cost: 0
   goingForward: 0
   sideStrafe: 0
+  canMoveSideways: 0
+  canMoveForwards: 1
   canMove: 0
   maxX: 0
   maxZ: 0

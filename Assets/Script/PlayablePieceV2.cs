@@ -9,8 +9,8 @@ public class PlayablePieceV2 : MonoBehaviour
     public int cost;
     public bool goingForward;
     public bool sideStrafe;
-    bool canMoveSideways = false;
-    bool canMoveForwards = true;
+    public bool canMoveSideways;
+    public bool canMoveForwards;
     public bool canMove;
     public int maxX;
     public int maxZ;

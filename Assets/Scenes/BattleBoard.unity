@@ -6268,6 +6268,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1024230039658026367, guid: 0e0d320107c47a14a9dad689a56fbcb0, type: 3}
+      propertyPath: canMoveForwards
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024230039658026367, guid: 0e0d320107c47a14a9dad689a56fbcb0, type: 3}
+      propertyPath: canMoveSideways
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5253901005397134154, guid: 0e0d320107c47a14a9dad689a56fbcb0, type: 3}
       propertyPath: afterlife.y
       value: 25
@@ -8487,11 +8495,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6766117352166746299, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
       propertyPath: goingForward
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6766117352166746299, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
       propertyPath: sideStrafe
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6766117352166746299, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
       propertyPath: MyPause
@@ -8721,6 +8729,14 @@ PrefabInstance:
     - target: {fileID: 2248901052851025245, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
       propertyPath: speed
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248901052851025245, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
+      propertyPath: canMoveForwards
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248901052851025245, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
+      propertyPath: canMoveSideways
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4520620666717366388, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
       propertyPath: afterlife.y
