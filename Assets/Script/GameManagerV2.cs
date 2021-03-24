@@ -55,10 +55,10 @@ public class GameManagerV2 : MonoBehaviour
     public void EndRound()
     {
         GameObject[] playersPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
-        for(int i = 0; i < playersPieces.Length; i++)
+        /*for(int i = 0; i < playersPieces.Length; i++)
         {
             Destroy(playersPieces[i]);
-        }
+        }*/
         roundNum += 1;
     }
 }

@@ -6789,6 +6789,10 @@ PrefabInstance:
       propertyPath: pieces.Array.data[2]
       value: 
       objectReference: {fileID: 1140006209434903053, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
+    - target: {fileID: 3253820981788190193, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: piece
+      value: 
+      objectReference: {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
     - target: {fileID: 3253820981914837522, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_SizeDelta.x
       value: 150
@@ -7009,6 +7013,10 @@ PrefabInstance:
       propertyPath: pieces.Array.data[2]
       value: 
       objectReference: {fileID: 1140006209434903053, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
+    - target: {fileID: 3253820982306286017, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: piece
+      value: 
+      objectReference: {fileID: 5259317173998863803, guid: 0e0d320107c47a14a9dad689a56fbcb0, type: 3}
     - target: {fileID: 3253820982306286078, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7133,6 +7141,10 @@ PrefabInstance:
       propertyPath: pieces.Array.data[2]
       value: 
       objectReference: {fileID: 1140006209434903053, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
+    - target: {fileID: 3253820982681593807, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: piece
+      value: 
+      objectReference: {fileID: 6356886384931101924, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
     - target: {fileID: 3253820982681593808, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7180,7 +7192,7 @@ PrefabInstance:
     - target: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: pieces.Array.data[2]
       value: 
-      objectReference: {fileID: 1140006209434903053, guid: df2c0c79dba84c947b82eafa3f529a18, type: 3}
+      objectReference: {fileID: 6356886384931101924, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
     - target: {fileID: 3253820982826061290, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9639,7 +9651,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256972519}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f743b3fd641bc14eb595113a109a69e, type: 3}
   m_Name: 
@@ -9735,7 +9747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pieces:
-  - {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
+  - {fileID: 9044584644082958031, guid: a88e1dd91c872b64e94fc17577a67b3e, type: 3}
   - {fileID: 9167107426948758524, guid: 68d178df41155a142bfa950097ba5646, type: 3}
   - {fileID: 1140006209434903053, guid: df2c0c79dba84c947b82eafa3f529a18, type: 3}
   startPoints:
@@ -9744,7 +9756,7 @@ MonoBehaviour:
   - {x: 24, y: 1, z: 9}
   - {x: 24, y: 1, z: 4}
   roundNum: 0
-  timerStart: 0
+  timerStart: 15
   score: 0
 --- !u!1 &1272970111
 GameObject:
