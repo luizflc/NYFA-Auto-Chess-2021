@@ -222,7 +222,7 @@ public class GameManager : MonoBehaviour
             SpawnEnemyPieces();
         }*/
         DeployEnemyPieces();
-        SpawnEnemyPieces();
+        //SpawnEnemyPieces();
         GameObject[] playersObj = GameObject.FindGameObjectsWithTag("PlayerPiece");
         GameObject[] enemyObj = GameObject.FindGameObjectsWithTag("EnemyPiece");
         int numberNeeded = playersObj.Length - enemyObj.Length;
@@ -230,13 +230,13 @@ public class GameManager : MonoBehaviour
         {
             numberNeeded *= -1;
         }*/
-        if(numberNeeded > 0)
+        /*if(numberNeeded > 0)
         {
             for(int i = 0; i < numberNeeded; i++)
             {
                 SpawnEnemyPieces();
             }
-        }
+        }*/
         //state = GameState.PlayerAttack;
     }
 
@@ -261,7 +261,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SpawnEnemyPieces()
+    /*public void SpawnEnemyPieces()
     {
         //for (int i = 0; i < turnNum; i++)
         //{
@@ -271,11 +271,11 @@ public class GameManager : MonoBehaviour
 
             newPiece.GetComponent<PieceDeathScript>().afterlife = new Vector3(33, 1, 19.4f);
             newPiece.tag = "EnemyPiece";
-            TryGoalAdd(newPlayable.shape.objective, 1);
-            TryGoalAdd(newPlayable.color.objective, 1);
+            //TryGoalAdd(newPlayable.shape.objective, 1);
+            //TryGoalAdd(newPlayable.color.objective, 1);
             newPiece.name = ("EnemyPiece" + GameObject.FindGameObjectsWithTag("EnemyPiece").Length);
             newPiece.AddComponent<GetTargeted>();
-            if(newPlayable.shape.name == "Pyramid")
+            /*if(newPlayable.shape.name == "Pyramid")
             {
                 GameObject hat = Instantiate(enemyHat, Vector3.zero, Quaternion.identity);
                 hat.transform.parent = newPiece.transform;
@@ -295,9 +295,9 @@ public class GameManager : MonoBehaviour
                 hat.transform.parent = newPiece.transform;
                 hat.transform.localPosition = new Vector3(0, .5f, 0);
                 hat.transform.localScale = new Vector3(.6f, .6f, .6f);
-            }
+            }*/
         //}
-    }
+    //}
 
     public void DeployEnemyPieces()
     {

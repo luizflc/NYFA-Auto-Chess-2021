@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class SpawnPiece : MonoBehaviour
 {
-    public GameObject[] pieces;
+    public GameObject piece;
     public GameObject[] otherButtons;
-    public int currPiece;
+    //public int currPiece;
     public Vector3[] benchLocations;
     public Transform[] benchTransforms;
     public Vector3 spawnLocation;
     public GameObject playerHat;
-    public GameManagerV2 myManager;
+    public GameManager myManager;
     // Start is called before the first frame update
     void Start()
     {
-        myManager = GameObject.Find("GameManager").GetComponent<GameManagerV2>();
+        myManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         for(int i = 0; i < benchLocations.Length; i++)
         {
             benchLocations[i] = benchTransforms[i].position; 
@@ -32,6 +32,7 @@ public class SpawnPiece : MonoBehaviour
 
     public void Spawn()
     {
+        print("Button was pusheded");
        //if(Economy.instance.p1Corners >= pieces[currPiece].GetComponent<PlayablePiece>().shape.cost){
             GameObject[] playerPieces = GameObject.FindGameObjectsWithTag("PlayerPiece");
             if (playerPieces.Length < benchLocations.Length)
@@ -42,7 +43,9 @@ public class SpawnPiece : MonoBehaviour
             {
                 spawnLocation = benchLocations[0];
             }
-            GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.Euler(-90,90,0));
+            GameObject newPiece = Instantiate(piece, spawnLocation, Quaternion.Euler(-90,90,0));
+        //newPiece.SetActive(false);
+            print("Object should have been instantiated");
             //print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
             //Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
             newPiece.tag = "PlayerPiece";
