@@ -7181,6 +7181,10 @@ PrefabInstance:
       propertyPath: cornerPrices.Array.data[2]
       value: 
       objectReference: {fileID: 1851507122}
+    - target: {fileID: 3253820982826061286, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
+      propertyPath: pieces.Array.data[2]
+      value: 
+      objectReference: {fileID: 6356886384931101924, guid: df2c0c79dba84c947b82eafa3f529a18, type: 3}
     - target: {fileID: 3253820983072862548, guid: 96e604045e6fe1844a4289793c4a8033, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -5

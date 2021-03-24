@@ -777,7 +777,7 @@ MonoBehaviour:
   pieces:
   - {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
   - {fileID: 5259317173998863803, guid: 0e0d320107c47a14a9dad689a56fbcb0, type: 3}
-  - {fileID: 1140006209434903053, guid: d7de98c30e1d38c429d4e70ff8218bf4, type: 3}
+  - {fileID: 6356886384931101924, guid: df2c0c79dba84c947b82eafa3f529a18, type: 3}
   spawners:
   - {fileID: 3253820981788190193}
   - {fileID: 3253820982306286017}
