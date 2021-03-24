@@ -47,7 +47,7 @@ public class GameManagerV2 : MonoBehaviour
             print("Piece num is " + pieceNum);
             int startPos = Random.Range(0, startPoints.Length);
             print("StartPos num is " + startPos);
-            GameObject newEnemyPiece = Instantiate(Pieces[pieceNum], startPoints[startPos], Quaternion.identity);
+            GameObject newEnemyPiece = Instantiate(Pieces[pieceNum], startPoints[startPos], Quaternion.Euler(-90,-90,0));
             newEnemyPiece.tag = "EnemyPiece";
         }
     }

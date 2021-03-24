@@ -42,7 +42,7 @@ public class SpawnPiece : MonoBehaviour
             {
                 spawnLocation = benchLocations[0];
             }
-            GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.identity);
+            GameObject newPiece = Instantiate(pieces[currPiece], spawnLocation, Quaternion.Euler(-90,90,0));
             //print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
             //Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
             newPiece.tag = "PlayerPiece";
