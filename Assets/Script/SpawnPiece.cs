@@ -11,11 +11,11 @@ public class SpawnPiece : MonoBehaviour
     public Transform[] benchTransforms;
     public Vector3 spawnLocation;
     public GameObject playerHat;
-    public GameManager myManager;
+    public GameManagerV2 myManager;
     // Start is called before the first frame update
     void Start()
     {
-        myManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        myManager = GameObject.Find("GameManager").GetComponent<GameManagerV2>();
         for(int i = 0; i < benchLocations.Length; i++)
         {
             benchLocations[i] = benchTransforms[i].position; 
@@ -73,7 +73,7 @@ public class SpawnPiece : MonoBehaviour
                 hat.transform.localPosition = new Vector3(0, .5f, 0);
                 hat.transform.localScale = new Vector3(.2f, .2f, .2f);
             }*/
-            SynergyBonuses.instance.UpdateSynergies();
+            //SynergyBonuses.instance.UpdateSynergies();
             //gameObject.transform.parent.GetComponent<PieceSelector>().Refresh();
         //}
         //else
