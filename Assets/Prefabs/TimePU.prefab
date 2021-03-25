@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1598879478050261956}
   m_Layer: 0
   m_Name: TimePU
-  m_TagString: Untagged
+  m_TagString: timePU
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupEffect: {fileID: 4660360271646773364, guid: b82fadddb1c87054bb781d887efc5a95, type: 3}
-  timeScaleValue: 20
   durationOfEffect: 3
   playerPiece: {fileID: 0}
