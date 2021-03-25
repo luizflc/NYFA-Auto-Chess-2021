@@ -132,6 +132,7 @@ MonoBehaviour:
   canMove: 0
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
+  MyPause: {fileID: 0}
 --- !u!114 &3003043660804497421
 MonoBehaviour:
   m_ObjectHideFlags: 0

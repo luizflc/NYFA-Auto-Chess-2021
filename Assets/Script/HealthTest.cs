@@ -19,12 +19,12 @@ public class HealthTest : MonoBehaviour
 
         if (Input.GetKey("k"))
         {
-            HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() - 0.005f);
+            HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() - 0.0025f);
         }
 
         if (Input.GetKey("h"))
         {
-            HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() + 0.005f);
+            HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() + 0.0025f);
         }
     }
 }
