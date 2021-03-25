@@ -21,6 +21,7 @@ public class PlayablePieceV2 : MonoBehaviour
     public GameManager myManager;
     public PauseMenu MyPause;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,9 +98,15 @@ public class PlayablePieceV2 : MonoBehaviour
         {
             col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
         }
+        //used for time power up
+        else if (col.gameObject.tag == "timePU")
+        {
+            gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
+            
+        }
         else
         {
             return;
         }
         }
-    }
+}

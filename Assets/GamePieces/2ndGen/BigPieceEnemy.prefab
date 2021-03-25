@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -1218627610554491216}
   m_Layer: 0
   m_Name: BigPieceEnemy
-  m_TagString: PlayerPiece
+  m_TagString: EnemyPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
