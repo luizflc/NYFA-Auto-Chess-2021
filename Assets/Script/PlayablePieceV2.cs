@@ -43,7 +43,7 @@ public class PlayablePieceV2 : MonoBehaviour
             {
                 triggered = false;
                 timer = 0f;
-                gameObject.GetComponent<PlayablePieceV2>().speed /= 5;
+                gameObject.GetComponent<PlayablePieceV2>().speed /= 2;
             }
         }
         if (canMove == true)
@@ -118,7 +118,7 @@ public class PlayablePieceV2 : MonoBehaviour
             if (!triggered)
             {
                 triggered = true;
-                gameObject.GetComponent<PlayablePieceV2>().speed *= 5;
+                gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
                 timer = durationOfEffect;
             }
         }
