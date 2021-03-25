@@ -46,6 +46,10 @@ public class SpawnPiece : MonoBehaviour
             GameObject newPiece = Instantiate(piece, spawnLocation, Quaternion.Euler(-90,90,0));
         //newPiece.SetActive(false);
             print("Object should have been instantiated");
+            if(piece.name == "SmallPieceEnemy")
+        {
+            newPiece.transform.position = new Vector3(newPiece.transform.position.x, newPiece.transform.position.y + 3, newPiece.transform.position.z);
+        }
             //print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
             //Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
             newPiece.tag = "PlayerPiece";
