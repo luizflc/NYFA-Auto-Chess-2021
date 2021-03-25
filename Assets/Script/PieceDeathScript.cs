@@ -75,13 +75,13 @@ public class PieceDeathScript : MonoBehaviour
                 myManager.playerScore += 2;
             }
             */
-            } 
-
+            }
+        GameObject.Instantiate(myExplosion, transform.position + Vector3.up, Quaternion.identity);
         transform.position = afterlife;
         myPlayable.canMove = false;
         inNeutralArea = false;
         myPlayable.health += 1;
-        GameObject.Instantiate(myExplosion);
+        
         if(disabling)
         {
             gameObject.SetActive(false);
