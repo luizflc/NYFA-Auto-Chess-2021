@@ -20,6 +20,10 @@ public class PlayablePieceV2 : MonoBehaviour
     public GameObject myManagerObject;
     public GameManager myManager;
     public PauseMenu MyPause;
+    //variables for timePU
+    public float timer;
+    public bool triggered;
+    public float durationOfEffect = 3f;
 
 
     // Start is called before the first frame update
@@ -32,6 +36,16 @@ public class PlayablePieceV2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (triggered)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                triggered = false;
+                timer = 0f;
+                gameObject.GetComponent<PlayablePieceV2>().speed /= 5;
+            }
+        }
         if (canMove == true)
         {
             if (canMoveForwards == true)
@@ -101,8 +115,12 @@ public class PlayablePieceV2 : MonoBehaviour
         //used for time power up
         else if (col.gameObject.tag == "timePU")
         {
-            gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
-            
+            if (!triggered)
+            {
+                triggered = true;
+                gameObject.GetComponent<PlayablePieceV2>().speed *= 5;
+                timer = durationOfEffect;
+            }
         }
         else
         {

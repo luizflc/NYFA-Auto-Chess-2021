@@ -24,6 +24,7 @@ public class timePowerUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (triggered)
         {
             timer -= (Time.deltaTime / Time.timeScale);
@@ -37,13 +38,15 @@ public class timePowerUp : MonoBehaviour
                 //playerPiece.speed = defaultSpeed;
             }
         }
+        */
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("PlayerPiece"))
         {
-            if (!triggered)
+            Destroy(this.gameObject);
+            /*if (!triggered)
             {
                 Instantiate(pickupEffect, transform.position, transform.rotation);
                 triggered = true;
@@ -53,6 +56,7 @@ public class timePowerUp : MonoBehaviour
                 //playerPiece.speed = defaultSpeed * 2;
 
             }
+            */
         }
 
     }
