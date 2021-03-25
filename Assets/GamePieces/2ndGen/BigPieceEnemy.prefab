@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5302400686237026466, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.42261827
+      value: 0.42261827
       objectReference: {fileID: 0}
     - target: {fileID: 5302400686237026466, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_LocalRotation.y
@@ -389,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5302400686237026466, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -50
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5302400686237026466, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -442,6 +442,22 @@ PrefabInstance:
     - target: {fileID: 5302400686237026469, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_Name
       value: Health Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302400686848739998, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302400686848739998, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302400687002456952, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302400687002456952, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
