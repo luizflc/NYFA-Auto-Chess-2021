@@ -109,5 +109,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupEffect: {fileID: 4660360271646773364, guid: b82fadddb1c87054bb781d887efc5a95, type: 3}
-  durationOfEffect: 3
+  durationOfEffect: 6
   playerPiece: {fileID: 0}

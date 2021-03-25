@@ -8,14 +8,14 @@ public class timePowerUp : MonoBehaviour
 
     private bool triggered;
     public float durationOfEffect = 6f;
-    private MeshRenderer thisRenderer;
+    //private MeshRenderer thisRenderer;
     private float timer;
-    public PlayablePiece playerPiece;
+    public GameObject powerUp;
     //public float defaultSpeed;
 
     void Start()
     {
-        thisRenderer = gameObject.GetComponent<MeshRenderer>();
+        //thisRenderer = gameObject.GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -27,8 +27,9 @@ public class timePowerUp : MonoBehaviour
             if (timer <= 0f)
             {
                 triggered = false;
+                powerUp.SetActive(true);
                 timer = 0f;
-                thisRenderer.enabled = true;
+                //thisRenderer.enabled = true;
             }
         }
     }
@@ -40,8 +41,9 @@ public class timePowerUp : MonoBehaviour
             if (!triggered)
             {
                 triggered = true;
+                powerUp.SetActive(false);
                 timer = durationOfEffect;
-                thisRenderer.enabled = false;
+                //thisRenderer.enabled = false;
             }
             
         }
