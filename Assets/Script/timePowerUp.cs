@@ -43,6 +43,7 @@ public class timePowerUp : MonoBehaviour
                 triggered = true;
                 powerUp.SetActive(false);
                 timer = durationOfEffect;
+                Destroy(gameObject);
                 //thisRenderer.enabled = false;
             }
             

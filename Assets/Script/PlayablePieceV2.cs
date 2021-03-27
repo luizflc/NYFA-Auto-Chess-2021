@@ -44,6 +44,7 @@ public class PlayablePieceV2 : MonoBehaviour
                 triggered = false;
                 timer = 0f;
                 gameObject.GetComponent<PlayablePieceV2>().speed /= 2;
+                gameObject.GetComponent<PlayablePieceV2>().damage /= 2;
             }
         }
         if (canMove == true)
@@ -113,12 +114,14 @@ public class PlayablePieceV2 : MonoBehaviour
             col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
         }
         //used for time power up
-        else if (col.gameObject.tag == "timePU")
+        else if (col.gameObject.tag == "timePU" && gameObject.tag == "PlayerPiece")
         {
             if (!triggered)
             {
                 triggered = true;
                 gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
+                gameObject.GetComponent<PlayablePieceV2>().damage *= 2;
+
                 timer = durationOfEffect;
             }
         }
