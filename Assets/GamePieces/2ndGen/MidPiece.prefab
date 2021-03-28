@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3350138804742303791}
   - component: {fileID: 5928720717463674683}
   - component: {fileID: 5253901005397134154}
+  - component: {fileID: 8614049738309710559}
   m_Layer: 0
   m_Name: MidPiece
   m_TagString: PlayerPiece
@@ -124,6 +125,9 @@ MonoBehaviour:
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
+  timer: 0
+  triggered: 0
+  durationOfEffect: 3
 --- !u!114 &1090310521019964129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +219,21 @@ MonoBehaviour:
   myNeutral: {fileID: 0}
   myExplosion: {fileID: 0}
   inNeutralArea: 0
+--- !u!114 &8614049738309710559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259317173998863803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0ec10f35978054fa118a8e0a93527e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTarget: 0
+  targetPos: {x: 0, y: 0, z: 0}
+  canTele: 0
 --- !u!1 &5259317173998920657
 GameObject:
   m_ObjectHideFlags: 0

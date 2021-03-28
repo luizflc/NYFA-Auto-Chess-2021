@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6714625286110189179}
   - component: {fileID: 4500965242031623426}
   - component: {fileID: -1218627610554491216}
+  - component: {fileID: 5691413503987111865}
   m_Layer: 0
   m_Name: BigPieceEnemy
   m_TagString: EnemyPiece
@@ -116,6 +117,9 @@ MonoBehaviour:
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
+  timer: 0
+  triggered: 0
+  durationOfEffect: 3
 --- !u!114 &7850372171032372869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +189,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5691413503987111865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044584644082958031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22811c3f62f6b76409aecdb1bb49d831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeTargeted: 0
+  targeter: {fileID: 0}
 --- !u!1 &9044584644082964947
 GameObject:
   m_ObjectHideFlags: 0

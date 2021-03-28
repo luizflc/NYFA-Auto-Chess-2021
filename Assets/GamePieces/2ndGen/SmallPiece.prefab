@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 3631489646466089688}
   - component: {fileID: 4215527683054419944}
   - component: {fileID: 4520620666717366388}
+  - component: {fileID: 8323067323023632773}
   m_Layer: 0
   m_Name: SmallPiece
   m_TagString: EnemyPiece
@@ -443,6 +444,9 @@ MonoBehaviour:
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
+  timer: 0
+  triggered: 0
+  durationOfEffect: 3
 --- !u!114 &2466497692276541298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,6 +516,21 @@ MonoBehaviour:
   myNeutral: {fileID: 0}
   myExplosion: {fileID: 1464421840011120619, guid: 81036dbc2af8aec4ba4b469675eae481, type: 3}
   inNeutralArea: 0
+--- !u!114 &8323067323023632773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140006209434903053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0ec10f35978054fa118a8e0a93527e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTarget: 0
+  targetPos: {x: 0, y: 0, z: 0}
+  canTele: 0
 --- !u!1001 &8859443494967794998
 PrefabInstance:
   m_ObjectHideFlags: 0

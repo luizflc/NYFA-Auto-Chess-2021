@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1854031443506417256}
   - component: {fileID: 7314917461476483452}
   - component: {fileID: 9164079328885208333}
+  - component: {fileID: 2935273085503338145}
   m_Layer: 0
   m_Name: MidPieceEnemy
   m_TagString: EnemyPiece
@@ -124,6 +125,9 @@ MonoBehaviour:
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
+  timer: 0
+  triggered: 0
+  durationOfEffect: 3
 --- !u!114 &4099767818448561318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +219,20 @@ MonoBehaviour:
   myNeutral: {fileID: 0}
   myExplosion: {fileID: 0}
   inNeutralArea: 0
+--- !u!114 &2935273085503338145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167107426948758524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22811c3f62f6b76409aecdb1bb49d831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canBeTargeted: 0
+  targeter: {fileID: 0}
 --- !u!1 &9167107426948814854
 GameObject:
   m_ObjectHideFlags: 0

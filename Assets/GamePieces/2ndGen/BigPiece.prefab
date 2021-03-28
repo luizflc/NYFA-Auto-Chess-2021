@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 7824526669841472947}
   - component: {fileID: 1139355291194771146}
   - component: {fileID: -4847217945087341864}
+  - component: {fileID: 6993582985308741114}
   m_Layer: 0
   m_Name: BigPiece
   m_TagString: PlayerPiece
@@ -198,6 +199,9 @@ MonoBehaviour:
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
+  timer: 0
+  triggered: 0
+  durationOfEffect: 3
 --- !u!114 &6722597118259998029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +271,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6993582985308741114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493749721896383751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0ec10f35978054fa118a8e0a93527e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canTarget: 0
+  targetPos: {x: 0, y: 0, z: 0}
+  canTele: 0
 --- !u!1 &5493749721896561277
 GameObject:
   m_ObjectHideFlags: 0
