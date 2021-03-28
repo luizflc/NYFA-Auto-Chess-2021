@@ -6,21 +6,30 @@ public class spawnPU : MonoBehaviour
 {
     public GameObject[] spawnObjects;
     public GameObject[] spawnLocations;
+
     // Start is called before the first frame update
 
     void Awake()
     {
-        spawnLocations = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        checkSpawns();
     }
     void Start()
     {
-        int spawn = Random.Range(0, spawnLocations.Length);
-        Instantiate(spawnObjects[0], spawnLocations[spawn].transform.position, Quaternion.identity);
+        Respawn();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+    public void Respawn()
+    {
+        int spawn = Random.Range(0, spawnLocations.Length);
+        Instantiate(spawnObjects[0], spawnLocations[spawn].transform.position, Quaternion.identity);
+    }
+    public void checkSpawns()
+    {
+        spawnLocations = GameObject.FindGameObjectsWithTag("SpawnPoint");
     }
 }

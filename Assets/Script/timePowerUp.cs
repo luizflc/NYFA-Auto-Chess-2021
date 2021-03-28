@@ -6,11 +6,14 @@ public class timePowerUp : MonoBehaviour
 {
     public GameObject pickupEffect;
 
+
     private bool triggered;
     public float durationOfEffect = 6f;
     //private MeshRenderer thisRenderer;
     private float timer;
     public GameObject powerUp;
+    GameObject respawner;
+    GameObject checking;
     //public float defaultSpeed;
 
     void Start()
@@ -27,21 +30,21 @@ public class timePowerUp : MonoBehaviour
             if (timer <= 0f)
             {
                 triggered = false;
-                powerUp.SetActive(true);
                 timer = 0f;
+                checking.GetComponent<spawnPU>().checkSpawns();
+                respawner.GetComponent<spawnPU>().Respawn();
                 //thisRenderer.enabled = true;
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("PlayerPiece"))
         {
             if (!triggered)
             {
                 triggered = true;
-                powerUp.SetActive(false);
                 timer = durationOfEffect;
                 Destroy(gameObject);
                 //thisRenderer.enabled = false;
