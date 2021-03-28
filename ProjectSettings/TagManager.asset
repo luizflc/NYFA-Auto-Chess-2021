@@ -11,6 +11,9 @@ TagManager:
   - HelperText
   - GameManager
   - NonSnapBox
+  - timePU
+  - SpawnPoint
+  - Spawner
   layers:
   - Default
   - TransparentFX

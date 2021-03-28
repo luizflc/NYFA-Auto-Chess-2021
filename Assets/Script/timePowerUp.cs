@@ -8,14 +8,17 @@ public class timePowerUp : MonoBehaviour
 
     private bool triggered;
     public float durationOfEffect = 6f;
-    private MeshRenderer thisRenderer;
+    //private MeshRenderer thisRenderer;
     private float timer;
-    public PlayablePiece playerPiece;
+    public GameObject powerUp;
+    //GameObject respawner;
+    //GameObject checking;
     //public float defaultSpeed;
 
     void Start()
     {
-        thisRenderer = gameObject.GetComponent<MeshRenderer>();
+        //thisRenderer = gameObject.GetComponent<MeshRenderer>();
+        //particle = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -28,20 +31,22 @@ public class timePowerUp : MonoBehaviour
             {
                 triggered = false;
                 timer = 0f;
-                thisRenderer.enabled = true;
+                //thisRenderer.enabled = true;
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("PlayerPiece"))
         {
             if (!triggered)
             {
+                Instantiate(pickupEffect, transform.position + Vector3.up, Quaternion.identity);
                 triggered = true;
                 timer = durationOfEffect;
-                thisRenderer.enabled = false;
+                Destroy(gameObject);
+                //thisRenderer.enabled = false;
             }
             
         }
