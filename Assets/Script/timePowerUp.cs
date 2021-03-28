@@ -6,19 +6,19 @@ public class timePowerUp : MonoBehaviour
 {
     public GameObject pickupEffect;
 
-
     private bool triggered;
     public float durationOfEffect = 6f;
     //private MeshRenderer thisRenderer;
     private float timer;
     public GameObject powerUp;
-    GameObject respawner;
-    GameObject checking;
+    //GameObject respawner;
+    //GameObject checking;
     //public float defaultSpeed;
 
     void Start()
     {
         //thisRenderer = gameObject.GetComponent<MeshRenderer>();
+        //particle = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -31,8 +31,6 @@ public class timePowerUp : MonoBehaviour
             {
                 triggered = false;
                 timer = 0f;
-                checking.GetComponent<spawnPU>().checkSpawns();
-                respawner.GetComponent<spawnPU>().Respawn();
                 //thisRenderer.enabled = true;
             }
         }
@@ -44,6 +42,7 @@ public class timePowerUp : MonoBehaviour
         {
             if (!triggered)
             {
+                Instantiate(pickupEffect, transform.position + Vector3.up, Quaternion.identity);
                 triggered = true;
                 timer = durationOfEffect;
                 Destroy(gameObject);

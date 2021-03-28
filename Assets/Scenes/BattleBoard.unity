@@ -18360,6 +18360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spawnPoints
       objectReference: {fileID: 0}
+    - target: {fileID: 6663202989405269884, guid: a9dde09c5cdbe79428aa6c62bd85a9ef, type: 3}
+      propertyPath: m_TagString
+      value: Spawner
+      objectReference: {fileID: 0}
     - target: {fileID: 6663202989405269885, guid: a9dde09c5cdbe79428aa6c62bd85a9ef, type: 3}
       propertyPath: spawnLocations.Array.size
       value: 36
@@ -18508,6 +18512,10 @@ PrefabInstance:
       propertyPath: spawnLocations.Array.data[35]
       value: 
       objectReference: {fileID: 1063684068}
+    - target: {fileID: 6663202989405269885, guid: a9dde09c5cdbe79428aa6c62bd85a9ef, type: 3}
+      propertyPath: timer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6663202989405269886, guid: a9dde09c5cdbe79428aa6c62bd85a9ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.5

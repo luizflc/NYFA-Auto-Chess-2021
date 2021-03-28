@@ -13,6 +13,7 @@ TagManager:
   - NonSnapBox
   - timePU
   - SpawnPoint
+  - Spawner
   layers:
   - Default
   - TransparentFX
