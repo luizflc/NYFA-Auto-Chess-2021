@@ -113,7 +113,7 @@ MonoBehaviour:
   maxZ: 25
   minX: 0
   minZ: 0
-  speed: 0.2
+  speed: 0.04
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
