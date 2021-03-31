@@ -34,14 +34,15 @@ public class GameManager : MonoBehaviour
     public System.Random myRandom = new System.Random();
     public static float setTimer = 15f;
     public static int setMaxTurns = 2;
-
+    public GameObject[] buyablePieces;
+    public int buyablePieceNum;
     public GameObject EndGameUI;
    
     //public GameState state;
     // Start is called before the first frame update
     void Start()
     {
-        
+        canBuy = true;
         bonusTexts = new Text[3];
         myBonusGoals = new BonusGoalScript[3];
         for (int i = 0; i < myBonusGoals.Length; i++)
@@ -84,6 +85,10 @@ public class GameManager : MonoBehaviour
 
         myEnemyText.text = "Enemy:" + enemyScore;
         myPlayerText.text = "Player:" + playerScore;
+        if(buyablePieceNum <= 0)
+        {
+            canBuy = false;
+        }
     }
     public void TryGoalAdd(BonusGoalObjective objective, int player)
     {
