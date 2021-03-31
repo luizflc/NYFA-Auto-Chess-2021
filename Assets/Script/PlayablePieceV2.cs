@@ -22,7 +22,8 @@ public class PlayablePieceV2 : MonoBehaviour
     public PauseMenu MyPause;
     //variables for timePU
     public float timer;
-    public bool triggered;
+    public bool fastTriggered;
+    public bool slowTriggered;
     public float durationOfEffect = 3f;
 
 
@@ -36,15 +37,26 @@ public class PlayablePieceV2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (triggered)
+        if (fastTriggered)
         {
             timer -= Time.deltaTime;
             if (timer <= 0f)
             {
-                triggered = false;
+                fastTriggered = false;
                 timer = 0f;
                 gameObject.GetComponent<PlayablePieceV2>().speed /= 2;
                 gameObject.GetComponent<PlayablePieceV2>().damage /= 2;
+            }
+        }
+        else if (slowTriggered)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                slowTriggered = false;
+                timer = 0f;
+                gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
+                gameObject.GetComponent<PlayablePieceV2>().health /= 2;
             }
         }
         if (canMove == true)
@@ -116,11 +128,23 @@ public class PlayablePieceV2 : MonoBehaviour
         //used for time power up
         else if (col.gameObject.tag == "timePU" && gameObject.tag == "PlayerPiece")
         {
-            if (!triggered)
+            if (!fastTriggered)
             {
-                triggered = true;
+                fastTriggered = true;
                 gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
                 gameObject.GetComponent<PlayablePieceV2>().damage *= 2;
+
+                timer = durationOfEffect;
+            }
+        }
+        else if(col.gameObject.tag == "slowPU" && gameObject.tag == "PlayerPiece")
+        {
+            if(!slowTriggered)
+            {
+                slowTriggered = true;
+
+                gameObject.GetComponent<PlayablePieceV2>().speed /= 2;
+                gameObject.GetComponent<PlayablePieceV2>().health *= 2;
 
                 timer = durationOfEffect;
             }
