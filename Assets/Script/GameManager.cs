@@ -221,7 +221,7 @@ public class GameManager : MonoBehaviour
             DeployEnemyPieces();
             SpawnEnemyPieces();
         }*/
-        DeployEnemyPieces();
+       // DeployEnemyPieces();
         //SpawnEnemyPieces();
         GameObject[] playersObj = GameObject.FindGameObjectsWithTag("PlayerPiece");
         GameObject[] enemyObj = GameObject.FindGameObjectsWithTag("EnemyPiece");
@@ -344,7 +344,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        GameObject[] enemyPieces = GameObject.FindGameObjectsWithTag("EnemyPiece");
+       /* GameObject[] enemyPieces = GameObject.FindGameObjectsWithTag("EnemyPiece");
         for (int i = 0; i < enemyPieces.Length; i++)
         {
             if (i < enemyBench.Length)
@@ -355,7 +355,7 @@ public class GameManager : MonoBehaviour
             {
                 Destroy(enemyPieces[i]);
             }
-        }
+        }*/
 
     }
 }

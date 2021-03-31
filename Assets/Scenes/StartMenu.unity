@@ -288,6 +288,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8373432950165806005, guid: 6a19ff4732198dd4191f42fe7fceec4b, type: 3}
+      propertyPath: m_Text
+      value: 'War Games
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a19ff4732198dd4191f42fe7fceec4b, type: 3}
 --- !u!1 &645568422
