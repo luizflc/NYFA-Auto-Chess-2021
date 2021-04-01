@@ -15,6 +15,7 @@ TagManager:
   - SpawnPoint
   - Spawner
   - slowPU
+  - SpawnPointSP
   layers:
   - Default
   - TransparentFX
