@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Author: Christopher Cruz
-public class spawnPU : MonoBehaviour
+public class SpawnSlowPU : MonoBehaviour
 {
     public GameObject[] spawnObjects;
     public GameObject[] spawnLocations;
@@ -24,10 +23,10 @@ public class spawnPU : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!GameObject.FindGameObjectWithTag("timePU"))
+        if (!GameObject.FindGameObjectWithTag("slowPU"))
         {
             timer -= Time.deltaTime;
-            if(timer <= 0)
+            if (timer <= 0)
             {
                 Respawn();
                 timer = 10f;
@@ -42,6 +41,6 @@ public class spawnPU : MonoBehaviour
     }
     public void checkSpawns()
     {
-        spawnLocations = GameObject.FindGameObjectsWithTag("SpawnPoint");
+        spawnLocations = GameObject.FindGameObjectsWithTag("SpawnPointSP");
     }
 }

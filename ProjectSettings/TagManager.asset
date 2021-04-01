@@ -15,6 +15,7 @@ TagManager:
   - SpawnPoint
   - Spawner
   - slowPU
+  - Test
   layers:
   - Default
   - TransparentFX
