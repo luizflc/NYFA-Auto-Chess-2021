@@ -59,6 +59,9 @@ public class SpawnPiece : MonoBehaviour
             //myManager.TryGoalAdd(spawnPlayable.shape.objective, 1);
             newPiece.AddComponent<ClickToTarget>();
             newPiece.GetComponent<PieceDeathScript>().afterlife = spawnLocation;
+            myManager.buyablePieceNum -= 1;
+            myManager.buyablePieces[myManager.buyablePieceNum].SetActive(false);
+        
             /*if (newPiece.GetComponent<PlayablePiece>().shape.name == "Pyramid")
             {
                 GameObject hat = Instantiate(playerHat, Vector3.zero, Quaternion.identity);
