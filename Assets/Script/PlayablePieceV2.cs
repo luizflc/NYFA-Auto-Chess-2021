@@ -22,8 +22,7 @@ public class PlayablePieceV2 : MonoBehaviour
     public PauseMenu MyPause;
     //variables for timePU
     public float timer;
-    public bool fastTriggered;
-    public bool slowTriggered;
+    public bool triggered;
     public float durationOfEffect = 3f;
 
 
@@ -37,26 +36,15 @@ public class PlayablePieceV2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (fastTriggered)
+        if (triggered)
         {
             timer -= Time.deltaTime;
             if (timer <= 0f)
             {
-                fastTriggered = false;
+                triggered = false;
                 timer = 0f;
                 gameObject.GetComponent<PlayablePieceV2>().speed /= 2;
                 gameObject.GetComponent<PlayablePieceV2>().damage /= 2;
-            }
-        }
-        else if (slowTriggered)
-        {
-            timer -= Time.deltaTime;
-            if (timer <= 0f)
-            {
-                slowTriggered = false;
-                timer = 0f;
-                gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
-                gameObject.GetComponent<PlayablePieceV2>().health /= 2;
             }
         }
         if (canMove == true)
@@ -120,6 +108,7 @@ public class PlayablePieceV2 : MonoBehaviour
         if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
         {
             col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
+           
         }
         else if ((gameObject.tag == "EnemyPiece" && col.gameObject.tag == "PlayerPiece"))
         {
@@ -128,23 +117,11 @@ public class PlayablePieceV2 : MonoBehaviour
         //used for time power up
         else if (col.gameObject.tag == "timePU" && gameObject.tag == "PlayerPiece")
         {
-            if (!fastTriggered)
+            if (!triggered)
             {
-                fastTriggered = true;
+                triggered = true;
                 gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
                 gameObject.GetComponent<PlayablePieceV2>().damage *= 2;
-
-                timer = durationOfEffect;
-            }
-        }
-        else if(col.gameObject.tag == "slowPU" && gameObject.tag == "PlayerPiece")
-        {
-            if(!slowTriggered)
-            {
-                slowTriggered = true;
-
-                gameObject.GetComponent<PlayablePieceV2>().speed /= 2;
-                gameObject.GetComponent<PlayablePieceV2>().health *= 2;
 
                 timer = durationOfEffect;
             }

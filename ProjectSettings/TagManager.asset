@@ -14,6 +14,8 @@ TagManager:
   - timePU
   - SpawnPoint
   - Spawner
+  - slowPU
+  - Test
   layers:
   - Default
   - TransparentFX

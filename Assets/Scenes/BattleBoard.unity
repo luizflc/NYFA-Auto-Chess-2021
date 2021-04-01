@@ -18024,7 +18024,7 @@ GameObject:
   - component: {fileID: 2017505844}
   - component: {fileID: 2017505843}
   m_Layer: 5
-  m_Name: Moves Counteer
+  m_Name: Moves Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

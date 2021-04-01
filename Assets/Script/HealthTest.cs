@@ -15,7 +15,8 @@ public class HealthTest : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
         if (Input.GetKey("k"))
         {
