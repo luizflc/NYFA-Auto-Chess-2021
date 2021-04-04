@@ -52,16 +52,16 @@ public class HealthBar : MonoBehaviour
     {
         HealthBarImage = GetComponent<Image>();
         SetHealthBarColor(Color.green);
-        SetHealthBarValue(1);
+       // SetHealthBarValue(1);
     }
 
-    public void OnTriggerEnter(Collider col)
+   /* public void OnTriggerEnter(Collider col)
     {
         if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
         {
-            SetHealthBarValue(0.5f);
+            SetHealthBarValue(GetHealthBarValue() - 0.5f);
 
         }
-    }
+    } */
 }
 

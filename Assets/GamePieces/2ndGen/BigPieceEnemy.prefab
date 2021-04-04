@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &4499346789214314995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5428750503194801012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f01274ed7939444dae20641385c687f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9044584644082958031
 GameObject:
   m_ObjectHideFlags: 0
@@ -17,6 +29,7 @@ GameObject:
   - component: {fileID: 4500965242031623426}
   - component: {fileID: -1218627610554491216}
   - component: {fileID: 5691413503987111865}
+  - component: {fileID: 2366823943505595978}
   m_Layer: 0
   m_Name: BigPieceEnemy
   m_TagString: EnemyPiece
@@ -118,7 +131,8 @@ MonoBehaviour:
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
   timer: 0
-  triggered: 0
+  fastTriggered: 0
+  slowTriggered: 0
   durationOfEffect: 3
 --- !u!114 &7850372171032372869
 MonoBehaviour:
@@ -203,6 +217,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBeTargeted: 0
   targeter: {fileID: 0}
+--- !u!114 &2366823943505595978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044584644082958031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7828d0055bf44439423c2ca93ae7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0.15
 --- !u!1 &9044584644082964947
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,5 +509,10 @@ PrefabInstance:
 --- !u!224 &5428750501888239789 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5302400686237026466, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+  m_PrefabInstance: {fileID: 199040764111986703}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5428750503194801012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5302400687002456955, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
   m_PrefabInstance: {fileID: 199040764111986703}
   m_PrefabAsset: {fileID: 0}

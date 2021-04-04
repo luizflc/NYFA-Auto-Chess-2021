@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 4520620666717366388}
   - component: {fileID: 8323067323023632773}
   - component: {fileID: 8441803303757703102}
+  - component: {fileID: 3888008877393146488}
   m_Layer: 0
   m_Name: SmallPiece
   m_TagString: EnemyPiece
@@ -447,7 +448,8 @@ MonoBehaviour:
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
   timer: 0
-  triggered: 0
+  fastTriggered: 0
+  slowTriggered: 0
   durationOfEffect: 3
 --- !u!114 &2466497692276541298
 MonoBehaviour:
@@ -546,6 +548,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 5915386072524861598}
+--- !u!114 &3888008877393146488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140006209434903053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7828d0055bf44439423c2ca93ae7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
+--- !u!114 &8167843639591461099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3703922344518143565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f01274ed7939444dae20641385c687f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1302859540701889314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -765,5 +792,10 @@ PrefabInstance:
 --- !u!224 &3703922346432746900 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5302400686237026466, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+  m_PrefabInstance: {fileID: 8859443494967794998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3703922344518143565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5302400687002456955, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
   m_PrefabInstance: {fileID: 8859443494967794998}
   m_PrefabAsset: {fileID: 0}
