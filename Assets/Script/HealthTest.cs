@@ -29,9 +29,23 @@ public class HealthTest : MonoBehaviour
         }
     } */
 
+   /* void Update()
+    {
+        if (HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() == 0)
+        {
+
+        }
+    }*/
+
     public void OnTriggerEnter(Collider col)
     {
         if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
+        {
+            HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() - Damage);
+
+        }
+
+        else if ((gameObject.tag == "EnemyPiece" && col.gameObject.tag == "PlayerPiece"))
         {
             HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() - Damage);
 
