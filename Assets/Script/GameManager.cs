@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer >= 0)
+        /*if(timer >= 0)
         {
             timer -= Time.deltaTime;
 
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
         {
             EndBattlePhase();
             StartBuyingPhase();
-        }
+        }*/
 
         myEnemyText.text = "Enemy:" + enemyScore;
         myPlayerText.text = "Player:" + playerScore;
