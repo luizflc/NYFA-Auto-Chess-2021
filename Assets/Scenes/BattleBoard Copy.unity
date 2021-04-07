@@ -16866,7 +16866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4247557805542233696, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
       propertyPath: m_TagString
-      value: NonSnapBox
+      value: Snapbox
       objectReference: {fileID: 0}
     - target: {fileID: 4323762449135955937, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
       propertyPath: m_RootOrder
@@ -16942,7 +16942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7754436434004239992, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
       propertyPath: m_TagString
-      value: NonSnapBox
+      value: Snapbox
       objectReference: {fileID: 0}
     - target: {fileID: 8037172651524047294, guid: 41086d101b7198b4d9c41ea98775c104, type: 3}
       propertyPath: m_RootOrder
