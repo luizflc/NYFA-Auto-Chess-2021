@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class LevelCreatorManager : MonoBehaviour
 {
-    public int timer;
-    public Text timerText;
+  //  public int timer;
+   // public Text timerText;
     public int rounds;
     public Text roundsText;
     public string nextScene;
@@ -15,8 +15,8 @@ public class LevelCreatorManager : MonoBehaviour
     void Start()
     {
         nextScene = null;
-        timer = 15;
-        timerText.text = "15";
+     //   timer = 15;
+     //   timerText.text = "15";
         rounds = 2;
         roundsText.text = "2";
     }
@@ -29,21 +29,24 @@ public class LevelCreatorManager : MonoBehaviour
 
     public void AddToTimer()
     {
-        timer += 1;
+    /*    timer += 1;
         if (timer > 60)
         {
             timer = 60;
         }
         timerText.text = timer.ToString();
+        */
     }
     public void SubtractToTimer()
     {
+        /*
         timer -= 1;
         if (timer < 5)
         {
             timer = 5;
         }
         timerText.text = timer.ToString();
+        */
     }
     public void SetNextSceneTo(string sceneName)
     {
@@ -51,7 +54,7 @@ public class LevelCreatorManager : MonoBehaviour
     }
     public void StartGame()
     {
-        GameManager.setTimer = timer;
+       // GameManager.setTimer = timer;
         GameManager.setMaxTurns = rounds;
         SceneManager.LoadScene(nextScene);
 

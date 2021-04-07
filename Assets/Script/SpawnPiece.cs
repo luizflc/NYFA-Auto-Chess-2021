@@ -50,9 +50,13 @@ public class SpawnPiece : MonoBehaviour
         {
             newPiece.transform.position = new Vector3(newPiece.transform.position.x, newPiece.transform.position.y + 3, newPiece.transform.position.z);
         }
-            //print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
-            //Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
-            newPiece.tag = "PlayerPiece";
+        if (piece.name == "SmallPiece")
+        {
+            newPiece.transform.position = new Vector3(newPiece.transform.position.x, newPiece.transform.position.y + 3, newPiece.transform.position.z);
+        }
+        //print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
+        //Economy.instance.SubtractCorners(newPiece.GetComponent<PlayablePiece>().shape.cost);
+        newPiece.tag = "PlayerPiece";
             newPiece.name = ("PlayerPiece" + GameObject.FindGameObjectsWithTag("PlayerPiece").Length);
             //PlayablePiece spawnPlayable = newPiece.GetComponent<PlayablePiece>();
             //myManager.TryGoalAdd(spawnPlayable.color.objective, 1);

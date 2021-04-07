@@ -6,14 +6,15 @@ public class HealthTest : MonoBehaviour
 {
     //Author Jordan Barboza
 
-    
+    public GameObject HealthUI;
+    HealthBar healthBar;
     public float Damage;
 
     // Start is called before the first frame update
     void Start()
     {
         HealthBar.SetHealthBarValue(1);
-        
+        healthBar = HealthUI.GetComponent<HealthBar>();
     }
 
     // Update is called once per frame
@@ -34,12 +35,12 @@ public class HealthTest : MonoBehaviour
 
     public void OnTriggerEnter(Collider col)
     {
-        if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
+        if ((col.gameObject.tag == "EnemyPiece"))
         {
             HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() - Damage);
 
         }
 
 
-    }
+    } 
 }
