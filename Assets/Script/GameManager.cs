@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public GameState myState;
     public GameObject UI;
     public int turnNum = 0;
-    public float timer;
+   // public float timer;
     public bool canBuy;
     public GameObject textObject;
     public GameObject enemyTextObject;
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public Text myPlayerText;
     public Text myEnemyText;
     public Text resultText;
-    public Text timerText;
+   // public Text timerText;
     public Text[] bonusTexts;
     public int playerScore;
     public int enemyScore;
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemyHat;
     public BonusGoalScript[] myBonusGoals;
     public System.Random myRandom = new System.Random();
-    public static float setTimer = 15f;
+  //  public static float setTimer = 15f;
     public static int setMaxTurns = 2;
     public GameObject[] buyablePieces;
     public int buyablePieceNum;
@@ -54,12 +54,12 @@ public class GameManager : MonoBehaviour
         }
         
         myState = GameState.Buy;
-        timer = setTimer;
+      //  timer = setTimer;
         maxTurns = setMaxTurns;
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
         resultText = resultObject.GetComponent<Text>();
-        timerText = timerObject.GetComponent<Text>();
+      //  timerText = timerObject.GetComponent<Text>();
         StartBuyingPhase();
     }
 
@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartBattlePhase() {
         myState = GameState.Attack;
-        timer = setTimer;
+      //  timer = setTimer;
         canBuy = false;
         UI.SetActive(false);
         /*if (turnNum == 0 || turnNum == 1)

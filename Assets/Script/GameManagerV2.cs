@@ -8,21 +8,22 @@ public class GameManagerV2 : MonoBehaviour
     public GameObject[] Pieces;
     public Vector3[] startPoints;
     public int roundNum;
-    public float timerStart;
-    float timer;
-    public int score;
+   /// public float timerStart;
+   // float timer;
+   // public int score;
     //public Text timerText;
     // Start is called before the first frame update
     void Start()
     {
         roundNum = 1;
-        timer = timerStart;
+  //      timer = timerStart;
         StartRound();
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if(timer > 0f)
         {
             timer -= Time.deltaTime;
@@ -33,6 +34,7 @@ public class GameManagerV2 : MonoBehaviour
             timer = timerStart;
             EndRound();
         } 
+        */
     }
 
     public void StartRound() {

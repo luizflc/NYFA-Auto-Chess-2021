@@ -250,12 +250,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ba9ce34780ea64b83f52317ad64610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPlayable: {fileID: 0}
+  myPlayable: {fileID: 6766117352166746299}
   afterlife: {x: 0, y: 0, z: 17.82}
   Graveyard: {fileID: 0}
   disabling: 0
   myManagerObject: {fileID: 0}
-  myDragScript: {fileID: 0}
+  myDragScript: {fileID: 6722597118259998029}
   myManager: {fileID: 0}
   myNeutral: {fileID: 0}
   myExplosion: {fileID: 1464421840011120619, guid: 81036dbc2af8aec4ba4b469675eae481, type: 3}
@@ -517,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 5302400686237026469, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_Name
       value: Health Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302400686237026469, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5302400686848739998, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_SizeDelta.x

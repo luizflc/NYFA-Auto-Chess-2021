@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class HealthTest : MonoBehaviour
 {
-    //Author Jordan Barboza
+ //Author Jordan Barboza
 
-    public float Damage; 
+   /* public float Damage; 
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +27,8 @@ public class HealthTest : MonoBehaviour
         {
             HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() + 0.0025f);
         }
-    } */
-
+    } 
+   
     public void OnTriggerEnter(Collider col)
     {
         if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
@@ -37,4 +37,6 @@ public class HealthTest : MonoBehaviour
 
         }
     }
+}
+*/
 }

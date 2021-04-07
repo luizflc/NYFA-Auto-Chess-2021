@@ -7,13 +7,13 @@ public class HealthBar : MonoBehaviour
 {
 
 
-    private static Image HealthBarImage;
-
+    //private static Image HealthBarImage;
+/*
     /// <summary>
     /// Sets the health bar value
     /// </summary>
     /// <param name="value">should be between 0 to 1</param>
-
+   
     public static void SetHealthBarValue(float value)
     {
         HealthBarImage.fillAmount = value;

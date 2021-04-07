@@ -234,7 +234,7 @@ MonoBehaviour:
   homeSpace: {fileID: 0}
   homeScript: {fileID: 0}
   homeRenderer: {fileID: 0}
-  thisPiece: {fileID: 0}
+  thisPiece: {fileID: 5251087697642081204}
 --- !u!65 &7318221236667972657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -246,8 +246,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4111015, y: 2.9445508, z: 1.1421186}
-  m_Center: {x: 0, y: 0, z: 0.72115636}
+  m_Size: {x: 1.4111015, y: 2.9445508, z: 1.7546215}
+  m_Center: {x: 0, y: -1.2092729e-15, z: 0.41490486}
 --- !u!54 &7884325139088015617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -276,12 +276,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ba9ce34780ea64b83f52317ad64610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPlayable: {fileID: 0}
-  afterlife: {x: 0, y: 0, z: 17.82}
+  myPlayable: {fileID: 5251087697642081204}
+  afterlife: {x: 0, y: 0, z: 25}
   Graveyard: {fileID: 0}
   disabling: 0
   myManagerObject: {fileID: 0}
-  myDragScript: {fileID: 0}
+  myDragScript: {fileID: 8489546373140085147}
   myManager: {fileID: 0}
   myNeutral: {fileID: 0}
   myExplosion: {fileID: 1464421840011120619, guid: 81036dbc2af8aec4ba4b469675eae481, type: 3}
@@ -312,7 +312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7828d0055bf44439423c2ca93ae7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 1
 --- !u!1 &6356886384931156894
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +650,10 @@ PrefabInstance:
     - target: {fileID: 5302400686237026469, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_Name
       value: Health Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302400686237026469, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5302400686848739998, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
       propertyPath: m_SizeDelta.x
