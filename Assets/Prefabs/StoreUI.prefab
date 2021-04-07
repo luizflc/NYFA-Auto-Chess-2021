@@ -144,20 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaa24a2554d9344b933e19d1ce7ff3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieces:
-  - {fileID: 2344459608175888341, guid: f4da37e3579aa794ca5ce380319ccc93, type: 3}
-  - {fileID: 7250533191543977526, guid: a2d40ac2d2e63504e9fcfb78b5459af1, type: 3}
-  - {fileID: 5412233354676430614, guid: b67ac687e7456a64ea524c28c8b9e0df, type: 3}
-  - {fileID: 1824064252397945354, guid: 68543ebd3bcfaff419d2df269d8e658b, type: 3}
-  - {fileID: 8459689335906772260, guid: f3a8ec72f7978734ca4b5e1d602f7dee, type: 3}
-  - {fileID: 982471391650890265, guid: f981fb8582a971d4fb70959688427ada, type: 3}
-  - {fileID: 4374776697734332108, guid: f4173faae0bfb19429edfff85e56a8fc, type: 3}
-  - {fileID: 9061147378704913819, guid: 131e50f20cbef1d42bddb6b57b3f5e98, type: 3}
-  - {fileID: 1931687215547990029, guid: d523e3b04e346334ca7118b201649440, type: 3}
+  piece: {fileID: 0}
   otherButtons:
   - {fileID: 3253820982306286077}
   - {fileID: 3253820982681593806}
-  currPiece: 0
   benchLocations: []
   benchTransforms: []
   spawnLocation: {x: -6, y: 1, z: 4}
@@ -469,20 +459,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaa24a2554d9344b933e19d1ce7ff3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieces:
-  - {fileID: 2344459608175888341, guid: f4da37e3579aa794ca5ce380319ccc93, type: 3}
-  - {fileID: 7250533191543977526, guid: a2d40ac2d2e63504e9fcfb78b5459af1, type: 3}
-  - {fileID: 5412233354676430614, guid: b67ac687e7456a64ea524c28c8b9e0df, type: 3}
-  - {fileID: 1824064252397945354, guid: 68543ebd3bcfaff419d2df269d8e658b, type: 3}
-  - {fileID: 8459689335906772260, guid: f3a8ec72f7978734ca4b5e1d602f7dee, type: 3}
-  - {fileID: 982471391650890265, guid: f981fb8582a971d4fb70959688427ada, type: 3}
-  - {fileID: 4374776697734332108, guid: f4173faae0bfb19429edfff85e56a8fc, type: 3}
-  - {fileID: 9061147378704913819, guid: 131e50f20cbef1d42bddb6b57b3f5e98, type: 3}
-  - {fileID: 1931687215547990029, guid: d523e3b04e346334ca7118b201649440, type: 3}
+  piece: {fileID: 0}
   otherButtons:
   - {fileID: 3253820981788190189}
   - {fileID: 3253820982681593806}
-  currPiece: 0
   benchLocations: []
   benchTransforms: []
   spawnLocation: {x: -6, y: 1, z: 4}
@@ -632,20 +612,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaa24a2554d9344b933e19d1ce7ff3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pieces:
-  - {fileID: 2344459608175888341, guid: f4da37e3579aa794ca5ce380319ccc93, type: 3}
-  - {fileID: 7250533191543977526, guid: a2d40ac2d2e63504e9fcfb78b5459af1, type: 3}
-  - {fileID: 5412233354676430614, guid: b67ac687e7456a64ea524c28c8b9e0df, type: 3}
-  - {fileID: 1824064252397945354, guid: 68543ebd3bcfaff419d2df269d8e658b, type: 3}
-  - {fileID: 8459689335906772260, guid: f3a8ec72f7978734ca4b5e1d602f7dee, type: 3}
-  - {fileID: 982471391650890265, guid: f981fb8582a971d4fb70959688427ada, type: 3}
-  - {fileID: 4374776697734332108, guid: f4173faae0bfb19429edfff85e56a8fc, type: 3}
-  - {fileID: 9061147378704913819, guid: 131e50f20cbef1d42bddb6b57b3f5e98, type: 3}
-  - {fileID: 1931687215547990029, guid: d523e3b04e346334ca7118b201649440, type: 3}
+  piece: {fileID: 0}
   otherButtons:
   - {fileID: 3253820981788190189}
   - {fileID: 3253820982306286077}
-  currPiece: 0
   benchLocations: []
   benchTransforms: []
   spawnLocation: {x: -6, y: 1, z: 4}
@@ -777,7 +747,7 @@ MonoBehaviour:
   pieces:
   - {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
   - {fileID: 5259317173998863803, guid: 0e0d320107c47a14a9dad689a56fbcb0, type: 3}
-  - {fileID: 6356886384931101924, guid: df2c0c79dba84c947b82eafa3f529a18, type: 3}
+  - {fileID: 1140006209434903053, guid: df2c0c79dba84c947b82eafa3f529a18, type: 3}
   spawners:
   - {fileID: 3253820981788190193}
   - {fileID: 3253820982306286017}
