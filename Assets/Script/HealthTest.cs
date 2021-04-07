@@ -6,12 +6,14 @@ public class HealthTest : MonoBehaviour
 {
     //Author Jordan Barboza
 
-    public float Damage; 
+    
+    public float Damage;
 
     // Start is called before the first frame update
     void Start()
     {
         HealthBar.SetHealthBarValue(1);
+        
     }
 
     // Update is called once per frame
@@ -29,13 +31,6 @@ public class HealthTest : MonoBehaviour
         }
     } */
 
-   /* void Update()
-    {
-        if (HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() == 0)
-        {
-
-        }
-    }*/
 
     public void OnTriggerEnter(Collider col)
     {
@@ -45,10 +40,6 @@ public class HealthTest : MonoBehaviour
 
         }
 
-        else if ((gameObject.tag == "EnemyPiece" && col.gameObject.tag == "PlayerPiece"))
-        {
-            HealthBar.SetHealthBarValue(HealthBar.GetHealthBarValue() - Damage);
 
-        }
     }
 }

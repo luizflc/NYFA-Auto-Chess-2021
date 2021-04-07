@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-
-
+   
     private static Image HealthBarImage;
 
     /// <summary>
@@ -52,16 +51,9 @@ public class HealthBar : MonoBehaviour
     {
         HealthBarImage = GetComponent<Image>();
         SetHealthBarColor(Color.green);
-       // SetHealthBarValue(1);
+       
     }
 
-   /* public void OnTriggerEnter(Collider col)
-    {
-        if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
-        {
-            SetHealthBarValue(GetHealthBarValue() - 0.5f);
+ }
 
-        }
-    } */
-}
 
