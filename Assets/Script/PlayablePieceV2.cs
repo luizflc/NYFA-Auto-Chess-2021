@@ -32,11 +32,17 @@ public class PlayablePieceV2 : MonoBehaviour
     {
         myManagerObject = GameObject.Find("GameManager");
         myManager = myManagerObject.GetComponent<GameManager>();
+
+        MyPause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (MyPause.isPaused)
+        {
+            return;
+        }
         if (fastTriggered)
         {
             timer -= Time.deltaTime;

@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b0dfb75f73d84643a847294bf17f1ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   health: 3
   cost: 1
   goingForward: 0
@@ -411,18 +411,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5718108184051013930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8628193770167267807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f01274ed7939444dae20641385c687f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4478946179171705508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,11 +531,6 @@ PrefabInstance:
 --- !u!224 &8628193771549190662 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5302400686237026466, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
-  m_PrefabInstance: {fileID: 4478946179171705508}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8628193770167267807 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5302400687002456955, guid: 149a3c6df60f9fc40b0cf88b1677f767, type: 3}
   m_PrefabInstance: {fileID: 4478946179171705508}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9157915394487149785
