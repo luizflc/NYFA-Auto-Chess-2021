@@ -43,6 +43,10 @@ public class PlayablePieceV2 : MonoBehaviour
         {
             return;
         }
+        if (myManager.notStarted)
+        {
+            return;
+        }
         if (fastTriggered)
         {
             timer -= Time.deltaTime;

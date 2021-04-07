@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public PieceSelector storeFront;
     public GameState myState;
     public GameObject UI;
+    public GameObject startUI;
     public int turnNum = 0;
    // public float timer;
     public bool canBuy;
@@ -37,11 +38,15 @@ public class GameManager : MonoBehaviour
     public GameObject[] buyablePieces;
     public int buyablePieceNum;
     public GameObject EndGameUI;
+
+    public bool notStarted;
    
     //public GameState state;
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 0;
+        notStarted = true;
         canBuy = true;
         bonusTexts = new Text[3];
         myBonusGoals = new BonusGoalScript[3];
@@ -53,14 +58,14 @@ public class GameManager : MonoBehaviour
            
         }
         
-        myState = GameState.Buy;
+        myState = GameState.Select;
       //  timer = setTimer;
         maxTurns = setMaxTurns;
         myPlayerText = textObject.GetComponent<Text>();
         myEnemyText = enemyTextObject.GetComponent<Text>();
         resultText = resultObject.GetComponent<Text>();
       //  timerText = timerObject.GetComponent<Text>();
-        StartBuyingPhase();
+      //StartBuyingPhase();
     }
 
     // Update is called once per frame
@@ -82,7 +87,16 @@ public class GameManager : MonoBehaviour
             EndBattlePhase();
             StartBuyingPhase();
         }*/
+        if (notStarted)
+        {
+            //freezes game if paused
+            Time.timeScale = 0;
 
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
         myEnemyText.text = "Enemy:" + enemyScore;
         myPlayerText.text = "Player:" + playerScore;
         if(buyablePieceNum <= 0)
@@ -247,6 +261,8 @@ public class GameManager : MonoBehaviour
 
     public void StartBuyingPhase()
     {
+        startUI.SetActive(false);
+        notStarted = false;
         myState = GameState.Buy;
         turnNum += 1;
         Economy.instance.p1Corners += 4;
