@@ -197,7 +197,7 @@ MonoBehaviour:
   maxZ: 25
   minX: 0
   minZ: 0
-  speed: 0.02
+  speed: 1
   myManagerObject: {fileID: 0}
   myManager: {fileID: 0}
   MyPause: {fileID: 0}
@@ -300,6 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7828d0055bf44439423c2ca93ae7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HealthUI: {fileID: 0}
+  Damage: 0
 --- !u!1 &6356886384931156894
 GameObject:
   m_ObjectHideFlags: 0
