@@ -6,8 +6,12 @@ using UnityEngine.UI;
 public class Economy : MonoBehaviour
 {
     public Text p1Text;
-    public int p1Corners;
-    public int p2Corners;
+    public int p1Energy;
+    public int p2Energy;
+    public int maxEnergy;
+    public float energyGain;
+    public float energyGainMax;
+    //these are for the interval of energy gains. Energy gain is the current number the timer is on, and energyGainMax is the maximum value of the timer.
     public static Economy instance;
     // Start is called before the first frame update
 
@@ -18,23 +22,42 @@ public class Economy : MonoBehaviour
     void Start()
     {
         
-        p1Corners = 4;
-        p2Corners = 4;
+        p1Energy = 4;
+        p2Energy = 4;
     }
 
     // Update is called once per frame
     void Update()
     {
-        p1Text.text ="Corners: " + p1Corners.ToString();
+        if(energyGain > 0)
+        {
+            energyGain -= 1 * Time.deltaTime;
+        }
+        else
+        {
+            AddCorners(1);
+            p2Energy++; 
+            energyGain = energyGainMax;
+        }
+        p1Text.text ="Energy: " + p1Energy.ToString();
+        
     }
 
-    public void AddCorners(int corner)
+    public void AddCorners(int energy)
     {
-        p1Corners += corner;
+        if(p1Energy + energy < maxEnergy)
+        {
+            p1Energy += energy;
+        }
+        else
+        {
+            p1Energy = maxEnergy;
+        }
     }
 
-    public void SubtractCorners(int corner)
+    public void SubtractCorners(int energy)
     {
-        p1Corners -= corner;
+        p1Energy -= energy;
+
     }
 }

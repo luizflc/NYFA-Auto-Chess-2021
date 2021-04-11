@@ -140,6 +140,7 @@ MonoBehaviour:
   homeScript: {fileID: 0}
   homeRenderer: {fileID: 0}
   thisPiece: {fileID: 7809094907679597427}
+  noGrab: 0
 --- !u!65 &6714625286110189179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -168,12 +169,13 @@ MonoBehaviour:
   myPlayable: {fileID: 7809094907679597427}
   afterlife: {x: 0, y: 0, z: -17.82}
   Graveyard: {fileID: 0}
-  disabling: 0
+  disabling: 1
   myManagerObject: {fileID: 0}
   myDragScript: {fileID: 0}
   myManager: {fileID: 0}
   myNeutral: {fileID: 0}
   myExplosion: {fileID: 1464421840011120619, guid: 81036dbc2af8aec4ba4b469675eae481, type: 3}
+  myPause: {fileID: 0}
   inNeutralArea: 0
 --- !u!54 &-1218627610554491216
 Rigidbody:
@@ -217,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7828d0055bf44439423c2ca93ae7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HealthUI: {fileID: 0}
   Damage: 0.15
 --- !u!1 &9044584644082964947
 GameObject:

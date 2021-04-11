@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         notStarted = true;
         canBuy = true;
+        gameOver = false;
         bonusTexts = new Text[3];
         myBonusGoals = new BonusGoalScript[3];
         for (int i = 0; i < myBonusGoals.Length; i++)
@@ -129,9 +130,14 @@ public class GameManager : MonoBehaviour
     }
     public void StartBattlePhase() {
         myState = GameState.Attack;
-      //  timer = setTimer;
-        canBuy = false;
-        UI.SetActive(false);
+        
+        notStarted = false;
+        canBuy = true;
+        UI.SetActive(true);
+        //I'm changing this to allow players to purchase during the round. This means that both the player and enemy periodically get new pieces. 
+
+        //canBuy = false;
+        // UI.SetActive(false);
         /*if (turnNum == 0 || turnNum == 1)
         {
             int chooseRand = Random.Range(0, 3);
@@ -240,7 +246,7 @@ public class GameManager : MonoBehaviour
             DeployEnemyPieces();
             SpawnEnemyPieces();
         }*/
-       // DeployEnemyPieces();
+        // DeployEnemyPieces();
         //SpawnEnemyPieces();
         GameObject[] playersObj = GameObject.FindGameObjectsWithTag("PlayerPiece");
         GameObject[] enemyObj = GameObject.FindGameObjectsWithTag("EnemyPiece");
@@ -265,7 +271,7 @@ public class GameManager : MonoBehaviour
         notStarted = false;
         myState = GameState.Buy;
         turnNum += 1;
-        Economy.instance.p1Corners += 4;
+        Economy.instance.p1Energy += 4;
         if(turnNum <= maxTurns + 1 || endless)
         {
             canBuy = true;
@@ -278,7 +284,7 @@ public class GameManager : MonoBehaviour
         else
         {
             GameOver((playerScore-enemyScore));
-            gameOver = true;
+            //gameOver = true;
         }
     }
 
@@ -334,13 +340,34 @@ public class GameManager : MonoBehaviour
         resultParent.SetActive(true);
         if (score > 0)
         {
-            resultText.text = "Player 1 wins.";
-            EndGameUI.SetActive(true);
+            if (gameOver)
+            {
+                resultText.text = "Draw";
+                EndGameUI.SetActive(true);
+            }
+            else
+            {
+                resultText.text = "Player 1 wins.";
+                EndGameUI.SetActive(true);
+                gameOver = true;
+            }
+            
         }
         else if (score < 0)
         {
-            resultText.text = "Player 2 wins.";
-            EndGameUI.SetActive(true);
+            if (gameOver)
+            {
+                resultText.text = "Draw";
+                EndGameUI.SetActive(true);
+            }
+            else
+            {
+                resultText.text = "Player 2 wins.";
+                EndGameUI.SetActive(true);
+                gameOver = true;
+
+            }
+           
         }
         else
         {

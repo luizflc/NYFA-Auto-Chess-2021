@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: -6209946827300909717}
   - component: {fileID: 2709750595225680223}
   m_Layer: 0
-  m_Name: BigPiece
+  m_Name: BigPiece 1
   m_TagString: PlayerPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5493749721896383751}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: -0, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -125,7 +125,7 @@ Transform:
   - {fileID: 4545381155571767140}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
 --- !u!33 &5493749721899528225
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -189,13 +189,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   health: 3
-  cost: 1
+  cost: 4
   goingForward: 0
   sideStrafe: 0
   canMoveSideways: 0
   canMoveForwards: 1
   canMove: 1
-  maxX: 25
+  maxX: 30
   maxZ: 25
   minX: 0
   minZ: 0
