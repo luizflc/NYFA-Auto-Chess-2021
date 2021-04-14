@@ -14,7 +14,7 @@ public class DragScript : MonoBehaviour
     public MeshRenderer homeRenderer;
     public PlayablePieceV2 thisPiece;
     float distance;
-    
+    public bool noGrab;
     void Start()
     {
         thisPiece = gameObject.GetComponent<PlayablePieceV2>();
@@ -22,8 +22,12 @@ public class DragScript : MonoBehaviour
     private void OnMouseDown()
     {
         //if (!inBattle)
-       // {
-       if(gameObject.tag == "PlayerPiece")
+        // {
+        if (noGrab)
+        {
+            return;
+        }
+        if(gameObject.tag == "PlayerPiece")
         {
             distance = Vector3.Distance(transform.position, Camera.main.transform.position);
             dragging = true;
@@ -33,8 +37,12 @@ public class DragScript : MonoBehaviour
     }
     private void OnMouseUp()
     {
-       // if (!inBattle)
-      //  {
+        // if (!inBattle)
+        //  {
+        if (noGrab)
+        {
+            return;
+        }
       if(gameObject.tag == "PlayerPiece")
         {
             dragging = false;
@@ -67,6 +75,17 @@ public class DragScript : MonoBehaviour
             Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 rayPoint = myRay.GetPoint(distance);
             transform.position = new Vector3 (rayPoint.x, 1, rayPoint.z + (-.05f * rayPoint.z));
+        }
+        else
+        {
+            if (homeScript != null && homeScript.thisSpace == GridSquareScript.SpaceType.battlefield)
+            {
+                noGrab = true;
+            }
+            else
+            {
+                noGrab = false;
+            }
         }
     }
     

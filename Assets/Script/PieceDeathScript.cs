@@ -16,14 +16,16 @@ public class PieceDeathScript : MonoBehaviour
     public GameManager myManager;
     public NeutralArea myNeutral;
     public GameObject myExplosion;
+    public PauseMenu myPause;
     public bool inNeutralArea = false;
     void Start()
     {
-         myPlayable = gameObject.GetComponent<PlayablePieceV2>();
-         myNeutral = GameObject.Find("Neutral Ground").GetComponent<NeutralArea>();
-         dead = false;
-         myManagerObject = GameObject.Find("GameManager");
-         myManager = myManagerObject.GetComponent<GameManager>();
+        myPlayable = gameObject.GetComponent<PlayablePieceV2>();
+        myNeutral = GameObject.Find("Neutral Ground").GetComponent<NeutralArea>();
+        dead = false;
+        myPause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
+        myManagerObject = GameObject.Find("GameManager");
+        myManager = myManagerObject.GetComponent<GameManager>();
         /*if (Graveyard == null)
         {
             afterlife = new Vector3(10, 10, 10);
@@ -34,13 +36,13 @@ public class PieceDeathScript : MonoBehaviour
         }*/
     }
 
-   
+
     void Update()
     {
-     if(myPlayable.health <= 0 /*&& dead == false*/)
+        if (myPlayable.health <= 0 /*&& dead == false*/)
         {
             Death();
-        }   
+        }
     }
     void Death()
     {
@@ -61,8 +63,8 @@ public class PieceDeathScript : MonoBehaviour
             }
             */
         }
-        else if (gameObject.tag == "PlayerPiece") 
-            {
+        else if (gameObject.tag == "PlayerPiece")
+        {
             myManager.enemyScore++;
             if (inNeutralArea)
             {
@@ -75,13 +77,26 @@ public class PieceDeathScript : MonoBehaviour
                 myManager.playerScore += 2;
             }
             */
-            }
+        }
         GameObject.Instantiate(myExplosion, transform.position + Vector3.up, Quaternion.identity);
         transform.position = afterlife;
         myPlayable.canMove = false;
         inNeutralArea = false;
         myPlayable.health += 1;
-        
+        if (gameObject.name == "PlayerBase")
+        {
+                myManager.GameOver(-1);
+                Time.timeScale = 0;
+                myPause.isPaused = true;
+            
+            
+        }
+        if(gameObject.name == "EnemyBase")
+        {
+            myManager.GameOver(1);
+            Time.timeScale = 0;
+            myPause.isPaused = true;
+        }
         if(disabling)
         {
             gameObject.SetActive(false);

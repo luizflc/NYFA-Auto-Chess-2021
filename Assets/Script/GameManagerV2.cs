@@ -8,6 +8,7 @@ public class GameManagerV2 : MonoBehaviour
     public GameObject[] Pieces;
     public Vector3[] startPoints;
     public int roundNum;
+    
    /// public float timerStart;
    // float timer;
    // public int score;

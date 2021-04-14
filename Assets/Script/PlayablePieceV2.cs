@@ -125,16 +125,26 @@ public class PlayablePieceV2 : MonoBehaviour
 
         }
     }
-        public void OnTriggerEnter(Collider col)
+        public void OnTriggerEnter(Collider col) 
         {
         if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
         {
             col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
-           
+            if (col != null && col.gameObject.GetComponent<PlayablePieceV2>().damage == 0)
+            {
+                col.gameObject.GetComponent<PlayablePieceV2>().health -= 1;
+            }
+            //this if statement is to check if the opposing piece is a bike, in the case of bikes hitting each other since their damage is both 0.  
+
         }
         else if ((gameObject.tag == "EnemyPiece" && col.gameObject.tag == "PlayerPiece"))
         {
+            
             col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
+            if (col != null && col.gameObject.GetComponent<PlayablePieceV2>().damage == 0)
+            {
+                col.gameObject.GetComponent<PlayablePieceV2>().health -= 1;
+            }
         }
         //used for time power up
         else if (col.gameObject.tag == "timePU" && gameObject.tag == "PlayerPiece")
