@@ -337,18 +337,19 @@ public class GameManager : MonoBehaviour
     // The way you would call this method is this: GameOver((playerScore - enemyScore));.
     public void GameOver(int score)
     {
-        resultParent.SetActive(true);
+        StartCoroutine(gameOverDelay(1f));
+        
         if (score > 0)
         {
             if (gameOver)
             {
                 resultText.text = "Draw";
-                EndGameUI.SetActive(true);
+                
             }
             else
             {
                 resultText.text = "Player 1 wins.";
-                EndGameUI.SetActive(true);
+                
                 gameOver = true;
             }
             
@@ -358,12 +359,12 @@ public class GameManager : MonoBehaviour
             if (gameOver)
             {
                 resultText.text = "Draw";
-                EndGameUI.SetActive(true);
+                
             }
             else
             {
                 resultText.text = "Player 2 wins.";
-                EndGameUI.SetActive(true);
+               
                 gameOver = true;
 
             }
@@ -372,7 +373,7 @@ public class GameManager : MonoBehaviour
         else
         {
             resultText.text = "Draw";
-            EndGameUI.SetActive(true);
+            
         }
         
     }
@@ -406,4 +407,12 @@ public class GameManager : MonoBehaviour
         }*/
 
     }
-}
+   public IEnumerator gameOverDelay(float delay)
+    {
+
+        print("wait");
+        yield return new WaitForSecondsRealtime(2f);
+        resultParent.SetActive(true);
+        EndGameUI.SetActive(true);
+    }
+}   
