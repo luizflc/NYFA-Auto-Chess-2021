@@ -6400,6 +6400,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8353522748213206571, guid: 588344c8f24cdda47bf582dca73dc731, type: 3}
+      propertyPath: thisLevel
+      value: BattleBoard Copy 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8353522748276430603, guid: 588344c8f24cdda47bf582dca73dc731, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
@@ -19032,6 +19036,10 @@ PrefabInstance:
     - target: {fileID: 2342340378817557361, guid: dfc97f352e7ce974e98b1c228dcfdbc0, type: 3}
       propertyPath: m_Name
       value: GameOverUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342340378817557364, guid: dfc97f352e7ce974e98b1c228dcfdbc0, type: 3}
+      propertyPath: thisLevel
+      value: BattleBoard Copy 1
       objectReference: {fileID: 0}
     - target: {fileID: 2342340378817557373, guid: dfc97f352e7ce974e98b1c228dcfdbc0, type: 3}
       propertyPath: m_LocalPosition.x
