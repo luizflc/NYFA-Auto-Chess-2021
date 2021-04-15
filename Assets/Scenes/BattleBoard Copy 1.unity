@@ -14064,6 +14064,7 @@ MonoBehaviour:
   - {x: 24, y: 1, z: 9}
   - {x: 24, y: 1, z: 4}
   roundNum: 0
+  timerStart: 3
 --- !u!1 &1272970111
 GameObject:
   m_ObjectHideFlags: 0
