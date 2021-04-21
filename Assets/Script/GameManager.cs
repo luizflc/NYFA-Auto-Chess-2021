@@ -130,7 +130,6 @@ public class GameManager : MonoBehaviour
     }
     public void StartBattlePhase() {
         myState = GameState.Attack;
-        
         notStarted = false;
         canBuy = true;
         UI.SetActive(true);
@@ -338,7 +337,6 @@ public class GameManager : MonoBehaviour
     public void GameOver(int score)
     {
         StartCoroutine(gameOverDelay(1f));
-        
         if (score > 0)
         {
             if (gameOver)
