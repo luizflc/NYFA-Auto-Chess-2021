@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: ea73eaec2ec556a4c93e42b109e7c61c
   - enabled: 1
-    path: Assets/Scenes/BattleBoard.unity
-    guid: cd09a03b88ce72c4fbd71bb4fd04115a
+    path: Assets/Scenes/BattleBoard Copy 1.unity
+    guid: 607aa10426ed7eb4bbe314e0072fc16d
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: f04b3e4fc4dba6a498fbbd4ffa10e2ad
