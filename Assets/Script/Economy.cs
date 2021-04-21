@@ -58,6 +58,6 @@ public class Economy : MonoBehaviour
     public void SubtractCorners(int energy)
     {
         p1Energy -= energy;
-
+    
     }
 }
