@@ -925,6 +925,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592767701}
   m_CullTransparentMesh: 0
+--- !u!1 &606851934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
+  m_PrefabInstance: {fileID: 1157654965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &606851947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606851934}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cb75b8480111d4ca166a369aa65d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &645568422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb7828d0055bf44439423c2ca93ae7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HealthUI: {fileID: 0}
   Damage: 0
 --- !u!4 &839016239
 Transform:
@@ -1484,7 +1502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5493749721896667135, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1565,7 +1583,7 @@ GameObject:
   - component: {fileID: 1102473164}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: EnemyPiece
+  m_TagString: Rotate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1669,7 +1687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102473163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.53, y: 62.5, z: 0.59}
+  m_LocalPosition: {x: -3.2, y: 62.5, z: 0.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1769,7 +1787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493749721896667135, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 5493749721896667135, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2976,6 +2994,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1674305478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5493749721896383751, guid: ddb34583413f90d4698f0186bd322f16, type: 3}
+  m_PrefabInstance: {fileID: 957676174}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1674305479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674305478}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cb75b8480111d4ca166a369aa65d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1685048231
 GameObject:
   m_ObjectHideFlags: 0
@@ -2990,9 +3025,10 @@ GameObject:
   - component: {fileID: 1685048234}
   - component: {fileID: 1685048233}
   - component: {fileID: 1685048232}
+  - component: {fileID: 1685048238}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: EnemyPiece
+  m_TagString: Rotate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3096,12 +3132,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685048231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.53, y: 45.1, z: 0.59}
+  m_LocalPosition: {x: -3.2, y: 45.1, z: 0.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685048238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685048231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cb75b8480111d4ca166a369aa65d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1721945398
 GameObject:
   m_ObjectHideFlags: 0

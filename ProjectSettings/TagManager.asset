@@ -16,6 +16,9 @@ TagManager:
   - Spawner
   - slowPU
   - Test
+  - SpawnPointSP
+  - Rotate
+  - NoRotate
   layers:
   - Default
   - TransparentFX
