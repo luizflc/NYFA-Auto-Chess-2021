@@ -15,7 +15,7 @@ public class Economy : MonoBehaviour
     public static Economy instance;
     // Start is called before the first frame update
 
-    private void Awake()
+    private void Awake()    
     {
         instance = this;
     }
