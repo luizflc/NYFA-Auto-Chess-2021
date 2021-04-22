@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 881496174259246246}
   - component: {fileID: 881496174259246249}
   - component: {fileID: 881496174259246248}
+  - component: {fileID: 3864378329481933385}
   m_Layer: 0
   m_Name: FrozenTile
-  m_TagString: Untagged
+  m_TagString: iceTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,8 +91,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881496174259246251}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3864378329481933385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881496174259246251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c745d98b78f2bc440a7b097413f8c924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupEffect: {fileID: 0}
+  durationOfEffect: 6
+  iceBlock: {fileID: 881496174259246251}

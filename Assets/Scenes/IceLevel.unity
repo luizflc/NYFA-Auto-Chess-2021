@@ -9179,7 +9179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3182708042292429834, guid: 883e1b3a4e7c1914db281e298d51b489, type: 3}
       propertyPath: spawnObjects.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3182708042292429834, guid: 883e1b3a4e7c1914db281e298d51b489, type: 3}
       propertyPath: spawnObjects.Array.data[0]
@@ -9197,6 +9197,10 @@ PrefabInstance:
       propertyPath: spawnObjects.Array.data[3]
       value: 
       objectReference: {fileID: 881496174259246251, guid: 829a2e9d400801b4d8f2861570591732, type: 3}
+    - target: {fileID: 3182708042292429834, guid: 883e1b3a4e7c1914db281e298d51b489, type: 3}
+      propertyPath: timer
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3182708042292429835, guid: 883e1b3a4e7c1914db281e298d51b489, type: 3}
       propertyPath: m_Name
       value: spawnPoints 2
