@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
-  health: 3
+  health: 9
   cost: 4
   goingForward: 0
   sideStrafe: 0
