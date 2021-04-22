@@ -26,6 +26,8 @@ public class PlayablePieceV2 : MonoBehaviour
     public bool slowTriggered;
     public float durationOfEffect = 3f;
 
+    public bool stopTriggered;
+
 
     // Start is called before the first frame update
     void Start()
@@ -67,6 +69,16 @@ public class PlayablePieceV2 : MonoBehaviour
                 timer = 0f;
                 gameObject.GetComponent<PlayablePieceV2>().speed *= 2;
                 gameObject.GetComponent<PlayablePieceV2>().health /= 2;
+            }
+        }
+        if (stopTriggered)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                stopTriggered = false;
+                timer = 0f;
+                gameObject.GetComponent<PlayablePieceV2>().speed /= 3;
             }
         }
         if (canMove == true)
@@ -125,8 +137,8 @@ public class PlayablePieceV2 : MonoBehaviour
 
         }
     }
-        public void OnTriggerEnter(Collider col) 
-        {
+    public void OnTriggerEnter(Collider col)
+    {
         if ((gameObject.tag == "PlayerPiece" && col.gameObject.tag == "EnemyPiece"))
         {
             col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
@@ -139,7 +151,7 @@ public class PlayablePieceV2 : MonoBehaviour
         }
         else if ((gameObject.tag == "EnemyPiece" && col.gameObject.tag == "PlayerPiece"))
         {
-            
+
             col.gameObject.GetComponent<PlayablePieceV2>().health -= damage;
             if (col != null && col.gameObject.GetComponent<PlayablePieceV2>().damage == 0)
             {
@@ -168,6 +180,12 @@ public class PlayablePieceV2 : MonoBehaviour
 
                 timer = durationOfEffect;
             }
+        }
+        //used in icelevel
+        else if (col.gameObject.tag == "iceTile" && gameObject.tag == "PlayerPiece" || gameObject.tag == "EnemeyPiece")
+        {
+            stopTriggered = true;
+            gameObject.GetComponent<PlayablePieceV2>().speed *= 3;
         }
         else
         {
