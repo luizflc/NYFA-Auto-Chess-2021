@@ -11750,9 +11750,9 @@ MonoBehaviour:
   p1Text: {fileID: 144104890}
   p1Energy: 0
   p2Energy: 0
-  maxEnergy: 0
+  maxEnergy: 10
   energyGain: 0
-  energyGainMax: 0
+  energyGainMax: 2
 --- !u!114 &1256972523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16822,9 +16822,9 @@ MonoBehaviour:
   p1Text: {fileID: 144104890}
   p1Energy: 0
   p2Energy: 0
-  maxEnergy: 0
+  maxEnergy: 10
   energyGain: 0
-  energyGainMax: 0
+  energyGainMax: 2
 --- !u!1001 &1785699495
 PrefabInstance:
   m_ObjectHideFlags: 0
