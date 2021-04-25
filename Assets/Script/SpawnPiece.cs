@@ -50,11 +50,11 @@ public class SpawnPiece : MonoBehaviour
             print("Object should have been instantiated");
             if (piece.name == "SmallPieceEnemy" || piece.name == "SmallPieceEnemy 1")
             {
-                newPiece.transform.position = new Vector3(newPiece.transform.position.x, newPiece.transform.position.y + 3, newPiece.transform.position.z);
+                newPiece.transform.position = new Vector3(newPiece.transform.position.x, newPiece.transform.position.y + 2, newPiece.transform.position.z);
             }
             if (piece.name == "SmallPiece" || piece.name == "SmallPiece 1")
             {
-                newPiece.transform.position = new Vector3(newPiece.transform.position.x, newPiece.transform.position.y + 3, newPiece.transform.position.z);
+                newPiece.transform.position = new Vector3(newPiece.transform.position.x, newPiece.transform.position.y + 2, newPiece.transform.position.z);
             }
             //print("Subtracting: " + newPiece.GetComponent<PlayablePiece>().shape.cost + " corners");
             Economy.instance.SubtractCorners(piece.GetComponent<PlayablePieceV2>().cost);

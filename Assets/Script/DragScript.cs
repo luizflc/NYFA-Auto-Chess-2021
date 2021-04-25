@@ -120,6 +120,7 @@ public class DragScript : MonoBehaviour
     {
         if (other.tag == "Snapbox")
         {
+           
             if (homeSpace == null || other.name != homeSpace.name)
             {
                 if (homeSpace != null)
