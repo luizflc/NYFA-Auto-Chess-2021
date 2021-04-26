@@ -296,7 +296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8695065544483887248, guid: 6a19ff4732198dd4191f42fe7fceec4b, type: 3}
       propertyPath: loadLevel
-      value: BattleBoard Copy 1
+      value: LevelSelect
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a19ff4732198dd4191f42fe7fceec4b, type: 3}

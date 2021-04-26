@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rules.unity
     guid: 1f3c194f43880e6408164306c99fbe10
+  - enabled: 1
+    path: Assets/Scenes/IceLevel.unity
+    guid: 16741da66d7eb2d478ddac51ecd32d59
+  - enabled: 1
+    path: Assets/Scenes/TerrainBackground.unity
+    guid: 3a642c790d3c81e4f92c096b1a516857
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: ea2958ebf32147842944776f9f600a93
   m_configObjects: {}
