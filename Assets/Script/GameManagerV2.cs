@@ -34,7 +34,7 @@ public class GameManagerV2 : MonoBehaviour
        else if(timer <= 0f)
         {
             SpawnPiece();
-            timer = Random.Range(0f,5f);
+            timer = Random.Range(3f,10f);
             //EndRound();
         } 
         
