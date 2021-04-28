@@ -346,7 +346,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                resultText.text = "Player 1 wins.";
+                resultText.text = "You Win!";
                 
                 gameOver = true;
             }
@@ -361,7 +361,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                resultText.text = "Player 2 wins.";
+                resultText.text = "You Lose!";
                
                 gameOver = true;
 
