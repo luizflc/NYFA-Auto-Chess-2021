@@ -902,7 +902,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d697aa8eca9a6074e932a13fe7d7f5c1, type: 2}
+  - {fileID: 2100000, guid: 21583e009529de2498db37e0c7b79bfe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -956,6 +956,8 @@ MonoBehaviour:
   fastTriggered: 0
   slowTriggered: 0
   durationOfEffect: 3
+  myBoard: {fileID: 0}
+  stopTriggered: 0
 --- !u!114 &719485465336933022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,7 +1025,6 @@ MonoBehaviour:
   myManagerObject: {fileID: 0}
   myDragScript: {fileID: 719485465336933022}
   myManager: {fileID: 0}
-  myNeutral: {fileID: 0}
   myExplosion: {fileID: 1464421840011120619, guid: 81036dbc2af8aec4ba4b469675eae481, type: 3}
   myPause: {fileID: 0}
   inNeutralArea: 0

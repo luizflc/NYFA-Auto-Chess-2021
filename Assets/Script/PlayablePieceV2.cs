@@ -12,10 +12,10 @@ public class PlayablePieceV2 : MonoBehaviour
     public bool canMoveSideways;
     public bool canMoveForwards;
     public bool canMove;
-    public int maxX;
-    public int maxZ;
-    public int minX;
-    public int minZ;
+    public float maxX;
+    public float maxZ;
+    public float minX;
+    public float minZ;
     public float speed;
     public GameObject myManagerObject;
     public GameManager myManager;
@@ -25,7 +25,7 @@ public class PlayablePieceV2 : MonoBehaviour
     public bool fastTriggered;
     public bool slowTriggered;
     public float durationOfEffect = 3f;
-
+    public BoardCenterScript myBoard;
     public bool stopTriggered;
 
 
@@ -34,8 +34,12 @@ public class PlayablePieceV2 : MonoBehaviour
     {
         myManagerObject = GameObject.Find("GameManager");
         myManager = myManagerObject.GetComponent<GameManager>();
-
+        myBoard = GameObject.Find("BoardCenter").GetComponent<BoardCenterScript>();
         MyPause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
+        maxX = myBoard.gameObject.transform.position.x + myBoard.BoardLength;
+        minX = myBoard.gameObject.transform.position.x - myBoard.BoardLength;
+        maxZ = myBoard.gameObject.transform.position.z + myBoard.BoardWidth;
+        minZ = myBoard.gameObject.transform.position.z - myBoard.BoardWidth;
     }
 
     // Update is called once per frame
