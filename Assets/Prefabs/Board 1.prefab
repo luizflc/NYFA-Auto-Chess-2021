@@ -110,12 +110,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &126447467044277427
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,12 +224,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &791493746682212786
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,12 +338,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &894161886741971394
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,12 +452,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894428685169500
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,12 +566,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894428928455498
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,12 +680,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429007898066
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,12 +794,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429125091170
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,12 +908,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429128696053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,12 +1022,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429249137607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,12 +1136,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429260729311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,12 +1250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429635772785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,12 +1364,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429687925993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,12 +1478,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894429779411336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,12 +1592,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430011577824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,12 +1706,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430058281374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,12 +1820,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430086773033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,12 +1934,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430164098281
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,12 +2048,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430192844959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,12 +2162,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430285258598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2314,12 +2276,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430379720021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,12 +2390,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1341894430461113824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,12 +2504,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &1685594823249199664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,12 +2618,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &2314596377327187392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,12 +2732,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &2338291505292228847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,12 +2846,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &2385497435839304860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,12 +2960,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &2740784452183583546
 GameObject:
   m_ObjectHideFlags: 0
@@ -3126,12 +3074,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &2875732203895069564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,12 +3188,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &3138627468520648760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,12 +3302,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &3565041295976356709
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,12 +3416,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4029261706170234320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,12 +3530,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4155789435803225790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,12 +3644,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4324134919976691646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3822,12 +3758,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4411201988276244259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3938,12 +3872,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4492020793253902137
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,12 +3986,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4527216396756286261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4170,12 +4100,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4621729083786837577
 GameObject:
   m_ObjectHideFlags: 0
@@ -4286,12 +4214,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &4674877397960343403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4402,12 +4328,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &5056580130336285454
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,12 +4442,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &5162012638818863971
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,12 +4556,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &5540637359768884416
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,12 +4670,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &6649001817503036935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,12 +4784,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &6710807370318210645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,12 +4898,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &6877914398639222813
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,12 +5012,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &6910781789727054207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5214,12 +5126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &7104618289558390461
 GameObject:
   m_ObjectHideFlags: 0
@@ -5330,12 +5240,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &7349237748689947899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5446,12 +5354,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &7382200873478420765
 GameObject:
   m_ObjectHideFlags: 0
@@ -5562,12 +5468,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &7642534979517607713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5678,12 +5582,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &7784232347163006618
 GameObject:
   m_ObjectHideFlags: 0
@@ -5794,12 +5696,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &8045528324223850253
 GameObject:
   m_ObjectHideFlags: 0
@@ -5910,12 +5810,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 049d348cca9ebe04c943f51f51e9ed8c, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &8537698589529441011
 GameObject:
   m_ObjectHideFlags: 0
@@ -6026,12 +5924,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &8734808916878674254
 GameObject:
   m_ObjectHideFlags: 0
@@ -6142,12 +6038,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &8814311756395124614
 GameObject:
   m_ObjectHideFlags: 0
@@ -6258,12 +6152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}
 --- !u!1 &8891230048076975686
 GameObject:
   m_ObjectHideFlags: 0
@@ -6273,7 +6165,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1528357320561440935}
-  - component: {fileID: 4529890770201320933}
   m_Layer: 0
   m_Name: Board 1
   m_TagString: Untagged
@@ -6350,18 +6241,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4529890770201320933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8891230048076975686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4b6eaf2871da674fa5984bb2382a453, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9095840708498105553
 GameObject:
   m_ObjectHideFlags: 0
@@ -6472,9 +6351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taken: 0
   altered: 0
-  snapEnabled: 0
   selectedMaterial: {fileID: 2100000, guid: eeefa710181736c4b9737b88c2c29069, type: 2}
   ordinaryMaterial: {fileID: 2100000, guid: 7f89133a16665b0469f7f0b34d3f8f3a, type: 2}
   thisRenderer: {fileID: 0}
   thisSpace: 0
-  myColumnObject: {fileID: 0}

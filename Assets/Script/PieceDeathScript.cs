@@ -14,14 +14,14 @@ public class PieceDeathScript : MonoBehaviour
     public GameObject myManagerObject;
     public DragScript myDragScript;
     public GameManager myManager;
-   // public NeutralArea myNeutral;
+    public NeutralArea myNeutral;
     public GameObject myExplosion;
     public PauseMenu myPause;
     public bool inNeutralArea = false;
     void Start()
     {
         myPlayable = gameObject.GetComponent<PlayablePieceV2>();
-     //   myNeutral = GameObject.Find("Neutral Ground").GetComponent<NeutralArea>();
+        myNeutral = GameObject.Find("Neutral Ground").GetComponent<NeutralArea>();
         dead = false;
         myPause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
         myManagerObject = GameObject.Find("GameManager");
@@ -51,10 +51,10 @@ public class PieceDeathScript : MonoBehaviour
         if (gameObject.tag == "EnemyPiece")
         {
             myManager.playerScore++;
-            /*if (inNeutralArea)
+            if (inNeutralArea)
             {
-               // myNeutral.ForcedEnemyExit();
-            }*/
+                myNeutral.ForcedEnemyExit();
+            }
             /*
             if(myPlayable.color.name == "Purple")
             {
@@ -66,11 +66,10 @@ public class PieceDeathScript : MonoBehaviour
         else if (gameObject.tag == "PlayerPiece")
         {
             myManager.enemyScore++;
-            /*if (inNeutralArea)
+            if (inNeutralArea)
             {
-              //  myNeutral.ForcedPlayerExit();
+                myNeutral.ForcedPlayerExit();
             }
-            */
             /*
             if(myPlayable.color.name == "Purple")
             {
